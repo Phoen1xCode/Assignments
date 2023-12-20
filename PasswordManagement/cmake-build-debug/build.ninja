@@ -98,15 +98,22 @@ build CMakeFiles/PasswordManagement.dir/applications/ConfigManager.cpp.obj: CXX_
   OBJECT_DIR = CMakeFiles\PasswordManagement.dir
   OBJECT_FILE_DIR = CMakeFiles\PasswordManagement.dir\applications
 
-build CMakeFiles/PasswordManagement.dir/applications/JSONManager.cpp.obj: CXX_COMPILER__PasswordManagement_unscanned_Debug X$:/CLionProjects/PasswordManagement/applications/JSONManager.cpp || cmake_object_order_depends_target_PasswordManagement
-  DEP_FILE = CMakeFiles\PasswordManagement.dir\applications\JSONManager.cpp.obj.d
+build CMakeFiles/PasswordManagement.dir/applications/Credential.cpp.obj: CXX_COMPILER__PasswordManagement_unscanned_Debug X$:/CLionProjects/PasswordManagement/applications/Credential.cpp || cmake_object_order_depends_target_PasswordManagement
+  DEP_FILE = CMakeFiles\PasswordManagement.dir\applications\Credential.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IX:/CLionProjects/PasswordManagement/cmake-build-debug/lib/cryptopp-cmake/cryptopp -IX:/CLionProjects/PasswordManagement/cmake-build-debug/lib/cryptopp-cmake
   OBJECT_DIR = CMakeFiles\PasswordManagement.dir
   OBJECT_FILE_DIR = CMakeFiles\PasswordManagement.dir\applications
 
-build CMakeFiles/PasswordManagement.dir/applications/Credential.cpp.obj: CXX_COMPILER__PasswordManagement_unscanned_Debug X$:/CLionProjects/PasswordManagement/applications/Credential.cpp || cmake_object_order_depends_target_PasswordManagement
-  DEP_FILE = CMakeFiles\PasswordManagement.dir\applications\Credential.cpp.obj.d
+build CMakeFiles/PasswordManagement.dir/applications/CredentialManager.cpp.obj: CXX_COMPILER__PasswordManagement_unscanned_Debug X$:/CLionProjects/PasswordManagement/applications/CredentialManager.cpp || cmake_object_order_depends_target_PasswordManagement
+  DEP_FILE = CMakeFiles\PasswordManagement.dir\applications\CredentialManager.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IX:/CLionProjects/PasswordManagement/cmake-build-debug/lib/cryptopp-cmake/cryptopp -IX:/CLionProjects/PasswordManagement/cmake-build-debug/lib/cryptopp-cmake
+  OBJECT_DIR = CMakeFiles\PasswordManagement.dir
+  OBJECT_FILE_DIR = CMakeFiles\PasswordManagement.dir\applications
+
+build CMakeFiles/PasswordManagement.dir/applications/KeyManager.cpp.obj: CXX_COMPILER__PasswordManagement_unscanned_Debug X$:/CLionProjects/PasswordManagement/applications/KeyManager.cpp || cmake_object_order_depends_target_PasswordManagement
+  DEP_FILE = CMakeFiles\PasswordManagement.dir\applications\KeyManager.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IX:/CLionProjects/PasswordManagement/cmake-build-debug/lib/cryptopp-cmake/cryptopp -IX:/CLionProjects/PasswordManagement/cmake-build-debug/lib/cryptopp-cmake
   OBJECT_DIR = CMakeFiles\PasswordManagement.dir
@@ -120,9 +127,9 @@ build CMakeFiles/PasswordManagement.dir/applications/Credential.cpp.obj: CXX_COM
 #############################################
 # Link the executable PasswordManagement.exe
 
-build PasswordManagement.exe: CXX_EXECUTABLE_LINKER__PasswordManagement_Debug CMakeFiles/PasswordManagement.dir/PasswordManagement.cpp.obj CMakeFiles/PasswordManagement.dir/applications/User.cpp.obj CMakeFiles/PasswordManagement.dir/applications/PasswordManager.cpp.obj CMakeFiles/PasswordManagement.dir/applications/PasswordUtils.cpp.obj CMakeFiles/PasswordManagement.dir/lib/bcrypt/src/bcrypt.cpp.obj CMakeFiles/PasswordManagement.dir/lib/bcrypt/src/blowfish.cpp.obj CMakeFiles/PasswordManagement.dir/applications/ConfigManager.cpp.obj CMakeFiles/PasswordManagement.dir/applications/JSONManager.cpp.obj CMakeFiles/PasswordManagement.dir/applications/Credential.cpp.obj | lib/cryptopp-cmake/cryptopp/libcryptopp.a || lib/cryptopp-cmake/cryptopp/libcryptopp.a
+build PasswordManagement.exe: CXX_EXECUTABLE_LINKER__PasswordManagement_Debug CMakeFiles/PasswordManagement.dir/PasswordManagement.cpp.obj CMakeFiles/PasswordManagement.dir/applications/User.cpp.obj CMakeFiles/PasswordManagement.dir/applications/PasswordManager.cpp.obj CMakeFiles/PasswordManagement.dir/applications/PasswordUtils.cpp.obj CMakeFiles/PasswordManagement.dir/lib/bcrypt/src/bcrypt.cpp.obj CMakeFiles/PasswordManagement.dir/lib/bcrypt/src/blowfish.cpp.obj CMakeFiles/PasswordManagement.dir/applications/ConfigManager.cpp.obj CMakeFiles/PasswordManagement.dir/applications/Credential.cpp.obj CMakeFiles/PasswordManagement.dir/applications/CredentialManager.cpp.obj CMakeFiles/PasswordManagement.dir/applications/KeyManager.cpp.obj | lib/cryptopp-cmake/cryptopp/libcryptopp.a || lib/cryptopp-cmake/cryptopp/libcryptopp.a
   FLAGS = -g
-  LINK_LIBRARIES = lib/cryptopp-cmake/cryptopp/libcryptopp.a  -lkernel32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = lib/cryptopp-cmake/cryptopp/libcryptopp.a  -lUser32  -lkernel32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\PasswordManagement.dir
   POST_BUILD = cd .
   PRE_LINK = cd .

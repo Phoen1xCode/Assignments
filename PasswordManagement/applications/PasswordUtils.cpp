@@ -3,14 +3,10 @@
 // 密码工具的具体实现
 
 #include "../models/PasswordUtils.h"
-#include <string>
-#include <random>
-#include <algorithm>
 
 namespace PasswordManagement {
 
-    // 生成随机密码
-    // 返回 生成的密码
+    // 生成强密码
     std::string generatePassword(int length) {
         // 定义了四个字符串，分别包含小写字母、大写字母、数字和特殊字符
         const std::string lowerCase = "abcdefghijklmnopqrstuvwxyz";
@@ -54,8 +50,7 @@ namespace PasswordManagement {
         return password;
     }
 
-    // 检查密码强度
-    // 强密码返回true 弱密码返回false
+    // 检查密码强度 强密码返回true 弱密码返回false
     bool isStrongPassword(const std::string& password) {
         // 检查密码长度是否在8到20位之间
         if (password.length() < 8 || password.length() > 20) {
@@ -93,28 +88,93 @@ namespace PasswordManagement {
     }
 
 
-// 生成一个AES-128密钥并检查其长度
-//    CryptoPP::AutoSeededRandomPool prng;
-//    CryptoPP::SecByteBlock key(CryptoPP::AES::DEFAULT_KEYLENGTH); // AES-128的密钥长度
-//    prng.GenerateBlock(key, key.size());
-//
-//    检查密钥长度是否为AES-128所需的16字节
-//    if (key.size() != CryptoPP::AES::DEFAULT_KEYLENGTH) {
-//      throw std::runtime_error("Invalid key size.");
-//    }
+// 检测Windows平台
+#if defined(_WIN32) || defined(_WIN64)
+#include <conio.h>
+#include <windows.h>
 
+    // getHiddenInput() 函数的跨平台实现 隐藏控制台输入
+    std::string getHiddenInput() {
+        std::string password; // 定义一个字符串变量来存储密码
+        char ch; // 定义一个字符变量来存储每次输入的字符
+        while ((ch = _getch()) != '\r') { // 循环直到用户按下回车键（回车在Windows中是 '\r'）
+            if (ch == '\b' && !password.empty()) { // 如果用户输入了退格键并且密码不为空
+                password.pop_back(); // 删除密码字符串中的最后一个字符
+                std::cout << "\b \b"; // 在控制台上删除一个星号
+            } else if (ch != '\b') { // 如果输入的不是退格键
+                password.push_back(ch); // 将输入的字符添加到密码字符串
+                std::cout << '*'; // 在控制台上显示一个星号
+            }
+        }
+        std::cout << std::endl; // 当用户按下回车键后，输出一个换行符
+        return password; // 返回输入的密码字符串
+    }
 
+    // CopyTextToClipboard() 函数
 
+    bool CopyTextToClipboard(const std::string &text) {
+        // 打开剪贴板
+        if (!OpenClipboard(nullptr)) {
+            return false;
+        }
 
-//    在使用加密算法时，初始化向量（IV）是确保相同的明文在不同的加密操作中产生不同密文的关键。这有助于增强安全性，特别是在使用块加密模式（如CBC模式）时。
-//    为了正确处理IV，你需要遵循以下步骤：
-//    生成IV：在加密操作开始时，生成一个随机的IV。这通常由加密库的随机数生成器完成，如CryptoPP::AutoSeededRandomPool。
-//    存储IV：加密后，你需要将IV存储在一个地方，以便解密时可以使用。通常的做法是将IV附加到密文的前面，因为IV不需要保密，只需要不可预测。
-//    传输IV：将密文和IV一起传输给解密方。确保在传输过程中IV不会被篡改。
-//    解密时使用IV：在解密操作开始时，从传输的数据中提取IV，并使用它来初始化解密算法。
+        // 清空剪贴板
+        EmptyClipboard();
 
-    // 使用AES算法加密
-    // // plainText:需要加密的明文字符串 | key:加密密钥 使用CryptoPP::SecByteBlock类型来确保安全地处理密钥
+        // 分配全局内存对象，注意加1是为了末尾的空字符
+        HGLOBAL hGlobal = GlobalAlloc(GMEM_MOVEABLE, (text.size() + 1) * sizeof(char));
+        if (!hGlobal) {
+            CloseClipboard();
+            return false;
+        }
+
+        // 锁定内存，准备写入数据
+        char *pGlobal = static_cast<char *>(GlobalLock(hGlobal));
+        memcpy(pGlobal, text.c_str(), text.size() + 1);
+        GlobalUnlock(hGlobal);
+
+        // 设置剪贴板数据
+        if (!SetClipboardData(CF_TEXT, hGlobal)) {
+            CloseClipboard();
+            GlobalFree(hGlobal);
+            return false;
+        }
+
+        // 关闭剪贴板
+        CloseClipboard();
+
+        // 如果SetClipboardData成功，系统会接管全局内存对象，不需要手动释放
+        return true;
+    }
+
+// 检测Unix/Linux/Mac OS X平台
+#elif defined(__unix__) || defined(__unix) || defined(__APPLE__) && defined(__MACH__)
+#include <termios.h>
+#include <unistd.h>
+
+    std::string getHiddenInput() {
+        std::string password;
+        termios oldt, newt;
+        char ch;
+
+        tcgetattr(STDIN_FILENO, &oldt);
+        newt = oldt;
+        newt.c_lflag &= ~(ECHO);
+        tcsetattr(STDIN_FILENO, TCSANOW, &newt);
+
+        while ((ch = getchar()) != '\n' && ch != EOF) {
+            password += ch;
+        }
+
+        tcsetattr(STDIN_FILENO, TCSANOW, &oldt);
+        return password;
+    }
+#endif
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+    // AES加密算法实现
+
+    // plainText:需要加密的明文字符串 | key:加密密钥 使用CryptoPP::SecByteBlock类型来确保安全地处理密钥
     std::string encryptPassword(const std::string& plainText, const CryptoPP::SecByteBlock& key) {
         CryptoPP::AutoSeededRandomPool prng; // 创建一个CryptoPP::AutoSeededRandomPool对象，用于生成随机数
         CryptoPP::byte iv[CryptoPP::AES::BLOCKSIZE]; // 定义一个字节数组iv，用作初始化向量(IV)，其大小与AES的块大小相同
@@ -133,29 +193,50 @@ namespace PasswordManagement {
 
         // 将IV附加到密文前面
         std::string ivStr(reinterpret_cast<const char*>(iv), CryptoPP::AES::BLOCKSIZE);
-        return cipherText; // 返回加密后的字符串
+        // return ivStr + cipherText; // 返回IV和加密后的字符串
+        std::string encryptedData = ivStr + cipherText;
+
+        // 对加密数据进行Base64编码
+        std::string base64EncryptedData;
+        CryptoPP::StringSource ss(encryptedData, true,
+                                  new CryptoPP::Base64Encoder(
+                                          new CryptoPP::StringSink(base64EncryptedData)
+                                  )
+        );
+
+        return base64EncryptedData; // 返回Base64编码的字符串
     }
-    // 使用AES算法解密
-    // // cipherText:要解密的密文字符串 | key:解密密钥 使用CryptoPP::SecByteBlock类型来确保安全地处理密钥
-    std::string decryptPassword(const std::string& cipherTextAndIv, const CryptoPP::SecByteBlock& key) {
-        // 从传入的数据中提取IV
+
+    // cipherText:要解密的密文字符串 | key:解密密钥 使用CryptoPP::SecByteBlock类型来确保安全地处理密钥
+    std::string decryptPassword(const std::string& base64CipherTextAndIv, const CryptoPP::SecByteBlock& key) {
+        // 对Base64编码的数据进行解码
+        std::string encryptedData;
+        CryptoPP::StringSource ss(base64CipherTextAndIv, true,
+                                  new CryptoPP::Base64Decoder(
+                                          new CryptoPP::StringSink(encryptedData)
+                                  )
+        );
+
+        // 从解码后的数据中提取IV
         CryptoPP::byte iv[CryptoPP::AES::BLOCKSIZE];
-        std::memcpy(iv, cipherTextAndIv.data(), CryptoPP::AES::BLOCKSIZE);
+        std::memcpy(iv, encryptedData.data(), CryptoPP::AES::BLOCKSIZE);
 
         // 提取实际的密文
-        std::string cipherText = cipherTextAndIv.substr(CryptoPP::AES::BLOCKSIZE);
+        std::string cipherText = encryptedData.substr(CryptoPP::AES::BLOCKSIZE);
 
         std::string decryptedText;
         CryptoPP::AES::Decryption aesDecryption(key, CryptoPP::AES::DEFAULT_KEYLENGTH);
         CryptoPP::CBC_Mode_ExternalCipher::Decryption cbcDecryption(aesDecryption, iv);
 
+        // 创建解密过滤器
         CryptoPP::StreamTransformationFilter stfDecryptor(cbcDecryption, new CryptoPP::StringSink(decryptedText));
+        // 将密文放入解密过滤器中
         stfDecryptor.Put(reinterpret_cast<const unsigned char*>(cipherText.c_str()), cipherText.size());
+        // 完成解密操作
         stfDecryptor.MessageEnd();
 
-        return decryptedText;
+        return decryptedText; // 返回解密后的明文
     }
 
-
-
+/* ------------------------------------------------------------------------------------------------------------------ */
 } // PasswordUtils
