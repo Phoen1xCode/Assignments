@@ -6,7 +6,7 @@
 
 using namespace std;
 
-// ±äÁ¿¹ÜÀí
+// å˜é‡ç®¡ç†
 class Event
 {
 public:
@@ -21,50 +21,50 @@ public:
     string date;
 
 public:
-    // ¹¹Ôìº¯Êı
+    // æ„é€ å‡½æ•°
     Event(const string& content, int startHour, int startMinute, int endHour, int endMinute, const string& location, const string& requirement, const string& date)
         : content(content), startHour(startHour), startMinute(startMinute), endHour(endHour), endMinute(endMinute), location(location), requirement(requirement), completed(false), date(date) {}
 
-    // ½«ÊÂ¼ş±ê¼ÇÎªÒÑÍê³É
+    // å°†äº‹ä»¶æ ‡è®°ä¸ºå·²å®Œæˆ
     void markAsCompleted()
     {
         completed = true;
     }
 
-    // ¼ì²éÊÂ¼şÊÇ·ñÒÑÍê³É
+    // æ£€æŸ¥äº‹ä»¶æ˜¯å¦å·²å®Œæˆ
     bool isCompleted() const
     {
         return completed;
     }
 
-    // ÓÑÔªº¯Êı£¬ÓÃÓÚ½«ÊÂ¼şĞÅÏ¢Êä³öµ½Á÷ÖĞ
+    // å‹å…ƒå‡½æ•°ï¼Œç”¨äºå°†äº‹ä»¶ä¿¡æ¯è¾“å‡ºåˆ°æµä¸­
     friend ostream& operator<<(ostream& os, const Event& event)
     {
-        os << "ÈÕÆÚ£º" << event.date << endl;                                          // Êä³öÈÕÆÚ
-        os << "ÄÚÈİ£º" << event.content << endl;                                      // Êä³öÈÕ³ÌÄÚÈİ
-        os << "ÆğÊ¼Ê±¼ä£º" << event.startHour << ":" << event.startMinute << endl;     // Êä³öÆğÊ¼Ê±¼ä
-        os << "½áÊøÊ±¼ä£º" << event.endHour << ":" << event.endMinute << endl;         // Êä³ö½áÊøÊ±¼ä
-        os << "µØµã£º" << event.location << endl;                                     // Êä³öµØµã
-        os << "ÒªÇó£º" << event.requirement << endl;                                  // Êä³öÒªÇó
-        os << "×´Ì¬£º" << (event.completed ? "ÒÑÍê³É" : "Î´Íê³É") << endl;            // Êä³ö×´Ì¬
+        os << "æ—¥æœŸï¼š" << event.date << endl;                                          // è¾“å‡ºæ—¥æœŸ
+        os << "å†…å®¹ï¼š" << event.content << endl;                                      // è¾“å‡ºæ—¥ç¨‹å†…å®¹
+        os << "èµ·å§‹æ—¶é—´ï¼š" << event.startHour << ":" << event.startMinute << endl;     // è¾“å‡ºèµ·å§‹æ—¶é—´
+        os << "ç»“æŸæ—¶é—´ï¼š" << event.endHour << ":" << event.endMinute << endl;         // è¾“å‡ºç»“æŸæ—¶é—´
+        os << "åœ°ç‚¹ï¼š" << event.location << endl;                                     // è¾“å‡ºåœ°ç‚¹
+        os << "è¦æ±‚ï¼š" << event.requirement << endl;                                  // è¾“å‡ºè¦æ±‚
+        os << "çŠ¶æ€ï¼š" << (event.completed ? "å·²å®Œæˆ" : "æœªå®Œæˆ") << endl;            // è¾“å‡ºçŠ¶æ€
         return os;
     }
 };
 
-// ¸÷¸ö¹¦ÄÜ¹ÜÀí
+// å„ä¸ªåŠŸèƒ½ç®¡ç†
 class Schedule
 {
 private:
     vector<Event> events;
-    // ¸¨Öúº¯Êı£ºÅĞ¶ÏÆğÊ¼Ê±¼äÊÇ·ñÔÚ½áÊøÊ±¼äÖ®Ç°
+    // è¾…åŠ©å‡½æ•°ï¼šåˆ¤æ–­èµ·å§‹æ—¶é—´æ˜¯å¦åœ¨ç»“æŸæ—¶é—´ä¹‹å‰
     bool isStartTimeBeforeEndTime(int startHour, int startMinute, int endHour, int endMinute) const
     {
-        // ÏÈ±È½ÏĞ¡Ê±
+        // å…ˆæ¯”è¾ƒå°æ—¶
         if (startHour < endHour)
         {
             return true;
         }
-        // Ğ¡Ê±ÏàÍ¬Ê±±È½Ï·ÖÖÓ
+        // å°æ—¶ç›¸åŒæ—¶æ¯”è¾ƒåˆ†é’Ÿ
         else if (startHour == endHour && startMinute < endMinute)
         {
             return true;
@@ -73,7 +73,7 @@ private:
     }
 
 public:
-    // ¸÷¸ö¹¦ÄÜº¯Êı
+    // å„ä¸ªåŠŸèƒ½å‡½æ•°
     void addEvent();
     void sortByEndTime();
     void markEventAsDone();

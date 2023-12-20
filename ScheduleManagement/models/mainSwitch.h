@@ -1,4 +1,4 @@
-// 选择各种功能
+// 閫夋嫨鍚勭鍔熻兘
 class mainSwitch
 {
 public:

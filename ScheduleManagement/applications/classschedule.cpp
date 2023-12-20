@@ -7,7 +7,7 @@
 
 using namespace std;
 
-// ¼ì²éÈÕÆÚÊÇ·ñºÏ·¨
+// æ£€æŸ¥æ—¥æœŸæ˜¯å¦åˆæ³•
 bool isDateValid(const string& date) 
 {
     if (date.length() != 10 || date[4] != '-' || date[7] != '-') 
@@ -25,7 +25,7 @@ bool isDateValid(const string& date)
     {
         return false;
     }
-    // ÈòÄê2ÔÂÅĞ¶¨
+    // é—°å¹´2æœˆåˆ¤å®š
     if (month == 2) 
     {
         if (day > 29) 
@@ -44,7 +44,7 @@ bool isDateValid(const string& date)
     return true;
 }
 
-// Ìí¼ÓÊÂ¼ş
+// æ·»åŠ äº‹ä»¶
 void Schedule::addEvent() 
 {
     string content;
@@ -56,70 +56,70 @@ void Schedule::addEvent()
     string requirement;
     string date;
 
-    cout << "ÇëÊäÈëÈÕÆÚ£¨¸ñÊ½£ºYYYY-MM-DD£©£º";
+    cout << "è¯·è¾“å…¥æ—¥æœŸï¼ˆæ ¼å¼ï¼šYYYY-MM-DDï¼‰ï¼š";
     while (cin >> date) 
     {
-        // ¼ì²éÈÕÆÚ¸ñÊ½ÊÇ·ñÕıÈ·
+        // æ£€æŸ¥æ—¥æœŸæ ¼å¼æ˜¯å¦æ­£ç¡®
         if (isDateValid(date))
         {
             break;
         }
         else
         {
-            cout << "ÎŞĞ§Ñ¡Ïî£¬ÇëÖØĞÂÊäÈëÈÕÆÚ£¨¸ñÊ½£ºYYYY-MM-DD£©£º" << endl;
+            cout << "æ— æ•ˆé€‰é¡¹ï¼Œè¯·é‡æ–°è¾“å…¥æ—¥æœŸï¼ˆæ ¼å¼ï¼šYYYY-MM-DDï¼‰ï¼š" << endl;
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
     }
 
-    cout << "ÇëÊäÈëÈÕ³ÌÄÚÈİ£º";
+    cout << "è¯·è¾“å…¥æ—¥ç¨‹å†…å®¹ï¼š";
     cin.ignore();
     getline(cin, content);
 
-    cout << "ÇëÊäÈëÆğÊ¼Ğ¡Ê±£¨0-23£©£º";
+    cout << "è¯·è¾“å…¥èµ·å§‹å°æ—¶ï¼ˆ0-23ï¼‰ï¼š";
     while (!(cin >> startHour) || startHour < 0 || startHour > 23) 
     {
-        cout << "ÎŞĞ§Ñ¡Ïî£¬ÇëÖØĞÂÊäÈëÆğÊ¼Ğ¡Ê±£¨0-23£©£º" << endl;
+        cout << "æ— æ•ˆé€‰é¡¹ï¼Œè¯·é‡æ–°è¾“å…¥èµ·å§‹å°æ—¶ï¼ˆ0-23ï¼‰ï¼š" << endl;
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
     }
 
-    cout << "ÇëÊäÈëÆğÊ¼·ÖÖÓ£¨0-59£©£º";
+    cout << "è¯·è¾“å…¥èµ·å§‹åˆ†é’Ÿï¼ˆ0-59ï¼‰ï¼š";
     while (!(cin >> startMinute) || startMinute < 0 || startMinute > 59) 
     {
-        cout << "ÎŞĞ§Ñ¡Ïî£¬ÇëÖØĞÂÊäÈëÆğÊ¼·ÖÖÓ£¨0-59£©£º" << endl;
+        cout << "æ— æ•ˆé€‰é¡¹ï¼Œè¯·é‡æ–°è¾“å…¥èµ·å§‹åˆ†é’Ÿï¼ˆ0-59ï¼‰ï¼š" << endl;
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
     }
 
-    cout << "ÇëÊäÈë½áÊøĞ¡Ê±£¨0-23£©£º";
+    cout << "è¯·è¾“å…¥ç»“æŸå°æ—¶ï¼ˆ0-23ï¼‰ï¼š";
     while (!(cin >> endHour) || endHour < 0 || endHour > 23 || !isStartTimeBeforeEndTime(startHour, startMinute, endHour, endMinute)) 
     {
-        cout << "ÎŞĞ§Ñ¡Ïî£¬ÇëÖØĞÂÊäÈë½áÊøĞ¡Ê±£¨0-23£©£º" << endl;
+        cout << "æ— æ•ˆé€‰é¡¹ï¼Œè¯·é‡æ–°è¾“å…¥ç»“æŸå°æ—¶ï¼ˆ0-23ï¼‰ï¼š" << endl;
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
     }
 
-    cout << "ÇëÊäÈë½áÊø·ÖÖÓ£¨0-59£©£º";
+    cout << "è¯·è¾“å…¥ç»“æŸåˆ†é’Ÿï¼ˆ0-59ï¼‰ï¼š";
     while (!(cin >> endMinute) || endMinute < 0 || endMinute > 59 || !isStartTimeBeforeEndTime(startHour, startMinute, endHour, endMinute)) 
     {
-        cout << "ÎŞĞ§Ñ¡Ïî£¬ÇëÖØĞÂÊäÈë½áÊø·ÖÖÓ£¨0-59£©£º" << endl;
+        cout << "æ— æ•ˆé€‰é¡¹ï¼Œè¯·é‡æ–°è¾“å…¥ç»“æŸåˆ†é’Ÿï¼ˆ0-59ï¼‰ï¼š" << endl;
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
     }
 
-    cout << "ÇëÊäÈëµØµã£º";
+    cout << "è¯·è¾“å…¥åœ°ç‚¹ï¼š";
     cin.ignore();
     getline(cin, location);
 
-    cout << "ÇëÊäÈëÒªÇó£º";
+    cout << "è¯·è¾“å…¥è¦æ±‚ï¼š";
     getline(cin, requirement);
 
     events.push_back(Event(content, startHour, startMinute, endHour, endMinute, location, requirement, date));
-    cout << "ÈÕ³ÌÌí¼Ó³É¹¦£¡" << endl;
+    cout << "æ—¥ç¨‹æ·»åŠ æˆåŠŸï¼" << endl;
 }
 
-// °´ÕÕ½áÊøÊ±¼ä½øĞĞÅÅĞò
+// æŒ‰ç…§ç»“æŸæ—¶é—´è¿›è¡Œæ’åº
 void Schedule::sortByEndTime()
 {
     sort(events.begin(), events.end(), [](const Event& event1, const Event& event2) 
@@ -139,52 +139,52 @@ void Schedule::sortByEndTime()
         });
 }
 
-// ±ê¼ÇÍê³É
+// æ ‡è®°å®Œæˆ
 void Schedule::markEventAsDone()
 {
     string content;
-    cout << "ÇëÊäÈëÒª±ê¼ÇÎªÒÑÍê³ÉµÄÈÕ³ÌÃû×Ö£º";
+    cout << "è¯·è¾“å…¥è¦æ ‡è®°ä¸ºå·²å®Œæˆçš„æ—¥ç¨‹åå­—ï¼š";
     cin >> content;
     bool found = false;
-    // Í¨¹ıÄÚÈİ½øĞĞ¼ìË÷
+    // é€šè¿‡å†…å®¹è¿›è¡Œæ£€ç´¢
     for (auto& event : events) 
     {
         if (event.content == content) 
         {
             found = true;
             event.completed = true;
-            cout << "ÒÑ±ê¼ÇÄÚÈİÎª " << content << " µÄÈÕ³ÌÎªÒÑÍê³É£¡" << endl;
+            cout << "å·²æ ‡è®°å†…å®¹ä¸º " << content << " çš„æ—¥ç¨‹ä¸ºå·²å®Œæˆï¼" << endl;
             break;
         }
     }
-    // Î´ÕÒµ½±¨´í
+    // æœªæ‰¾åˆ°æŠ¥é”™
     if (!found) 
     {
-        cout << "Ã»ÓĞÕÒµ½ÄÚÈİÎª " << content << " µÄÈÕ³Ì£¡" << endl;
+        cout << "æ²¡æœ‰æ‰¾åˆ°å†…å®¹ä¸º " << content << " çš„æ—¥ç¨‹ï¼" << endl;
     }
 }
 
-// Õ¹Ê¾ÈÕ³Ì±í
+// å±•ç¤ºæ—¥ç¨‹è¡¨
 void Schedule::showEvents()
 {
-    // ÏÈµ÷ÓÃº¯Êı½øĞĞÅÅĞò
+    // å…ˆè°ƒç”¨å‡½æ•°è¿›è¡Œæ’åº
     sortByEndTime();
-    cout << "ÈÕ³Ì±í£º" << endl;
-    // ÒÑÍê³É±ê¼Ç
+    cout << "æ—¥ç¨‹è¡¨ï¼š" << endl;
+    // å·²å®Œæˆæ ‡è®°
     for (const auto& event : events) 
     {
-        cout << (event.completed ? "[ÒÑÍê³É] " : "") << event << endl;
+        cout << (event.completed ? "[å·²å®Œæˆ] " : "") << event << endl;
     }
 }
 
-// ËÑË÷ÈÕ³Ì
+// æœç´¢æ—¥ç¨‹
 void Schedule::searchEventByContent()
 {
     string content;
-    cout << "ÇëÊäÈëÒªËÑË÷µÄÈÕ³ÌÄÚÈİ£º";
+    cout << "è¯·è¾“å…¥è¦æœç´¢çš„æ—¥ç¨‹å†…å®¹ï¼š";
     cin >> content;
     bool found = false;
-    // Í¨¹ıÄÚÈİ½øĞĞ¼ìË÷
+    // é€šè¿‡å†…å®¹è¿›è¡Œæ£€ç´¢
     for (auto& event : events) 
     {
         if (event.content == content) 
@@ -193,34 +193,34 @@ void Schedule::searchEventByContent()
             cout << event << endl;
         }
     }
-    // Î´ÕÒµ½Ê±±¨´í
+    // æœªæ‰¾åˆ°æ—¶æŠ¥é”™
     if (!found) 
     {
-        cout << "Ã»ÓĞÕÒµ½ÄÚÈİÎª " << content << " µÄÈÕ³Ì£¡" << endl;
+        cout << "æ²¡æœ‰æ‰¾åˆ°å†…å®¹ä¸º " << content << " çš„æ—¥ç¨‹ï¼" << endl;
     }
 }
 
-// É¾³ıÈÕ³Ì
+// åˆ é™¤æ—¥ç¨‹
 void Schedule::deleteEvent() 
 {
     string content;
-    cout << "ÇëÊäÈëÒªÉ¾³ıµÄÈÕ³ÌÄÚÈİ£º";
+    cout << "è¯·è¾“å…¥è¦åˆ é™¤çš„æ—¥ç¨‹å†…å®¹ï¼š";
     cin >> content;
     bool found = false;
-    // Í¨¹ıÄÚÈİ½øĞĞ¼ìË÷
+    // é€šè¿‡å†…å®¹è¿›è¡Œæ£€ç´¢
     for (auto it = events.begin(); it != events.end(); ++it) 
     {
         if (it->content == content) 
         {
             found = true;
             events.erase(it);
-            cout << "ÒÑÉ¾³ıÄÚÈİÎª " << content << " µÄÈÕ³Ì£¡" << endl;
+            cout << "å·²åˆ é™¤å†…å®¹ä¸º " << content << " çš„æ—¥ç¨‹ï¼" << endl;
             break;
         }
     }
-    // Î´ÕÒµ½Ê±±¨´í
+    // æœªæ‰¾åˆ°æ—¶æŠ¥é”™
     if (!found) 
     {
-        cout << "Ã»ÓĞÕÒµ½ÄÚÈİÎª " << content << " µÄÈÕ³Ì£¡" << endl;
+        cout << "æ²¡æœ‰æ‰¾åˆ°å†…å®¹ä¸º " << content << " çš„æ—¥ç¨‹ï¼" << endl;
     }
 }

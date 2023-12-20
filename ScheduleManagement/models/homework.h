@@ -8,98 +8,98 @@
 
 using namespace std;
 
-// ¹ÜÀí¸÷¸ö±äÁ¿
+// ç®¡ç†å„ä¸ªå˜é‡
 class Assignment
 {
 private:
-    string name;             // ×÷ÒµÃû³Æ
-    string subject;          // ¿ÆÄ¿
-    string content;          // ×÷ÒµÄÚÈİ
-    string type;             // ×÷ÒµÀàĞÍ
-    string ddl;              // ½ØÖ¹ÈÕÆÚ
-    bool completed;          // ÊÇ·ñÍê³É
-    bool contentPrepared;    // ÄÚÈİ×¼±¸Íê³É±êÖ¾
-    bool presentationPrepared;  // Õ¹Ê¾ÉÏÌ¨×¼±¸Íê³É±êÖ¾
+    string name;             // ä½œä¸šåç§°
+    string subject;          // ç§‘ç›®
+    string content;          // ä½œä¸šå†…å®¹
+    string type;             // ä½œä¸šç±»å‹
+    string ddl;              // æˆªæ­¢æ—¥æœŸ
+    bool completed;          // æ˜¯å¦å®Œæˆ
+    bool contentPrepared;    // å†…å®¹å‡†å¤‡å®Œæˆæ ‡å¿—
+    bool presentationPrepared;  // å±•ç¤ºä¸Šå°å‡†å¤‡å®Œæˆæ ‡å¿—
 
 public:
-    // ¹¹Ôìº¯Êı
+    // æ„é€ å‡½æ•°
     Assignment(const string& name, const string& subject, const string& content, const string& type, const string& ddl)
         : name(name), subject(subject), content(content), type(type), ddl(ddl), completed(false),
         contentPrepared(false), presentationPrepared(false) {}
 
-    // »ñÈ¡×÷ÒµÃû³Æ
+    // è·å–ä½œä¸šåç§°
     string getName() const
     {
         return name;
     }
 
-    // »ñÈ¡¿ÆÄ¿ĞÅÏ¢
+    // è·å–ç§‘ç›®ä¿¡æ¯
     string getSubject() const
     {
         return subject;
     }
 
-    // »ñÈ¡ÄÚÈİĞÅÏ¢
+    // è·å–å†…å®¹ä¿¡æ¯
     string getContent() const
     {
         return content;
     }
 
-    // »ñÈ¡×÷ÒµÀàĞÍ
+    // è·å–ä½œä¸šç±»å‹
     string getType() const
     {
         return type;
     }
 
-    // »ñÈ¡×÷Òµddl
+    // è·å–ä½œä¸šddl
     string getDdl() const
     {
         return ddl;
     }
 
-    // ×÷ÒµÍê³ÉÇé¿ö
+    // ä½œä¸šå®Œæˆæƒ…å†µ
     bool isCompleted() const
     {
         return completed;
     }
 
-    // ±ê¼Ç×÷ÒµÍê³É
+    // æ ‡è®°ä½œä¸šå®Œæˆ
     void markCompleted()
     {
         completed = true;
     }
 
-    // ±ê¼ÇÄÚÈİ×¼±¸Íê³É
+    // æ ‡è®°å†…å®¹å‡†å¤‡å®Œæˆ
     void markContentPrepared()
     {
         contentPrepared = true;
     }
 
-    // ±ê¼ÇÕ¹Ê¾ÉÏÌ¨×¼±¸Íê³É
+    // æ ‡è®°å±•ç¤ºä¸Šå°å‡†å¤‡å®Œæˆ
     void markPresentationPrepared()
     {
         presentationPrepared = true;
     }
 };
 
-// ¸÷¸ö¹¦ÄÜº¯Êı
+// å„ä¸ªåŠŸèƒ½å‡½æ•°
 class HomeworkManager
 {
 private:
-    // ÓÃvector´æ´¢×÷ÒµÁĞ±í
+    // ç”¨vectorå­˜å‚¨ä½œä¸šåˆ—è¡¨
     vector<Assignment> assignments;
 
 public:
-    // ¸÷¸ö¹¦ÄÜ¶ÔÓ¦º¯Êı
+    // å„ä¸ªåŠŸèƒ½å¯¹åº”å‡½æ•°
     void addAssignment();
     bool validateDate(const string& date);
     void displayAssignmentList();
     void markAssignmentCompleted();
     void deleteAssignment();
-    // ÒÔÏÂÎªÔ¤´¦Àí²Ù×÷
+    // ä»¥ä¸‹ä¸ºé¢„å¤„ç†æ“ä½œ
 
 private:
-    // ±È½Ï×÷ÒµµÄ½ØÖ¹ÈÕÆÚ
+    // æ¯”è¾ƒä½œä¸šçš„æˆªæ­¢æ—¥æœŸ
     static bool compareAssignmentsByDdl(const Assignment& a1, const Assignment& a2)
     {
         tm tm1 = parseDdlString(a1.getDdl());
@@ -107,7 +107,7 @@ private:
         return mktime(&tm1) < mktime(&tm2);
     }
 
-    // ½âÎöÈÕÆÚ×Ö·û´®Îªtm½á¹¹
+    // è§£ææ—¥æœŸå­—ç¬¦ä¸²ä¸ºtmç»“æ„
     static tm parseDdlString(const string& ddlString)
     {
         tm tm = {};
@@ -116,7 +116,7 @@ private:
         return tm;
     }
 
-    // °´½ØÖ¹ÈÕÆÚÅÅĞò×÷ÒµÁĞ±í
+    // æŒ‰æˆªæ­¢æ—¥æœŸæ’åºä½œä¸šåˆ—è¡¨
     void sortAssignmentsByDdl()
     {
         sort(assignments.begin(), assignments.end(), compareAssignmentsByDdl);

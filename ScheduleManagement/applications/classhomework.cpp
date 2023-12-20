@@ -9,34 +9,34 @@
 
 using namespace std;
 
-// Ìí¼Ó×÷ÒµĞÅÏ¢
+// æ·»åŠ ä½œä¸šä¿¡æ¯
 void HomeworkManager::addAssignment()
 {
-    // ÊäÈë×÷ÒµĞÅÏ¢
+    // è¾“å…¥ä½œä¸šä¿¡æ¯
     string name, subject, content, type, ddl;
-    cout << "ÇëÊäÈë¿ÆÄ¿£º";
+    cout << "è¯·è¾“å…¥ç§‘ç›®ï¼š";
     cin >> subject;
-    cout << "ÇëÊäÈë×÷ÒµÄÚÈİ£º";
+    cout << "è¯·è¾“å…¥ä½œä¸šå†…å®¹ï¼š";
     cin >> content;
-    cout << "ÇëÑ¡Ôñ·½Ê½£¨1.³£¹æ×÷Òµ/2.Õ¹Ê¾×÷Òµ£©£º";
+    cout << "è¯·é€‰æ‹©æ–¹å¼ï¼ˆ1.å¸¸è§„ä½œä¸š/2.å±•ç¤ºä½œä¸šï¼‰ï¼š";
     int hchoice;
     cin >> hchoice;
     while(true)
     {
         if (hchoice == 1)
         {
-            type = "³£¹æ×÷Òµ";
+            type = "å¸¸è§„ä½œä¸š";
             break;
         }
         else if (hchoice == 2)
         {
-            type = "Õ¹Ê¾×÷Òµ";
+            type = "å±•ç¤ºä½œä¸š";
             break;
         }
-        // ¾À´í»úÖÆ
+        // çº é”™æœºåˆ¶
         else
         {
-            cout << "ÎŞĞ§µÄÑ¡Ôñ£¬ÇëÖØĞÂÊäÈë£¡" << endl;
+            cout << "æ— æ•ˆçš„é€‰æ‹©ï¼Œè¯·é‡æ–°è¾“å…¥ï¼" << endl;
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             cin >> hchoice;
@@ -45,50 +45,50 @@ void HomeworkManager::addAssignment()
     bool hvalidDate = false;
     while (!hvalidDate)
     {
-        cout << "ÇëÊäÈë½ØÖ¹ÈÕÆÚ£¨YYYY-MM-DD£©£º";
+        cout << "è¯·è¾“å…¥æˆªæ­¢æ—¥æœŸï¼ˆYYYY-MM-DDï¼‰ï¼š";
         cin >> ddl;
 
-        // µ÷ÓÃº¯Êı½øĞĞÅĞ¶Ï
+        // è°ƒç”¨å‡½æ•°è¿›è¡Œåˆ¤æ–­
         hvalidDate = validateDate(ddl);
-        // ÅĞ¶ÏÈÕÆÚ¸ñÊ½ÊÇ·ñÕıÈ·ÇÒºÏÀí
+        // åˆ¤æ–­æ—¥æœŸæ ¼å¼æ˜¯å¦æ­£ç¡®ä¸”åˆç†
         if (!hvalidDate)
         {
-            cout << "ÈÕÆÚ¸ñÊ½²»ÕıÈ·»òÈÕÆÚ²»ºÏÀí£¬ÇëÖØĞÂÊäÈë¡£" << endl;
+            cout << "æ—¥æœŸæ ¼å¼ä¸æ­£ç¡®æˆ–æ—¥æœŸä¸åˆç†ï¼Œè¯·é‡æ–°è¾“å…¥ã€‚" << endl;
         }
     }
 
-    // Èô¸÷ÏîÄÚÈİºÏÀí£¬ÔòÌí¼Ó×÷Òµ
+    // è‹¥å„é¡¹å†…å®¹åˆç†ï¼Œåˆ™æ·»åŠ ä½œä¸š
     Assignment assignment(name, subject, content, type, ddl);
     assignments.push_back(assignment);
-    cout << "×÷ÒµÒÑÌí¼Ó¡£" << endl;
+    cout << "ä½œä¸šå·²æ·»åŠ ã€‚" << endl;
 }
 
-// ¼ì²âÈÕÆÚÕıÈ·ºÏÀíĞÔ
+// æ£€æµ‹æ—¥æœŸæ­£ç¡®åˆç†æ€§
 bool HomeworkManager::validateDate(const string& date)
 {
-    // ÑéÖ¤ÈÕÆÚ¸ñÊ½
+    // éªŒè¯æ—¥æœŸæ ¼å¼
     stringstream ss(date);
     int year, month, day;
     char delimiter;
     ss >> year >> delimiter >> month >> delimiter >> day;
 
-    // ÑéÖ¤¸ñÊ½ÕıÈ·
+    // éªŒè¯æ ¼å¼æ­£ç¡®
     if (ss.fail() || delimiter != '-' || ss.peek() != EOF)
     {
         return false;
     }
 
-    // ÑéÖ¤ÈÕÆÚºÏÀíĞÔ
+    // éªŒè¯æ—¥æœŸåˆç†æ€§
     if (month < 1 || month > 12 || day < 1 || day > 31)
     {
         return false;
     }
 
-    // ¼ì²éÔÂ·İ¶ÔÓ¦µÄÌìÊıÊÇ·ñÕıÈ·
+    // æ£€æŸ¥æœˆä»½å¯¹åº”çš„å¤©æ•°æ˜¯å¦æ­£ç¡®
     int daysInMonth;
     if (month == 2)
     {
-        // ÈòÄêµÄÅĞ¶Ï£ºÄÜ±»4Õû³ıµ«²»ÄÜ±»100Õû³ı£¬»òÕßÄÜ±»400Õû³ı
+        // é—°å¹´çš„åˆ¤æ–­ï¼šèƒ½è¢«4æ•´é™¤ä½†ä¸èƒ½è¢«100æ•´é™¤ï¼Œæˆ–è€…èƒ½è¢«400æ•´é™¤
         bool isLeapYear = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
         daysInMonth = isLeapYear ? 29 : 28;
     }
@@ -106,110 +106,110 @@ bool HomeworkManager::validateDate(const string& date)
         return false;
     }
 
-    // Èç¹ûÈÕÆÚºÏÀí·µ»Øtrue
+    // å¦‚æœæ—¥æœŸåˆç†è¿”å›true
     return true;
 }
 
-// ÏÔÊ¾×÷ÒµÁĞ±í
+// æ˜¾ç¤ºä½œä¸šåˆ—è¡¨
 void HomeworkManager::displayAssignmentList()
 {
     sortAssignmentsByDdl();
-    cout << "½ØÖ¹ÈÕÆÚ  - ¿ÆÄ¿    - ×÷Òµ" << endl;
+    cout << "æˆªæ­¢æ—¥æœŸ  - ç§‘ç›®    - ä½œä¸š" << endl;
     for (const auto& assignment : assignments)
     {
         cout << assignment.getDdl() << " - " << assignment.getSubject() << " - " << assignment.getContent() << endl;
     }
 }
 
-// ±ê¼Ç×÷ÒµÍê³É
+// æ ‡è®°ä½œä¸šå®Œæˆ
 void HomeworkManager::markAssignmentCompleted()
 {
-    // ÊäÈëÄÚÈİÌáÊ¾
+    // è¾“å…¥å†…å®¹æç¤º
     string name;
-    cout << "ÇëÊäÈëÒª±ê¼ÇÍê³ÉµÄ×÷ÒµÃû³Æ£º";
+    cout << "è¯·è¾“å…¥è¦æ ‡è®°å®Œæˆçš„ä½œä¸šåç§°ï¼š";
     cin.ignore();
     getline(cin, name);
 
     bool found = false;
-    // ±éÀú×÷Òµ±¾
+    // éå†ä½œä¸šæœ¬
     for (int i = 0; i < assignments.size(); i++)
     {
-        // ¼ìË÷¶ÔÓ¦µÄ×÷Òµ
+        // æ£€ç´¢å¯¹åº”çš„ä½œä¸š
         if (assignments[i].getName() == name)
         {
             found = true;
-            // Õ¹Ê¾Àà×÷ÒµµÄ±ê¼Ç
-            if (assignments[i].getType() == "Õ¹Ê¾×÷Òµ")
+            // å±•ç¤ºç±»ä½œä¸šçš„æ ‡è®°
+            if (assignments[i].getType() == "å±•ç¤ºä½œä¸š")
             {
-                // Ñ¡Ôñ¸÷Ïî¹¦ÄÜÌáÊ¾
-                cout << "ÇëÑ¡ÔñÒª±ê¼ÇµÄÄÚÈİ×¼±¸Íê³É»¹ÊÇÉÏÌ¨×¼±¸Íê³É£º" << endl;
-                cout << "1. ÄÚÈİ×¼±¸Íê³É" << endl;
-                cout << "2. ÉÏÌ¨×¼±¸Íê³É" << endl;
+                // é€‰æ‹©å„é¡¹åŠŸèƒ½æç¤º
+                cout << "è¯·é€‰æ‹©è¦æ ‡è®°çš„å†…å®¹å‡†å¤‡å®Œæˆè¿˜æ˜¯ä¸Šå°å‡†å¤‡å®Œæˆï¼š" << endl;
+                cout << "1. å†…å®¹å‡†å¤‡å®Œæˆ" << endl;
+                cout << "2. ä¸Šå°å‡†å¤‡å®Œæˆ" << endl;
 
-                // ÊµÏÖ¶ÔÓ¦Ñ¡Ôñ
+                // å®ç°å¯¹åº”é€‰æ‹©
                 int choice;
                 cin >> choice;
 
-                // Ñ¡Ôñ±ê¼ÇÄÚÈİ
+                // é€‰æ‹©æ ‡è®°å†…å®¹
                 switch (choice)
                 {
                 case 1:
                     assignments[i].markContentPrepared();
-                    cout << "Õ¹Ê¾ÄÚÈİ×¼±¸Íê³É¡£" << endl;
+                    cout << "å±•ç¤ºå†…å®¹å‡†å¤‡å®Œæˆã€‚" << endl;
                     break;
                 case 2:
                     assignments[i].markPresentationPrepared();
-                    cout << "Õ¹Ê¾ÉÏÌ¨×¼±¸Íê³É¡£" << endl;
+                    cout << "å±•ç¤ºä¸Šå°å‡†å¤‡å®Œæˆã€‚" << endl;
                     break;
                 default:
-                    cout << "ÎŞĞ§µÄÑ¡Ôñ¡£" << endl;
+                    cout << "æ— æ•ˆçš„é€‰æ‹©ã€‚" << endl;
                     cin.clear();
                     cin.ignore(numeric_limits<streamsize>::max(), '\n');
                 }
             }
-            // ³£¹æÀà×÷ÒµµÄ±ê¼Ç
+            // å¸¸è§„ç±»ä½œä¸šçš„æ ‡è®°
             else
             {
                 assignments[i].markCompleted();
-                cout << "×÷ÒµÒÑÍê³É¡£" << endl;
+                cout << "ä½œä¸šå·²å®Œæˆã€‚" << endl;
                 assignments.erase(assignments.begin() + i);
             }
             break;
         }
     }
 
-    // Î´²éÕÒµ½¶ÔÓ¦µÄ×÷Òµ
+    // æœªæŸ¥æ‰¾åˆ°å¯¹åº”çš„ä½œä¸š
     if (!found)
     {
-        cout << "Î´ÕÒµ½Ãû³ÆÎª " << name << " µÄ×÷Òµ¡£" << endl;
+        cout << "æœªæ‰¾åˆ°åç§°ä¸º " << name << " çš„ä½œä¸šã€‚" << endl;
     }
 }
 
-// É¾³ı×÷Òµ
+// åˆ é™¤ä½œä¸š
 void HomeworkManager::deleteAssignment()
 {
-    // ÊäÈëÄÚÈİÌáÊ¾
+    // è¾“å…¥å†…å®¹æç¤º
     string name;
-    cout << "ÇëÊäÈëÒªÉ¾³ıµÄ×÷ÒµÃû³Æ£º";
+    cout << "è¯·è¾“å…¥è¦åˆ é™¤çš„ä½œä¸šåç§°ï¼š";
     cin.ignore();
     getline(cin, name);
 
     bool found = false;
     for (int i = 0; i < assignments.size(); i++)
     {
-        // ¼ìË÷¶ÔÓ¦×÷Òµ
+        // æ£€ç´¢å¯¹åº”ä½œä¸š
         if (assignments[i].getName() == name)
         {
             found = true;
             assignments.erase(assignments.begin() + i);
-            cout << "×÷ÒµÒÑÉ¾³ı¡£" << endl;
+            cout << "ä½œä¸šå·²åˆ é™¤ã€‚" << endl;
             break;
         }
     }
 
-    // Î´ÕÒµ½¶ÔÓ¦×÷Òµ
+    // æœªæ‰¾åˆ°å¯¹åº”ä½œä¸š
     if (!found)
     {
-        cout << "Î´ÕÒµ½Ãû³ÆÎª " << name << " µÄ×÷Òµ¡£" << endl;
+        cout << "æœªæ‰¾åˆ°åç§°ä¸º " << name << " çš„ä½œä¸šã€‚" << endl;
     }
 }

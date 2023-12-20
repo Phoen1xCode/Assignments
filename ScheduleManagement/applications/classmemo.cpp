@@ -7,53 +7,53 @@ using namespace std;
 
 int Memo::count = 0;
 
-// ÊäÈë±¸ÍüÂ¼
+// è¾“å…¥å¤‡å¿˜å½•
 void MemoManager::addMemo()
 {
     string input;
     string line;
-    cout << "ÇëÊäÈë±¸ÍüÂ¼ÄÚÈİ£¨ÊäÈë¿ÕĞĞ½áÊø£©£º" << endl;
-    cin.ignore(); // Çå³ı»º³åÇø
-    // ÊäÈë±¸ÍüÂ¼ÄÚÈİ
+    cout << "è¯·è¾“å…¥å¤‡å¿˜å½•å†…å®¹ï¼ˆè¾“å…¥ç©ºè¡Œç»“æŸï¼‰ï¼š" << endl;
+    cin.ignore(); // æ¸…é™¤ç¼“å†²åŒº
+    // è¾“å…¥å¤‡å¿˜å½•å†…å®¹
     while (true)
     {
         getline(cin, line);
         if (line.empty())
-            break; // ½áÊøÊäÈë
-        input += line + "\n"; // Æ´½Ó¶àĞĞÄÚÈİ
+            break; // ç»“æŸè¾“å…¥
+        input += line + "\n"; // æ‹¼æ¥å¤šè¡Œå†…å®¹
     }
 
     memos.push_back(Memo(input, false));
 }
 
-// ±¸ÍüÂ¼ÅÅĞò
+// å¤‡å¿˜å½•æ’åº
 void MemoManager::arrangeMemos()
 {
-    // ¸üĞÂ±¸ÍüÂ¼µÄ±àºÅ
+    // æ›´æ–°å¤‡å¿˜å½•çš„ç¼–å·
     for (size_t i = 0; i < memos.size(); ++i)
     {
         memos[i].setId(i + 1);
     }
-    // Í¨¹ı±àºÅ½øĞĞÅÅĞò
+    // é€šè¿‡ç¼–å·è¿›è¡Œæ’åº
     sort(memos.begin(), memos.end(), [](const Memo& a, const Memo& b) {
         return a.getId() < b.getId();
         });
 }
 
-// Êä³ö±¸ÍüÂ¼
+// è¾“å‡ºå¤‡å¿˜å½•
 void MemoManager::showMemos()
 {
-    // ±éÀú²¢Êä³öÖÃ¶¥±¸ÍüÂ¼
+    // éå†å¹¶è¾“å‡ºç½®é¡¶å¤‡å¿˜å½•
     for (const auto& memo : memos)
     {
         if (memo.getIsTop())
         {
-            cout << "[ÖÃ¶¥] ";
+            cout << "[ç½®é¡¶] ";
             cout << "[" << memo.getId() << "] " << memo.getContent() << endl;
         }
     }
 
-    // ±éÀú²¢Êä³ö·ÇÖÃ¶¥±¸ÍüÂ¼
+    // éå†å¹¶è¾“å‡ºéç½®é¡¶å¤‡å¿˜å½•
     for (const auto& memo : memos)
     {
         if (!memo.getIsTop())
@@ -63,139 +63,139 @@ void MemoManager::showMemos()
     }
 }
 
-// ±¸ÍüÂ¼ÖÃ¶¥
+// å¤‡å¿˜å½•ç½®é¡¶
 void MemoManager::topMemo()
 {
-    // ÅÅ³ı±¸ÍüÂ¼Îª¿ÕÊ±µÄÎÊÌâ
+    // æ’é™¤å¤‡å¿˜å½•ä¸ºç©ºæ—¶çš„é—®é¢˜
     if (memos.empty())
     {
-        cout << "±¸ÍüÂ¼Îª¿Õ" << endl;
+        cout << "å¤‡å¿˜å½•ä¸ºç©º" << endl;
         return;
     }
 
-    // Ñ¡ÔñÖÃ¶¥µÄ±¸ÍüÂ¼
+    // é€‰æ‹©ç½®é¡¶çš„å¤‡å¿˜å½•
     int topid;
-    cout << "ÊäÈëÒªÖÃ¶¥µÄ±¸ÍüÂ¼±àºÅ£º" << endl;
-    cin.ignore(); // Çå³ı»»ĞĞ·û
+    cout << "è¾“å…¥è¦ç½®é¡¶çš„å¤‡å¿˜å½•ç¼–å·ï¼š" << endl;
+    cin.ignore(); // æ¸…é™¤æ¢è¡Œç¬¦
     cin >> topid;
 
-    // ¼ì²éÊäÈëµÄ±àºÅÊÇ·ñÓĞĞ§
+    // æ£€æŸ¥è¾“å…¥çš„ç¼–å·æ˜¯å¦æœ‰æ•ˆ
     while (cin.fail())
     {
-        cout << "ÎŞĞ§Ñ¡Ïî£¬ÇëÖØĞÂÊäÈë£¡" << endl;
+        cout << "æ— æ•ˆé€‰é¡¹ï¼Œè¯·é‡æ–°è¾“å…¥ï¼" << endl;
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cin >> topid;
     }
 
-    // ²éÕÒ¶ÔÓ¦±¸ÍüÂ¼£¬¸Ä±äÆäÖÃ¶¥×´Ì¬
+    // æŸ¥æ‰¾å¯¹åº”å¤‡å¿˜å½•ï¼Œæ”¹å˜å…¶ç½®é¡¶çŠ¶æ€
     auto it = find_if(memos.begin(), memos.end(),
         [topid](const Memo& memo) { return memo.getId() == topid; });
 
-    // ¼ì²éÊÇ·ñ´æÔÚ¶ÔÓ¦µÄ±¸ÍüÂ¼
+    // æ£€æŸ¥æ˜¯å¦å­˜åœ¨å¯¹åº”çš„å¤‡å¿˜å½•
     if (it == memos.end())
     {
-        cout << "±àºÅÎª" << topid << " µÄ±¸ÍüÂ¼²»´æÔÚ" << endl;
+        cout << "ç¼–å·ä¸º" << topid << " çš„å¤‡å¿˜å½•ä¸å­˜åœ¨" << endl;
         return;
     }
 
     Memo memo = *it;
     memo.setIsTop(true);
 
-    // ½«ÖÃ¶¥µÄ±¸ÍüÂ¼ÒÆ¶¯µ½ÁĞ±íµÄ¿ªÍ·
+    // å°†ç½®é¡¶çš„å¤‡å¿˜å½•ç§»åŠ¨åˆ°åˆ—è¡¨çš„å¼€å¤´
     memos.erase(it);
     memos.insert(memos.begin(), std::move(memo));
 
-    // ¸üĞÂ±¸ÍüÂ¼µÄ±àºÅºÍÖÃ¶¥×´Ì¬
+    // æ›´æ–°å¤‡å¿˜å½•çš„ç¼–å·å’Œç½®é¡¶çŠ¶æ€
     for (std::vector<Memo>::iterator it = memos.begin(); it != memos.end(); ++it)
     {
         it->setId(std::distance(memos.begin(), it) + 1);
-        it->setIsTop(it == memos.begin()); // µÚÒ»¸ö±¸ÍüÂ¼ÎªÖÃ¶¥±¸ÍüÂ¼£¬ÆäÓàÎª·ÇÖÃ¶¥±¸ÍüÂ¼
+        it->setIsTop(it == memos.begin()); // ç¬¬ä¸€ä¸ªå¤‡å¿˜å½•ä¸ºç½®é¡¶å¤‡å¿˜å½•ï¼Œå…¶ä½™ä¸ºéç½®é¡¶å¤‡å¿˜å½•
     }
 }
 
 
-// ĞŞ¸Ä±¸ÍüÂ¼ÄÚÈİ
+// ä¿®æ”¹å¤‡å¿˜å½•å†…å®¹
 void MemoManager::modifyMemo()
 {
-    // ÅÅ³ı±¸ÍüÂ¼Îª¿ÕÊ±µÄÎÊÌâ
+    // æ’é™¤å¤‡å¿˜å½•ä¸ºç©ºæ—¶çš„é—®é¢˜
     if (memos.empty())
     {
-        cout << "±¸ÍüÂ¼Îª¿Õ" << endl;
+        cout << "å¤‡å¿˜å½•ä¸ºç©º" << endl;
         return;
     }
 
-    // ÊäÈë±¸ÍüÂ¼±àºÅ
+    // è¾“å…¥å¤‡å¿˜å½•ç¼–å·
     int modifyId;
-    cout << "ÊäÈëÒªĞŞ¸ÄµÄ±¸ÍüÂ¼±àºÅ£º" << endl;
-    cin.ignore(); // Çå³ı»»ĞĞ·û
+    cout << "è¾“å…¥è¦ä¿®æ”¹çš„å¤‡å¿˜å½•ç¼–å·ï¼š" << endl;
+    cin.ignore(); // æ¸…é™¤æ¢è¡Œç¬¦
     cin >> modifyId;
 
-    // ¼ì²éÊäÈëµÄ±àºÅÊÇ·ñÓĞĞ§
+    // æ£€æŸ¥è¾“å…¥çš„ç¼–å·æ˜¯å¦æœ‰æ•ˆ
     while (cin.fail())
     {
-        cout << "ÎŞĞ§Ñ¡Ïî£¬ÇëÖØĞÂÊäÈë£¡" << endl;
+        cout << "æ— æ•ˆé€‰é¡¹ï¼Œè¯·é‡æ–°è¾“å…¥ï¼" << endl;
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cin >> modifyId;
     }
 
-    // ²éÕÒ¶ÔÓ¦±àºÅ
+    // æŸ¥æ‰¾å¯¹åº”ç¼–å·
     auto it = find_if(memos.begin(), memos.end(),
         [modifyId](const Memo& memo) { return memo.getId() == modifyId; });
 
     if (it == memos.end())
     {
-        cout << "±àºÅÎª" << modifyId << "µÄ±¸ÍüÂ¼²»´æÔÚ" << endl;
+        cout << "ç¼–å·ä¸º" << modifyId << "çš„å¤‡å¿˜å½•ä¸å­˜åœ¨" << endl;
         return;
     }
 
     string newContent;
-    cout << "ÊäÈëĞÂµÄ±¸ÍüÂ¼ÄÚÈİ£º" << endl;
-    cin.ignore(); // Çå³ı»»ĞĞ·û
+    cout << "è¾“å…¥æ–°çš„å¤‡å¿˜å½•å†…å®¹ï¼š" << endl;
+    cin.ignore(); // æ¸…é™¤æ¢è¡Œç¬¦
     getline(cin, newContent);
 
     it->setContent(newContent);
-    cout << "±¸ÍüÂ¼ÄÚÈİĞŞ¸Ä³É¹¦" << endl;
+    cout << "å¤‡å¿˜å½•å†…å®¹ä¿®æ”¹æˆåŠŸ" << endl;
 }
 
 
-// É¾³ı±¸ÍüÂ¼
+// åˆ é™¤å¤‡å¿˜å½•
 void MemoManager::deleteMemo()
 {
-    // ÅÅ³ı±¸ÍüÂ¼Îª¿ÕÊ±µÄÎÊÌâ
+    // æ’é™¤å¤‡å¿˜å½•ä¸ºç©ºæ—¶çš„é—®é¢˜
     if (memos.empty())
     {
-        cout << "±¸ÍüÂ¼Îª¿Õ" << endl;
+        cout << "å¤‡å¿˜å½•ä¸ºç©º" << endl;
         return;
     }
 
-    // ÊäÈë¶ÔÓ¦µÄ±àºÅ
+    // è¾“å…¥å¯¹åº”çš„ç¼–å·
     int deleteId;
-    cout << "ÊäÈëÒªÉ¾³ıµÄ±¸ÍüÂ¼±àºÅ£º" << endl;
-    cin.ignore(); // Çå³ı»»ĞĞ·û
+    cout << "è¾“å…¥è¦åˆ é™¤çš„å¤‡å¿˜å½•ç¼–å·ï¼š" << endl;
+    cin.ignore(); // æ¸…é™¤æ¢è¡Œç¬¦
     cin >> deleteId;
 
-    // ¼ì²éÊäÈëµÄ±àºÅÊÇ·ñÓĞĞ§
+    // æ£€æŸ¥è¾“å…¥çš„ç¼–å·æ˜¯å¦æœ‰æ•ˆ
     while (cin.fail())
     {
-        cout << "ÎŞĞ§Ñ¡Ïî£¬ÇëÖØĞÂÊäÈë£¡" << endl;
+        cout << "æ— æ•ˆé€‰é¡¹ï¼Œè¯·é‡æ–°è¾“å…¥ï¼" << endl;
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cin >> deleteId;
     }
 
-    // ²éÕÒ¶ÔÓ¦µÄ±àºÅ
+    // æŸ¥æ‰¾å¯¹åº”çš„ç¼–å·
     auto it = find_if(memos.begin(), memos.end(),
         [deleteId](const Memo& memo) { return memo.getId() == deleteId; });
 
     if (it == memos.end())
     {
-        cout << "±àºÅÎª" << deleteId << "µÄ±¸ÍüÂ¼²»´æÔÚ" << endl;
+        cout << "ç¼–å·ä¸º" << deleteId << "çš„å¤‡å¿˜å½•ä¸å­˜åœ¨" << endl;
         return;
     }
 
     memos.erase(it);
-    cout << "±¸ÍüÂ¼É¾³ı³É¹¦" << endl;
+    cout << "å¤‡å¿˜å½•åˆ é™¤æˆåŠŸ" << endl;
 
 }

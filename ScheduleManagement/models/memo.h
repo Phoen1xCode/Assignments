@@ -3,17 +3,17 @@
 
 using namespace std;
 
-// ¹ÜÀí¸÷¸ö±äÁ¿
+// ç®¡ç†å„ä¸ªå˜é‡
 class Memo
 {
 private:
-    static int count;  // ±¸ÍüÂ¼±àºÅ¼ÆÊıÆ÷
-    int id;            // ±¸ÍüÂ¼±àºÅ
-    string content;    // ±¸ÍüÂ¼ÄÚÈİ
-    bool isTop;        // ÊÇ·ñÖÃ¶¥
+    static int count;  // å¤‡å¿˜å½•ç¼–å·è®¡æ•°å™¨
+    int id;            // å¤‡å¿˜å½•ç¼–å·
+    string content;    // å¤‡å¿˜å½•å†…å®¹
+    bool isTop;        // æ˜¯å¦ç½®é¡¶
 
 public:
-    // ¹¹Ôìº¯Êı
+    // æ„é€ å‡½æ•°
     Memo(string _content, bool _isTop = false)
     {
         id = ++count;
@@ -21,7 +21,7 @@ public:
         isTop = _isTop;
     }
 
-    // »ñÈ¡±¸ÍüÂ¼±àºÅ
+    // è·å–å¤‡å¿˜å½•ç¼–å·
     int getId() const
     {
         return id;
@@ -31,7 +31,7 @@ public:
         this->id = id;
     }
 
-    // »ñÈ¡±¸ÍüÂ¼ÄÚÈİ
+    // è·å–å¤‡å¿˜å½•å†…å®¹
     const string& getContent() const
     {
         return content;
@@ -41,34 +41,34 @@ public:
         content = newContent;
     }
 
-    // ÅĞ¶Ï±¸ÍüÂ¼ÊÇ·ñÖÃ¶¥
+    // åˆ¤æ–­å¤‡å¿˜å½•æ˜¯å¦ç½®é¡¶
     bool getIsTop() const
     {
         return isTop;
     }
 
-    // ÉèÖÃ±¸ÍüÂ¼ÖÃ¶¥×´Ì¬
+    // è®¾ç½®å¤‡å¿˜å½•ç½®é¡¶çŠ¶æ€
     void setIsTop(bool _isTop)
     {
         isTop = _isTop;
     }
 
-    // ĞŞ¸Ä±¸ÍüÂ¼ÄÚÈİ
+    // ä¿®æ”¹å¤‡å¿˜å½•å†…å®¹
     void modifyContent(string newContent)
     {
         content = newContent;
     }
 };
 
-//¹ÜÀí¸÷¸ö¹¦ÄÜ
+//ç®¡ç†å„ä¸ªåŠŸèƒ½
 class MemoManager 
 {
 private:
-    // ¶¨Òåvector´æ´¢ÄÚÈİ
+    // å®šä¹‰vectorå­˜å‚¨å†…å®¹
     vector<Memo> memos;
 
 public:
-    // ¸÷¹¦ÄÜº¯Êı
+    // å„åŠŸèƒ½å‡½æ•°
     void addMemo();
     void showMemos();
     void arrangeMemos();

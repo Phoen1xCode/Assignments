@@ -5,84 +5,84 @@
 
 using namespace std;
 
-// ºóĞø½øĞĞ×´Ì¬×ª»»
+// åç»­è¿›è¡ŒçŠ¶æ€è½¬æ¢
 int Course::special = 0;
 int Course::remind = 0;
 
-// ¶¨Òå¶¯Ì¬Êı×é£¬±ãÓÚÊäÈë¼°ĞŞ¸ÄĞÅÏ¢
+// å®šä¹‰åŠ¨æ€æ•°ç»„ï¼Œä¾¿äºè¾“å…¥åŠä¿®æ”¹ä¿¡æ¯
 vector<Course> course_table;
 vector<Course> special_course;
 vector<Course> remind_course;
 
-// Â¼ÈëÆÕÍ¨¿Î³Ì
+// å½•å…¥æ™®é€šè¯¾ç¨‹
 void Course::inputRegularCourse()
 {
     Course course;
     inputCourse(course, course_table);
 }
 
-// Â¼Èë¿Î³ÌĞÅÏ¢Ä£¿é
+// å½•å…¥è¯¾ç¨‹ä¿¡æ¯æ¨¡å—
 void Course::inputCourse(Course& course, vector<Course>& courseList)
 {
 
-    cout << "ÇëÊäÈëÉÏ¿ÎÈÕÆÚÎªÖÜ¼¸£¨1-7£©£º";
+    cout << "è¯·è¾“å…¥ä¸Šè¯¾æ—¥æœŸä¸ºå‘¨å‡ ï¼ˆ1-7ï¼‰ï¼š";
     cin >> course.day;
     while (cin.fail() || course.day > 7 || course.day < 1)
     {
-        cout << "ÊäÈëÊı¾İÓĞÎó£¬ÇëÖØĞÂÊäÈë£º";
+        cout << "è¾“å…¥æ•°æ®æœ‰è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥ï¼š";
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cin >> course.day;
     }
-    cout << "ÇëÊäÈë¿Î³Ì¿ªÊ¼ÓÚµÚ¼¸½Ú£¨1-13£©£º";
+    cout << "è¯·è¾“å…¥è¯¾ç¨‹å¼€å§‹äºç¬¬å‡ èŠ‚ï¼ˆ1-13ï¼‰ï¼š";
     cin >> course.start_time;
     while (cin.fail() || course.start_time < 1 || course.start_time > 13)
     {
-        cout << "ÊäÈëÊı¾İÓĞÎó£¬ÇëÖØĞÂÊäÈë£º";
+        cout << "è¾“å…¥æ•°æ®æœ‰è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥ï¼š";
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cin >> course.start_time;
     }
-    cout << "ÇëÊäÈë¿Î³Ì½áÊøÓÚµÚ¼¸½Ú£¨1-13£©£º";
+    cout << "è¯·è¾“å…¥è¯¾ç¨‹ç»“æŸäºç¬¬å‡ èŠ‚ï¼ˆ1-13ï¼‰ï¼š";
     cin >> course.end_time;
     while (cin.fail() || course.end_time < 1 || course.end_time > 13 || course.end_time < course.start_time)
     {
-        cout << "ÊäÈëÊı¾İÓĞÎó£¬ÇëÖØĞÂÊäÈë£º";
+        cout << "è¾“å…¥æ•°æ®æœ‰è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥ï¼š";
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cin >> course.end_time;
     }
-    cout << "ÇëÊäÈë¿Î³ÌÃû³Æ£º";
+    cout << "è¯·è¾“å…¥è¯¾ç¨‹åç§°ï¼š";
     cin >> course.name;
-    cout << "ÇëÊäÈë½ÌÑ§Â¥£º";
+    cout << "è¯·è¾“å…¥æ•™å­¦æ¥¼ï¼š";
     cin >> course.building;
-    cout << "ÇëÊäÈë½ÌÊÒºÅ£º";
+    cout << "è¯·è¾“å…¥æ•™å®¤å·ï¼š";
     cin >> course.room;
     while (cin.fail())
     {
-        cout << "ÊäÈëÊı¾İÓĞÎó£¬ÇëÖØĞÂÊäÈë£º";
+        cout << "è¾“å…¥æ•°æ®æœ‰è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥ï¼š";
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cin >> course.room;
     }
 
     courseList.push_back(course);
-    cout << "¿Î³ÌÒÑÌí¼Ó£¡" << endl;
+    cout << "è¯¾ç¨‹å·²æ·»åŠ ï¼" << endl;
 }
 
-// ĞŞ¸Ä¸÷ÖÖ¿Î³ÌĞÅÏ¢
+// ä¿®æ”¹å„ç§è¯¾ç¨‹ä¿¡æ¯
 void Course::modifyVariousCourse()
 {
     while (true)
     {
         int mchoice;
         cout << endl;
-        cout << "ÇëÑ¡Ôñ²Ù×÷£º" << endl;
-        cout << "1.³£¹æ¿Î³Ì" << endl;
-        cout << "2.ÌØÊâ¿Î³Ì" << endl;
-        cout << "3.¿Î³Ì±¸×¢" << endl;
-        cout << "4.ÍË³ö¹¦ÄÜ" << endl;
-        cout << "ÇëÊäÈëÏëĞŞ¸Ä¿Î³ÌĞÅÏ¢µÄÀà±ğ£º";
+        cout << "è¯·é€‰æ‹©æ“ä½œï¼š" << endl;
+        cout << "1.å¸¸è§„è¯¾ç¨‹" << endl;
+        cout << "2.ç‰¹æ®Šè¯¾ç¨‹" << endl;
+        cout << "3.è¯¾ç¨‹å¤‡æ³¨" << endl;
+        cout << "4.é€€å‡ºåŠŸèƒ½" << endl;
+        cout << "è¯·è¾“å…¥æƒ³ä¿®æ”¹è¯¾ç¨‹ä¿¡æ¯çš„ç±»åˆ«ï¼š";
         cin >> mchoice;
         switch (mchoice)
         {
@@ -94,7 +94,7 @@ void Course::modifyVariousCourse()
                 modifyCourse(special_course);
             else
             {
-                cout << "ÔİÎ´Â¼ÈëÌØÊâÌáĞÑ¿Î³Ì" << endl;
+                cout << "æš‚æœªå½•å…¥ç‰¹æ®Šæé†’è¯¾ç¨‹" << endl;
                 return modifyVariousCourse();
             }
             break;
@@ -103,14 +103,14 @@ void Course::modifyVariousCourse()
                 modifyCourse(remind_course);
             else
             {
-                cout << "ÔİÎ´ÊäÈë¿Î³Ì±¸×¢" << endl;
+                cout << "æš‚æœªè¾“å…¥è¯¾ç¨‹å¤‡æ³¨" << endl;
                 return modifyVariousCourse();
             }
             break;
         case 4:
             return;
         default:
-            cout << "ÊäÈëÓĞÎó" << endl;
+            cout << "è¾“å…¥æœ‰è¯¯" << endl;
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             break;
@@ -118,16 +118,16 @@ void Course::modifyVariousCourse()
     }
 }
 
-// ĞŞ¸Ä¿Î³ÌĞÅÏ¢Ä£¿é
+// ä¿®æ”¹è¯¾ç¨‹ä¿¡æ¯æ¨¡å—
 void Course::modifyCourse(vector<Course>& courseList) 
 {
-    // ÊäÈë¿Î³ÌÃû³Æ
+    // è¾“å…¥è¯¾ç¨‹åç§°
     string name;
-    cout << "ÇëÊäÈëÒªĞŞ¸ÄµÄ¿Î³ÌÃû³Æ£º";
+    cout << "è¯·è¾“å…¥è¦ä¿®æ”¹çš„è¯¾ç¨‹åç§°ï¼š";
     cin >> name;
     cout << endl;
 
-    // ¼ìË÷¶ÔÓ¦¿Î³Ì
+    // æ£€ç´¢å¯¹åº”è¯¾ç¨‹
     auto it = find_if(courseList.begin(), courseList.end(), [&](const Course& course) {
         return course.name == name;
         });
@@ -137,36 +137,36 @@ void Course::modifyCourse(vector<Course>& courseList)
         Course& course = *it;
         while (true)
         {
-            cout << "ÇëÑ¡Ôñ²Ù×÷£º" << endl;
-            cout << "1. ĞŞ¸ÄÊ±¼ä" << endl;
-            cout << "2. ĞŞ¸ÄµØµã" << endl;
-            cout << "3. ÍË³ö" << endl;
-            cout << "ÇëÊäÈëÑ¡Ïî£º";
+            cout << "è¯·é€‰æ‹©æ“ä½œï¼š" << endl;
+            cout << "1. ä¿®æ”¹æ—¶é—´" << endl;
+            cout << "2. ä¿®æ”¹åœ°ç‚¹" << endl;
+            cout << "3. é€€å‡º" << endl;
+            cout << "è¯·è¾“å…¥é€‰é¡¹ï¼š";
             int choice;
             cin >> choice;
 
-            // Ñ¡Ôñ¹¦ÄÜ
+            // é€‰æ‹©åŠŸèƒ½
             switch (choice) {
             case 1:
-                cout << "ÇëÊäÈë¸ü¸ÄºóµÄÈÕÆÚ£¨1-7£©£º";
+                cout << "è¯·è¾“å…¥æ›´æ”¹åçš„æ—¥æœŸï¼ˆ1-7ï¼‰ï¼š";
                 cin >> course.day;
-                cout << "ÇëÊäÈë¸ü¸ÄºóµÄ¿Î¿ªÊ¼ÓÚµÚ¼¸½Ú£¨1-13£©£º";
+                cout << "è¯·è¾“å…¥æ›´æ”¹åçš„è¯¾å¼€å§‹äºç¬¬å‡ èŠ‚ï¼ˆ1-13ï¼‰ï¼š";
                 cin >> course.start_time;
-                cout << "ÇëÊäÈë¸ü¸ÄºóµÄ¿Î½áÊøÓÚµÚ¼¸½Ú£¨1-13£©£º";
+                cout << "è¯·è¾“å…¥æ›´æ”¹åçš„è¯¾ç»“æŸäºç¬¬å‡ èŠ‚ï¼ˆ1-13ï¼‰ï¼š";
                 cin >> course.end_time;
-                cout << "ĞŞ¸Ä³É¹¦£¡" << endl;
+                cout << "ä¿®æ”¹æˆåŠŸï¼" << endl;
                 break;
             case 2:
-                cout << "ÇëÊäÈë¸ü¸ÄºóµÄ½ÌÑ§Â¥£º";
+                cout << "è¯·è¾“å…¥æ›´æ”¹åçš„æ•™å­¦æ¥¼ï¼š";
                 cin >> course.building;
-                cout << "ÇëÊäÈë¸ü¸ÄºóµÄ½ÌÊÒºÅ£º";
+                cout << "è¯·è¾“å…¥æ›´æ”¹åçš„æ•™å®¤å·ï¼š";
                 cin >> course.room;
-                cout << "ĞŞ¸Ä³É¹¦£¡" << endl;
+                cout << "ä¿®æ”¹æˆåŠŸï¼" << endl;
                 break;
             case 3:
                 return;
             default:
-                cout << "ÊäÈëÓĞÎó" << endl;
+                cout << "è¾“å…¥æœ‰è¯¯" << endl;
                 cin.clear();
                 cin.ignore(numeric_limits<streamsize>::max(), '\n');
                 break;
@@ -178,20 +178,20 @@ void Course::modifyCourse(vector<Course>& courseList)
         }
     }
     else {
-        cout << "¸Ã¿Î³Ì²»´æÔÚ" << endl;
+        cout << "è¯¥è¯¾ç¨‹ä¸å­˜åœ¨" << endl;
     }
 }
 
-// É¾³ı¿Î³Ì
+// åˆ é™¤è¯¾ç¨‹
 void Course::deleteCourse()
 {
     string dname;
-    cout << "ÇëÊäÈëÒªÉ¾³ıµÄ¿Î³ÌÃû³Æ£º";
+    cout << "è¯·è¾“å…¥è¦åˆ é™¤çš„è¯¾ç¨‹åç§°ï¼š";
     cin >> dname;
 
     bool found = false;
 
-    // ¼ìË÷ÒªÉ¾³ıµÄ¿Î³Ì
+    // æ£€ç´¢è¦åˆ é™¤çš„è¯¾ç¨‹
     auto removeCourse = [&](vector<Course>& courseList) 
         {
         auto it = remove_if(courseList.begin(), courseList.end(), [&](const Course& course) {
@@ -208,56 +208,56 @@ void Course::deleteCourse()
     removeCourse(special_course);
     removeCourse(remind_course);
 
-    // É¾³ıÊÇ·ñ³É¹¦ĞÅÏ¢ÌáÊ¾
+    // åˆ é™¤æ˜¯å¦æˆåŠŸä¿¡æ¯æç¤º
     if (found)
-        cout << "¿Î³ÌÒÑÉ¾³ı£¡" << endl;
+        cout << "è¯¾ç¨‹å·²åˆ é™¤ï¼" << endl;
     else
-        cout << "Î´ÕÒµ½¸Ã¿Î³Ì£¡" << endl;
+        cout << "æœªæ‰¾åˆ°è¯¥è¯¾ç¨‹ï¼" << endl;
 }
 
-// Â¼ÈëÌØÊâ¿Î³Ì
+// å½•å…¥ç‰¹æ®Šè¯¾ç¨‹
 void Course::inputSpecialCourse()
 {
     Course scourse;
-    cout << "¡ª¡ª¡ª¡ª¡ª¡ªÇëÊäÈëÌØÊâ±ê¼ÇµÄ¿Î³ÌĞÅÏ¢¡ª¡ª¡ª¡ª¡ª¡ª" << endl;
-    cout << "ÊäÈëÌØÊâ±ê¼ÇĞÅÏ¢£º";
+    cout << "â€”â€”â€”â€”â€”â€”è¯·è¾“å…¥ç‰¹æ®Šæ ‡è®°çš„è¯¾ç¨‹ä¿¡æ¯â€”â€”â€”â€”â€”â€”" << endl;
+    cout << "è¾“å…¥ç‰¹æ®Šæ ‡è®°ä¿¡æ¯ï¼š";
     cin >> scourse.sname;
 
-    // µ÷ÓÃÊäÈë¿Î³ÌĞÅÏ¢Ä£¿é
+    // è°ƒç”¨è¾“å…¥è¯¾ç¨‹ä¿¡æ¯æ¨¡å—
     inputCourse(scourse, special_course);
     special = 1;
 }
 
-// Â¼Èë¿Î³Ì±¸×¢
+// å½•å…¥è¯¾ç¨‹å¤‡æ³¨
 void Course::remindCourse()
 {
     Course rcourse;
-    cout << "ÇëÊäÈëÄãÏë±¸×¢µÄ³£¹æ¿Î³ÌÃû£º";
+    cout << "è¯·è¾“å…¥ä½ æƒ³å¤‡æ³¨çš„å¸¸è§„è¯¾ç¨‹åï¼š";
     cin >> rcourse.name;
 
-    // ¼ìË÷¶ÔÓ¦¿Î³Ì
+    // æ£€ç´¢å¯¹åº”è¯¾ç¨‹
     auto it = find_if(course_table.begin(), course_table.end(), [&](const Course& course) {
         return course.name == rcourse.name;
         });
 
-    // ¶Ô¿Î³Ì½øĞĞ±¸×¢
+    // å¯¹è¯¾ç¨‹è¿›è¡Œå¤‡æ³¨
     if (it != course_table.end())
     {
         Course& course = *it;
         rcourse.day = course.day;
         *it = course;
-        cout << "ÇëÊäÈë¶Ô¸Ã¿Î³ÌµÄ±¸×¢£º" << endl;
+        cout << "è¯·è¾“å…¥å¯¹è¯¥è¯¾ç¨‹çš„å¤‡æ³¨ï¼š" << endl;
         cin >> rcourse.memory;
         remind_course.push_back(rcourse);
-        cout << "±¸×¢ÒÑÌí¼Ó" << endl;
+        cout << "å¤‡æ³¨å·²æ·»åŠ " << endl;
         remind = 1;
     }
     else
-        cout << "ÎŞ·¨¼ìË÷µ½¸Ã¿Î³Ì";
+        cout << "æ— æ³•æ£€ç´¢åˆ°è¯¥è¯¾ç¨‹";
     cout << endl;
 }
 
-// ¸÷ÖÖ¿Î³ÌĞÅÏ¢ÕûÀí
+// å„ç§è¯¾ç¨‹ä¿¡æ¯æ•´ç†
 void Course::arrangeVariousCourse()
 {
     if (special > 0)
@@ -267,17 +267,17 @@ void Course::arrangeVariousCourse()
     arrangeCourse(course_table);
 };
 
-// ¿Î³ÌĞÅÏ¢ÕûÀíÄ£¿é
+// è¯¾ç¨‹ä¿¡æ¯æ•´ç†æ¨¡å—
 void Course::arrangeCourse(vector<Course>& courseList)
 {
-    // ¶Ô¿Î³Ì°´Ê±¼ä½øĞĞÅÅĞò
+    // å¯¹è¯¾ç¨‹æŒ‰æ—¶é—´è¿›è¡Œæ’åº
     sort(courseList.begin(), courseList.end(), [](const Course& a, const Course& b) {
         if (a.day == b.day)
             return a.start_time < b.start_time;
         return a.day < b.day;
         });
 
-    // ½«Êı×Ö×ª»¯ÎªÖÜºÅ
+    // å°†æ•°å­—è½¬åŒ–ä¸ºå‘¨å·
     for (auto& course : courseList)
     {
         switch (course.day)
@@ -307,30 +307,30 @@ void Course::arrangeCourse(vector<Course>& courseList)
     }
 }
 
-// ¿Î±íÊä³ö
+// è¯¾è¡¨è¾“å‡º
 void Course::showCourse()
 {
-    // ÌØÊâ±ê¼Ç¿Î±íÊä³ö£¨µ±ÇÒ½öµ±´æÔÚÊ±£©
+    // ç‰¹æ®Šæ ‡è®°è¯¾è¡¨è¾“å‡ºï¼ˆå½“ä¸”ä»…å½“å­˜åœ¨æ—¶ï¼‰
     cout << endl;
     if (special > 0)
         showSpecialCourse();
 
-    // ³£¹æ¿Î±íÊä³ö
+    // å¸¸è§„è¯¾è¡¨è¾“å‡º
     showRegularCourse();
 
-    // ¿Î³Ì±¸×¢Êä³ö£¨µ±ÇÒ½öµ±´æÔÚÊ±£©
+    // è¯¾ç¨‹å¤‡æ³¨è¾“å‡ºï¼ˆå½“ä¸”ä»…å½“å­˜åœ¨æ—¶ï¼‰
     if (remind > 0)
         showRemindCourse();
 };
 
-// ÌØÊâ±ê¼Ç¿Î±íÊä³ö
+// ç‰¹æ®Šæ ‡è®°è¯¾è¡¨è¾“å‡º
 void Course::showSpecialCourse()
 {
-    // Êä³öÌØÊâ±ê¼Ç±íÍ·
-    cout << "¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ªÌØÊâ×¢Òâ¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª" << endl;
-    cout << "Ê±¼ä\t½ÚÊı\t½ÌÑ§Â¥\t½ÌÊÒ\t¿Î³Ì\t±¸×¢" << endl;
+    // è¾“å‡ºç‰¹æ®Šæ ‡è®°è¡¨å¤´
+    cout << "â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”ç‰¹æ®Šæ³¨æ„â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”" << endl;
+    cout << "æ—¶é—´\tèŠ‚æ•°\tæ•™å­¦æ¥¼\tæ•™å®¤\tè¯¾ç¨‹\tå¤‡æ³¨" << endl;
 
-    // ±éÀúÌØÊâ±ê¼Ç¶¯Ì¬Êı×éÖĞÄÚÈİ£¬½øĞĞÊä³ö
+    // éå†ç‰¹æ®Šæ ‡è®°åŠ¨æ€æ•°ç»„ä¸­å†…å®¹ï¼Œè¿›è¡Œè¾“å‡º
     for (const auto& scourse : special_course)
     {
         cout << scourse.weekday << "\t" << scourse.start_time << "-" << scourse.end_time << "\t";
@@ -339,14 +339,14 @@ void Course::showSpecialCourse()
     }
 }
 
-// ³£¹æ¿Î±íÊä³ö
+// å¸¸è§„è¯¾è¡¨è¾“å‡º
 void Course::showRegularCourse()
 {
-    // Êä³ö±íÍ·
-    cout << "¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¿Î±í¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª" << endl;
-    cout << "Ê±¼ä\t½ÚÊı\t½ÌÑ§Â¥\t½ÌÊÒ\t¿Î³Ì" << endl;
+    // è¾“å‡ºè¡¨å¤´
+    cout << "â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”è¯¾è¡¨â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”" << endl;
+    cout << "æ—¶é—´\tèŠ‚æ•°\tæ•™å­¦æ¥¼\tæ•™å®¤\tè¯¾ç¨‹" << endl;
 
-    // ±éÀú¶¯Ì¬Êı×éÖĞÄÚÈİ£¬½øĞĞÊä³ö
+    // éå†åŠ¨æ€æ•°ç»„ä¸­å†…å®¹ï¼Œè¿›è¡Œè¾“å‡º
     for (const auto& course : course_table)
     {
         cout << course.weekday << "\t" << course.start_time << "-" << course.end_time << "\t";
@@ -354,14 +354,14 @@ void Course::showRegularCourse()
     }
 }
 
-// ¿Î³Ì±¸×¢Êä³ö
+// è¯¾ç¨‹å¤‡æ³¨è¾“å‡º
 void Course::showRemindCourse()
 {
-    // Êä³ö±íÍ·
-    cout << "¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¿Î³Ì±¸×¢¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª" << endl;
-    cout << "Ê±¼ä\t¿Î³Ì\t±¸×¢ÄÚÈİ" << endl;
+    // è¾“å‡ºè¡¨å¤´
+    cout << "â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”è¯¾ç¨‹å¤‡æ³¨â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”" << endl;
+    cout << "æ—¶é—´\tè¯¾ç¨‹\tå¤‡æ³¨å†…å®¹" << endl;
 
-    // Êä³öÄÚÈİ
+    // è¾“å‡ºå†…å®¹
     for (const auto& rcourse : remind_course)
     {
         cout << rcourse.day << "\t" << rcourse.name << "\t" << rcourse.memory << endl;

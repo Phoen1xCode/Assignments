@@ -7,28 +7,28 @@
 
 using namespace std;
 
-// ¿Î³ÌÖúÊÖ¹¦ÄÜÑ¡Ôñ
+// è¯¾ç¨‹åŠ©æ‰‹åŠŸèƒ½é€‰æ‹©
 void mainSwitch::mainCourse()
 {
     extern int courseswitch;
     while (courseswitch)
     {
-        // Êä³öÑ¡Ôñ¹¦ÄÜ½çÃæ
+        // è¾“å‡ºé€‰æ‹©åŠŸèƒ½ç•Œé¢
         cout << endl;
-        cout << "¡ª¡ª¿Î³ÌÖúÊÖ¡ª¡ª" << endl;
-        cout << "1. Â¼Èë¿Î³Ì" << endl;
-        cout << "2. ĞŞ¸Ä¿Î³Ì" << endl;
-        cout << "3. É¾³ı¿Î³Ì" << endl;
-        cout << "4. ÌØÊâ±ê¼Ç" << endl;
-        cout << "5. ¿Î³Ì±¸×¢" << endl;
-        cout << "6. Êä³ö¿Î±í" << endl;
-        cout << "7. ÍË³ö¹¦ÄÜ" << endl;
-        cout << "ÇëÊäÈëÑ¡Ïî£º";
+        cout << "â€”â€”è¯¾ç¨‹åŠ©æ‰‹â€”â€”" << endl;
+        cout << "1. å½•å…¥è¯¾ç¨‹" << endl;
+        cout << "2. ä¿®æ”¹è¯¾ç¨‹" << endl;
+        cout << "3. åˆ é™¤è¯¾ç¨‹" << endl;
+        cout << "4. ç‰¹æ®Šæ ‡è®°" << endl;
+        cout << "5. è¯¾ç¨‹å¤‡æ³¨" << endl;
+        cout << "6. è¾“å‡ºè¯¾è¡¨" << endl;
+        cout << "7. é€€å‡ºåŠŸèƒ½" << endl;
+        cout << "è¯·è¾“å…¥é€‰é¡¹ï¼š";
 
         int coursechoice;
         cin >> coursechoice;
 
-        //²»Í¬¹¦ÄÜµÄÑ¡ÔñÊµÏÖ
+        //ä¸åŒåŠŸèƒ½çš„é€‰æ‹©å®ç°
         Course c;
         switch (coursechoice)
         {
@@ -55,7 +55,7 @@ void mainSwitch::mainCourse()
             courseswitch -= 1;
             break;
         default:
-            cout << "ÎŞĞ§Ñ¡Ïî£¬ÇëÖØĞÂÊäÈë£¡" << endl;
+            cout << "æ— æ•ˆé€‰é¡¹ï¼Œè¯·é‡æ–°è¾“å…¥ï¼" << endl;
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             break;
@@ -63,7 +63,7 @@ void mainSwitch::mainCourse()
     }
 }
 
-// ±¸ÍüÂ¼¹¦ÄÜÑ¡Ôñ
+// å¤‡å¿˜å½•åŠŸèƒ½é€‰æ‹©
 void mainSwitch::mainMemos()
 {   
     extern int memoswitch;
@@ -71,24 +71,24 @@ void mainSwitch::mainMemos()
     while (memoswitch)
     {
         cout << endl;
-        // ±¸ÍüÂ¼³£×¤Õ¹Ê¾
-        cout << "¡ª¡ª¡ª¡ª¡ª¡ª±¸ÍüÂ¼¡ª¡ª¡ª¡ª¡ª¡ª" << endl;
+        // å¤‡å¿˜å½•å¸¸é©»å±•ç¤º
+        cout << "â€”â€”â€”â€”â€”â€”å¤‡å¿˜å½•â€”â€”â€”â€”â€”â€”" << endl;
         memo.arrangeMemos();
         memo.showMemos();
 
-        // ÊäÈëÄÚÈİÌáÊ¾
-        cout << "¡ª¡ªÑ¡Ôñ¹¦ÄÜ¡ª¡ª" << endl;
-        cout << "1. ÊäÈë±¸ÍüÂ¼" << endl;
-        cout << "2. ÖÃ¶¥ÌáĞÑ" << endl;
-        cout << "3. ĞŞ¸Ä±¸ÍüÂ¼" << endl;
-        cout << "4. É¾³ı±¸ÍüÂ¼ " << endl;
-        cout << "5. ÍË³ö³ÌĞò " << endl;
-        cout << "ÇëÑ¡Ôñ²Ù×÷£º" ;
+        // è¾“å…¥å†…å®¹æç¤º
+        cout << "â€”â€”é€‰æ‹©åŠŸèƒ½â€”â€”" << endl;
+        cout << "1. è¾“å…¥å¤‡å¿˜å½•" << endl;
+        cout << "2. ç½®é¡¶æé†’" << endl;
+        cout << "3. ä¿®æ”¹å¤‡å¿˜å½•" << endl;
+        cout << "4. åˆ é™¤å¤‡å¿˜å½• " << endl;
+        cout << "5. é€€å‡ºç¨‹åº " << endl;
+        cout << "è¯·é€‰æ‹©æ“ä½œï¼š" ;
 
         int memochoice;
         cin >> memochoice;
 
-        // ²»Í¬¹¦ÄÜµÄÑ¡ÔñÊµÏÖ
+        // ä¸åŒåŠŸèƒ½çš„é€‰æ‹©å®ç°
         switch (memochoice)
         {
         case 1:
@@ -107,14 +107,14 @@ void mainSwitch::mainMemos()
             memoswitch -= 1;
             break;
         default:
-            cout << "ÊäÈë´íÎó£¬ÇëÖØĞÂÑ¡Ôñ²Ù×÷£¡" << endl;
+            cout << "è¾“å…¥é”™è¯¯ï¼Œè¯·é‡æ–°é€‰æ‹©æ“ä½œï¼" << endl;
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
     }
 }
 
-// ×÷ÒµÖúÊÖ¹¦ÄÜÑ¡Ôñ
+// ä½œä¸šåŠ©æ‰‹åŠŸèƒ½é€‰æ‹©
 void mainSwitch::mainHomework()
 {
     extern int homeworkswitch;
@@ -122,20 +122,20 @@ void mainSwitch::mainHomework()
 
     while (homeworkswitch)
     {
-        // ¹¦ÄÜÑ¡ÔñÌáÊ¾
+        // åŠŸèƒ½é€‰æ‹©æç¤º
         cout << endl;
-        cout << "¡ª¡ª×÷ÒµÖúÊÖ¡ª¡ª" << endl;
-        cout << "1. Ìí¼Ó×÷Òµ" << endl;
-        cout << "2. ÏÔÊ¾×÷ÒµÇåµ¥" << endl;
-        cout << "3. ±ê¼Ç×÷ÒµÍê³É" << endl;
-        cout << "4. É¾³ı×÷Òµ" << endl;
-        cout << "5. ÍË³ö" << endl;
-        cout << "ÇëÑ¡Ôñ²Ù×÷£º" ;
+        cout << "â€”â€”ä½œä¸šåŠ©æ‰‹â€”â€”" << endl;
+        cout << "1. æ·»åŠ ä½œä¸š" << endl;
+        cout << "2. æ˜¾ç¤ºä½œä¸šæ¸…å•" << endl;
+        cout << "3. æ ‡è®°ä½œä¸šå®Œæˆ" << endl;
+        cout << "4. åˆ é™¤ä½œä¸š" << endl;
+        cout << "5. é€€å‡º" << endl;
+        cout << "è¯·é€‰æ‹©æ“ä½œï¼š" ;
 
         int homeworkchoice;
         cin >> homeworkchoice;
 
-        // Ñ¡Ôñ¸÷¸ö¹¦ÄÜ
+        // é€‰æ‹©å„ä¸ªåŠŸèƒ½
         switch (homeworkchoice)
         {
         case 1:
@@ -154,15 +154,15 @@ void mainSwitch::mainHomework()
             homeworkswitch -= 1;
             break;
         default:
-            // Ñ¡ÔñµÄ¾À´í»úÖÆ
-            cout << "ÎŞĞ§Ñ¡Ïî£¬ÇëÖØĞÂÊäÈë£¡" << endl;
+            // é€‰æ‹©çš„çº é”™æœºåˆ¶
+            cout << "æ— æ•ˆé€‰é¡¹ï¼Œè¯·é‡æ–°è¾“å…¥ï¼" << endl;
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
     }
 }
 
-// ÈÕ³Ì±í¹¦ÄÜÑ¡Ôñ
+// æ—¥ç¨‹è¡¨åŠŸèƒ½é€‰æ‹©
 void mainSwitch::mainSchedule()
 {
     extern int scheduleswitch;
@@ -170,21 +170,21 @@ void mainSwitch::mainSchedule()
     
     while (scheduleswitch)
     {
-        // ÊäÈëÄÚÈİÌáÊ¾
+        // è¾“å…¥å†…å®¹æç¤º
         cout << endl;
-        cout << "¡ª¡ªÈÕ³Ì±í¡ª¡ª" << endl;
-        cout << "1. Ìí¼ÓÊÂ¼ş" << endl;
-        cout << "2. ±ê¼ÇÊÂ¼şÍê³É" << endl;
-        cout << "3. ËÑË÷ÊÂ¼ş" << endl;
-        cout << "4. É¾³ıÊÂ¼ş" << endl;
-        cout << "5. Êä³öÊÂ¼ş" << endl;
-        cout << "6. ÍË³ö¹¦ÄÜ" << endl;
-        cout << "ÇëÑ¡ÔñÒª½øĞĞµÄ²Ù×÷£º" ;
+        cout << "â€”â€”æ—¥ç¨‹è¡¨â€”â€”" << endl;
+        cout << "1. æ·»åŠ äº‹ä»¶" << endl;
+        cout << "2. æ ‡è®°äº‹ä»¶å®Œæˆ" << endl;
+        cout << "3. æœç´¢äº‹ä»¶" << endl;
+        cout << "4. åˆ é™¤äº‹ä»¶" << endl;
+        cout << "5. è¾“å‡ºäº‹ä»¶" << endl;
+        cout << "6. é€€å‡ºåŠŸèƒ½" << endl;
+        cout << "è¯·é€‰æ‹©è¦è¿›è¡Œçš„æ“ä½œï¼š" ;
 
         int schedulechoice;
         cin >> schedulechoice;
 
-        // Ñ¡Ôñ¸÷¸ö¹¦ÄÜ
+        // é€‰æ‹©å„ä¸ªåŠŸèƒ½
         switch (schedulechoice)
         {
         case 1:
@@ -204,12 +204,12 @@ void mainSwitch::mainSchedule()
             schedule.showEvents();
             break;
         case 6:
-            cout << "ÍË³ö³ÌĞò¡£" << endl;
+            cout << "é€€å‡ºç¨‹åºã€‚" << endl;
             scheduleswitch -= 1;
             break;
         default:
-            // ÊäÈë¾À´í»úÖÆ
-            cout << "ÎŞĞ§µÄÑ¡Ôñ£¬ÇëÖØĞÂÊäÈë¡£" << endl;
+            // è¾“å…¥çº é”™æœºåˆ¶
+            cout << "æ— æ•ˆçš„é€‰æ‹©ï¼Œè¯·é‡æ–°è¾“å…¥ã€‚" << endl;
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             break;

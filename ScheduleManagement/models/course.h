@@ -3,11 +3,11 @@
 
 using namespace std;
 
-// ¶¨ÒåCourseÀà
+// å®šä¹‰Courseç±»
 class Course
 {
 private:
-    // ¶¨ÒåËùĞè±äÁ¿
+    // å®šä¹‰æ‰€éœ€å˜é‡
     int day;
     string weekday;
     int start_time;
@@ -18,12 +18,12 @@ private:
     string sname;
     string memory;
 
-    // ¶¨Òå¾²Ì¬Êı¾İ
+    // å®šä¹‰é™æ€æ•°æ®
     static int special;
     static int remind;
 
 public:
-    // ÉùÃ÷¸÷¸ö¹¦ÄÜËùĞèº¯Êı
+    // å£°æ˜å„ä¸ªåŠŸèƒ½æ‰€éœ€å‡½æ•°
     void inputRegularCourse();
     void inputCourse(Course& course, vector<Course>& courseList);
     void modifyVariousCourse();

@@ -7,40 +7,40 @@
 
 using namespace std;
 
-// ¶¨ÒåÈ«¾Ö±äÁ¿´Ó¶ø±£ÁôÄÚÈİ
+// å®šä¹‰å…¨å±€å˜é‡ä»è€Œä¿ç•™å†…å®¹
 MemoManager memo;
 HomeworkManager manager;
 Schedule schedule;
 
-// ¶¨ÒåÈ«¾Ö±äÁ¿¿ØÖÆ¹¦ÄÜ¿ª¹Ø
+// å®šä¹‰å…¨å±€å˜é‡æ§åˆ¶åŠŸèƒ½å¼€å…³
 int courseswitch = 0;
 int memoswitch = 0;
 int homeworkswitch = 0;
 int scheduleswitch = 0;
 
-// Ö÷¿ØÖÆº¯Êı
+// ä¸»æ§åˆ¶å‡½æ•°
 int main() 
 {
     int mainchoice;
     while (true)
     {
-        // Êä³ö¹¦ÄÜÌáÊ¾
-        cout << "===Åã°éÄãµÄÃ¿Ò»Ìì===" << endl;
-        cout << "1. ¿Î³ÌÖúÊÖ" << endl;
-        cout << "2. ±¸ÍüÂ¼" << endl;
-        cout << "3. ×÷ÒµÖúÊÖ" << endl;
-        cout << "4. ÈÕ³ÌÖúÊÖ" << endl;
-        cout << "5. ÍË³ö³ÌĞò" << endl;
-        cout << "ÇëÊäÈëÑ¡Ïî£º";
+        // è¾“å‡ºåŠŸèƒ½æç¤º
+        cout << "===é™ªä¼´ä½ çš„æ¯ä¸€å¤©===" << endl;
+        cout << "1. è¯¾ç¨‹åŠ©æ‰‹" << endl;
+        cout << "2. å¤‡å¿˜å½•" << endl;
+        cout << "3. ä½œä¸šåŠ©æ‰‹" << endl;
+        cout << "4. æ—¥ç¨‹åŠ©æ‰‹" << endl;
+        cout << "5. é€€å‡ºç¨‹åº" << endl;
+        cout << "è¯·è¾“å…¥é€‰é¡¹ï¼š";
         cin >> mainchoice;
 
-        // ¶¨ÒåÀàµÄ³ÉÔ±´Ó¶øÊ¹ÓÃ³ÉÔ±º¯Êı
+        // å®šä¹‰ç±»çš„æˆå‘˜ä»è€Œä½¿ç”¨æˆå‘˜å‡½æ•°
         mainSwitch course;
         mainSwitch memo;
         mainSwitch homework;
         mainSwitch schedule;
 
-        // ²»Í¬¹¦ÄÜµÄÑ¡ÔñÊµÏÖ
+        // ä¸åŒåŠŸèƒ½çš„é€‰æ‹©å®ç°
         switch (mainchoice)
         {
         case 1:
@@ -62,8 +62,8 @@ int main()
         case 5:
             return 0;        
         default:
-            // ÊäÈë¾À´í»úÖÆ
-            cout << "ÎŞĞ§Ñ¡Ïî£¬ÇëÖØĞÂÊäÈë£¡" << endl;
+            // è¾“å…¥çº é”™æœºåˆ¶
+            cout << "æ— æ•ˆé€‰é¡¹ï¼Œè¯·é‡æ–°è¾“å…¥ï¼" << endl;
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             break;
