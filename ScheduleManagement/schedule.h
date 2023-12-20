@@ -49,7 +49,6 @@ public:
         os << "状态：" << (event.completed ? "已完成" : "未完成") << endl;            // 输出状态
         return os;
     }
-
 };
 
 // 各个功能管理
@@ -72,6 +71,7 @@ private:
         }
         return false;
     }
+
 public:
     // 各个功能函数
     void addEvent();

@@ -15,7 +15,7 @@ void mainSwitch::mainCourse()
     {
         // 输出选择功能界面
         cout << endl;
-        cout << "===课程助手===" << endl;
+        cout << "——课程助手——" << endl;
         cout << "1. 录入课程" << endl;
         cout << "2. 修改课程" << endl;
         cout << "3. 删除课程" << endl;
@@ -67,23 +67,23 @@ void mainSwitch::mainCourse()
 void mainSwitch::mainMemos()
 {   
     extern int memoswitch;
-    MemoManager memo;
+    extern MemoManager memo;
     while (memoswitch)
     {
+        cout << endl;
         // 备忘录常驻展示
         cout << "——————备忘录——————" << endl;
         memo.arrangeMemos();
         memo.showMemos();
-        cout << endl;
 
         // 输入内容提示
-        cout << "————选择功能————" << endl;
+        cout << "——选择功能——" << endl;
         cout << "1. 输入备忘录" << endl;
         cout << "2. 置顶提醒" << endl;
         cout << "3. 修改备忘录" << endl;
         cout << "4. 删除备忘录 " << endl;
         cout << "5. 退出程序 " << endl;
-        cout << "请选择操作：" << endl;
+        cout << "请选择操作：" ;
 
         int memochoice;
         cin >> memochoice;
@@ -111,7 +111,6 @@ void mainSwitch::mainMemos()
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
-        cout << endl;
     }
 }
 
@@ -119,18 +118,19 @@ void mainSwitch::mainMemos()
 void mainSwitch::mainHomework()
 {
     extern int homeworkswitch;
-    HomeworkManager manager;
+    extern HomeworkManager manager;
 
     while (homeworkswitch)
     {
         // 功能选择提示
         cout << endl;
-        cout << "请选择操作：" << endl;
+        cout << "——作业助手——" << endl;
         cout << "1. 添加作业" << endl;
         cout << "2. 显示作业清单" << endl;
         cout << "3. 标记作业完成" << endl;
         cout << "4. 删除作业" << endl;
         cout << "5. 退出" << endl;
+        cout << "请选择操作：" ;
 
         int homeworkchoice;
         cin >> homeworkchoice;
@@ -166,19 +166,21 @@ void mainSwitch::mainHomework()
 void mainSwitch::mainSchedule()
 {
     extern int scheduleswitch;
-    Schedule schedule;
+    extern Schedule schedule;
     
     while (scheduleswitch)
     {
         // 输入内容提示
-        cout << "请选择要进行的操作：" << endl;
+        cout << endl;
+        cout << "——日程表——" << endl;
         cout << "1. 添加事件" << endl;
         cout << "2. 标记事件完成" << endl;
         cout << "3. 搜索事件" << endl;
         cout << "4. 删除事件" << endl;
         cout << "5. 输出事件" << endl;
         cout << "6. 退出功能" << endl;
-        
+        cout << "请选择要进行的操作：" ;
+
         int schedulechoice;
         cin >> schedulechoice;
 
@@ -204,6 +206,7 @@ void mainSwitch::mainSchedule()
         case 6:
             cout << "退出程序。" << endl;
             scheduleswitch -= 1;
+            break;
         default:
             // 输入纠错机制
             cout << "无效的选择，请重新输入。" << endl;

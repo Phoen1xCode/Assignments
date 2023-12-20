@@ -1,7 +1,16 @@
 #include <iostream>
 #include "mainSwitch.h"
+#include "course.h"
+#include "memo.h"
+#include "homework.h"
+#include "schedule.h"
 
 using namespace std;
+
+// 定义全局变量从而保留内容
+MemoManager memo;
+HomeworkManager manager;
+Schedule schedule;
 
 // 定义全局变量控制功能开关
 int courseswitch = 0;
@@ -51,7 +60,7 @@ int main()
             schedule.mainSchedule();
             break;
         case 5:
-            return 0;
+            return 0;        
         default:
             // 输入纠错机制
             cout << "无效选项，请重新输入！" << endl;

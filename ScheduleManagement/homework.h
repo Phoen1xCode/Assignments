@@ -88,6 +88,7 @@ class HomeworkManager
 private:
     // 用vector存储作业列表
     vector<Assignment> assignments;
+
 public:
     // 各个功能对应函数
     void addAssignment();
@@ -96,6 +97,7 @@ public:
     void markAssignmentCompleted();
     void deleteAssignment();
     // 以下为预处理操作
+
 private:
     // 比较作业的截止日期
     static bool compareAssignmentsByDdl(const Assignment& a1, const Assignment& a2)

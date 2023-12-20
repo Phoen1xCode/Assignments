@@ -19,17 +19,19 @@ void HomeworkManager::addAssignment()
     cout << "请输入作业内容：";
     cin >> content;
     cout << "请选择方式（1.常规作业/2.展示作业）：";
-    int choice;
-    cin >> choice;
+    int hchoice;
+    cin >> hchoice;
     while(true)
     {
-        if (choice == 1)
+        if (hchoice == 1)
         {
             type = "常规作业";
+            break;
         }
-        else if (choice == 2)
+        else if (hchoice == 2)
         {
             type = "展示作业";
+            break;
         }
         // 纠错机制
         else
@@ -37,19 +39,19 @@ void HomeworkManager::addAssignment()
             cout << "无效的选择，请重新输入！" << endl;
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            cin >> choice;
+            cin >> hchoice;
         }
     }
-    bool validDate = false;
-    while (!validDate)
+    bool hvalidDate = false;
+    while (!hvalidDate)
     {
         cout << "请输入截止日期（YYYY-MM-DD）：";
         cin >> ddl;
 
         // 调用函数进行判断
-        validDate = validateDate(ddl);
+        hvalidDate = validateDate(ddl);
         // 判断日期格式是否正确且合理
-        if (!validDate)
+        if (!hvalidDate)
         {
             cout << "日期格式不正确或日期不合理，请重新输入。" << endl;
         }
@@ -70,6 +72,7 @@ bool HomeworkManager::validateDate(const string& date)
     char delimiter;
     ss >> year >> delimiter >> month >> delimiter >> day;
 
+    // 验证格式正确
     if (ss.fail() || delimiter != '-' || ss.peek() != EOF)
     {
         return false;
