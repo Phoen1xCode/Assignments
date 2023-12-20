@@ -26,7 +26,7 @@ CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=X:/CLionProjects/PasswordManagement/cmak
 //Install path prefix, prepended onto install directories.
 CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/cryptopp-populate
 
-//No help, variable specified on the command line.
+//make program
 CMAKE_MAKE_PROGRAM:FILEPATH=C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe
 
 //Value Computed by CMake

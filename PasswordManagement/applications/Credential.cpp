@@ -1,27 +1,47 @@
-//
+// Credential.cpp
 // Created by Jake Jia on 2023/12/5.
 //
 
+#include <iostream>
 #include <utility>
-
 #include "../models/Credential.h"
 
 namespace PasswordManagement {
 
 /* ------------------------------------------------------------------------------------------------------------------ */
+    // Identity 类默认构造函数实现
+    Identity::Identity() {
+        this->name = "";
+        this->gender = "";
+        this->birthdate = "";
+        this->stuentID = "";
+        this->email = "";
+        this->phoneNumber = "";
+    }
+
     // Identity 类构造函数实现
     Identity::Identity(std::string name,
                        std::string gender,
                        std::string birthdate,
-                       std::string stuentId,
+                       std::string studentID,
                        std::string email,
                        std::string phoneNumber) {
         this->name = std::move(name);
         this->gender = std::move(gender);
         this->birthdate = std::move(birthdate);
-        this->stuentId = std::move(stuentId);
+        this->stuentID = std::move(studentID);
         this->email = std::move(email);
         this->phoneNumber = std::move(phoneNumber);
+    }
+
+    // 复制构造函数
+    Identity::Identity(const Identity &other) {
+        this->name = other.name;
+        this->gender = other.gender;
+        this->birthdate = other.birthdate;
+        this->stuentID = other.stuentID;
+        this->email = other.email;
+        this->phoneNumber = other.phoneNumber;
     }
 
     // Identity 类成员函数实现
@@ -38,8 +58,8 @@ namespace PasswordManagement {
         return this->birthdate;
     }
 
-    std::string Identity::getStudentId() const {
-        return this->stuentId;
+    std::string Identity::getStudentID() const {
+        return this->stuentID;
     }
 
     std::string Identity::getEmail() const {
@@ -55,13 +75,37 @@ namespace PasswordManagement {
         std::cout << "Name: " << this->name << std::endl;
         std::cout << "Gender: " << this->gender << std::endl;
         std::cout << "Birthdate: " << this->birthdate << std::endl;
-        std::cout << "StudentID: " << this->stuentId << std::endl;
+        std::cout << "StudentID: " << this->stuentID << std::endl;
         std::cout << "Email: " << this->email << std::endl;
         std::cout << "Phone Number: " << this->phoneNumber << std::endl;
     }
 
+    void Identity::setName(const std::string& newName) {
+        this->name = newName;
+    }
+
+    void Identity::setGender(const std::string&newGender) {
+        this->gender = newGender;
+    }
+
+    void Identity::setBirthday(const std::string& newBirthday) {
+        this->birthdate = newBirthday;
+    }
+
+    void Identity::setStudentID(const std::string& newStudentID) {
+        this->birthdate = newStudentID;
+    }
+
+    void Identity::setEmail(const std::string& newEmail) {
+        this->email = newEmail;
+    }
+
+    void Identity::setPhoneNumber(const std::string& newPhoneNumber) {
+        this->phoneNumber = newPhoneNumber;
+    }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
+
     // Credential 类构造函数实现
     Credential::Credential(std::string itemName,
                            std::string username,
@@ -91,20 +135,31 @@ namespace PasswordManagement {
         return password;
     }
 
-    // 显示凭据信息
     void Credential::display() const {
-        std::cout << "Item Name: " << itemName << std::endl;
-        std::cout << "Username: " << username << std::endl;
-        std::cout << "Password: " << password << std::endl;
+        std::cout << "Item Name: " << this->itemName << std::endl;
+        std::cout << "Username: " << this->username << std::endl;
+        std::cout << "Password: " << this->password << std::endl;
     }
 
-//    // 更改密码
-//    void Credential::changePassword(const std::string& newPassword) {
-//        password = newPassword;
-//    }
+    void Credential::setItemName(const std::string &newItemName) {
+        this->itemName = newItemName;
+    }
 
+    void Credential::setUsername(const std::string &newUsername) {
+        this->username = newUsername;
+    }
+
+
+    void Credential::setPassword(const std::string& newPassword) {
+        this->password = newPassword;
+    }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
+    // WebsiteCredential 类默认构造函数实现
+    WebsiteCredential::WebsiteCredential() : Credential() {
+        this->websiteURL = "";
+    }
+
     // WebsiteCredential 类构造函数实现
     WebsiteCredential::WebsiteCredential(std::string itemName,
                                          std::string username,
@@ -120,7 +175,6 @@ namespace PasswordManagement {
         this->websiteURL = other.websiteURL;
     }
 
-
     // 获取网站 URL
     std::string WebsiteCredential::getWebsiteURL() const {
         return this->websiteURL;
@@ -132,6 +186,23 @@ namespace PasswordManagement {
         std::cout << "Website URL: " << this->websiteURL << std::endl;
     }
 
+    void WebsiteCredential::setItemName(const std::string &newItemName) {
+        Credential::setItemName(newItemName);
+    }
+
+    void WebsiteCredential::setUsername(const std::string &newUsername) {
+        Credential::setUsername(newUsername);
+    }
+
+    void WebsiteCredential::setPassword(const std::string &newPassword) {
+        Credential::setPassword(newPassword);
+    }
+
+    void WebsiteCredential::setWebsiteURL(const std::string &newWebsiteURL) {
+        this->websiteURL = newWebsiteURL;
+    }
+
+/* ------------------------------------------------------------------------------------------------------------------ */
     // BankCardCredential 类构造函数实现
     BankCardCredential::BankCardCredential(std::string itemName,
                                            std::string username,
@@ -150,12 +221,10 @@ namespace PasswordManagement {
         this->cardNumber = other.cardNumber;
     }
 
-    // 获取银行名称
     std::string BankCardCredential::getBankName() const {
         return this->bankName;
     }
 
-    // 获取卡号
     std::string BankCardCredential::getCardNumber() const {
         return this->cardNumber;
     }
@@ -165,6 +234,26 @@ namespace PasswordManagement {
         Credential::display();
         std::cout << "Bank Name: " << this->bankName << std::endl;
         std::cout << "Card Number: " << this->cardNumber << std::endl;
+    }
+
+    void BankCardCredential::setItemName(const std::string& newItemName) {
+        Credential::setItemName(newItemName);
+    }
+
+    void BankCardCredential::setUsername(const std::string& newUsername) {
+        Credential::setUsername(newUsername);
+    }
+
+    void BankCardCredential::setPassword(const std::string& newPassword) {
+        Credential::setPassword(newPassword);
+    }
+
+    void BankCardCredential::setBankName(const std::string &newBankName) {
+        this->bankName = newBankName;
+    }
+
+    void BankCardCredential::setCardNumber(const std::string &newCardNumber) {
+        this->cardNumber = newCardNumber;
     }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
@@ -186,38 +275,81 @@ namespace PasswordManagement {
         this->licenseKey = other.licenseKey;
     }
 
-    // 获取软件名称
     std::string SoftwareCredential::getSoftwareName() const {
         return this->softwareName;
     }
 
-    // 获取许可证密钥
     std::string SoftwareCredential::getLicenseKey() const {
         return this->licenseKey;
     }
 
-    // 显示软件凭据信息
     void SoftwareCredential::display() const {
         Credential::display();
         std::cout << "Software Name: " << this->softwareName << std::endl;
         std::cout << "License Key: " << this->licenseKey << std::endl;
     }
 
+    void SoftwareCredential::setItemName(const std::string &newItemName) {
+        Credential::setItemName(newItemName);
+    }
+
+    void SoftwareCredential::setUsername(const std::string &newUsername) {
+        Credential::setUsername(newUsername);
+    }
+
+    void SoftwareCredential::setPassword(const std::string &newPassword) {
+        Credential::setPassword(newPassword);
+    }
+
+    void SoftwareCredential::setSoftwareName(const std::string &newSoftwareName) {
+        this->softwareName = newSoftwareName;
+    }
+
+    void SoftwareCredential::setLicenseKey(const std::string &newLicenseKey) {
+        this->licenseKey = newLicenseKey;
+    }
+
 /* ------------------------------------------------------------------------------------------------------------------ */
-
     // WifiCredential 类构造函数实现
-    WifiCredential::WifiCredential(std::string itemName, std::string username, std::string password, std::string ssid)
-        : Credential(std::move(itemName), std::move(username), std::move(password)), ssid(std::move(ssid)) {}
+    WifiCredential::WifiCredential(std::string itemName,
+                                   std::string username,
+                                   std::string password,
+                                   std::string ssid)
+        : Credential(std::move(itemName), std::move(username), std::move(password)) {
+        this->ssid = std::move(ssid);
+    }
 
-    // 获取 SSID
+    WifiCredential::WifiCredential(const WifiCredential &other)
+    : Credential(other) {
+        this->ssid = other.ssid;
+    }
+
     std::string WifiCredential::getSsid() const {
         return ssid;
     }
 
-    // 显示 Wi-Fi 凭据信息
     void WifiCredential::display() const {
         Credential::display();
-        std::cout << "SSID: " << ssid << std::endl;
+        std::cout << "SSID: " << this->ssid << std::endl;
     }
 
-}
+    void WifiCredential::setItemName(const std::string &newItemName) {
+        Credential::setItemName(newItemName);
+    }
+
+    void WifiCredential::setUsername(const std::string &newUsername) {
+        Credential::setUsername(newUsername);
+    }
+
+    void WifiCredential::setPassword(const std::string &newPassword) {
+        Credential::setPassword(newPassword);
+    }
+
+    void WifiCredential::setSSID(const std::string &newSSID) {
+        this->ssid = newSSID;
+    }
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+
+} // PasswordManagement

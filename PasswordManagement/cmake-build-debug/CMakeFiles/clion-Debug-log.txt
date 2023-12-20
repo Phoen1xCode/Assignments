@@ -21,6 +21,6 @@
 -- [cryptopp] Compiler definitions:  
 -- [cryptopp] Compiler options:   
 -- [cryptopp] Build type: Debug
--- Configuring done (2.1s)
+-- Configuring done (2.8s)
 -- Generating done (0.0s)
 -- Build files have been written to: X:/CLionProjects/PasswordManagement/cmake-build-debug
