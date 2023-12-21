@@ -14,7 +14,7 @@
 #include "../lib/cryptopp/filters.h"
 #include "../lib/cryptopp/modes.h"
 #include "../lib/cryptopp/osrng.h"
-#include "base64.h"
+// #include "base64.h"
 
 #ifndef PASSWORDMANAGEMENT_KEYMANAGER_H
 #define PASSWORDMANAGEMENT_KEYMANAGER_H

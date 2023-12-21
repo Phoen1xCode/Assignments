@@ -1,6 +1,19 @@
 #include <iostream>
-int main() {
+#include "PasswordManagement/models/PasswordManager.h"
 
-    std::cout << "HelloWorld." << std::endl;
+int main() {
+    PasswordManagement::PasswordManager passwordManager;
+    if(!passwordManager.loginPasswordManagement())
+        return 0;
+    else // 运行程序
+    passwordManager.managePasswords();
+
+
     return 0;
 }
+
+
+
+
+
+

@@ -7,7 +7,7 @@
 #ifndef PASSWORDMANAGEMENT_CREDENTIAL_H
 #define PASSWORDMANAGEMENT_CREDENTIAL_H
 #include <string>
-#include "../models/PasswordUtils.h"
+#include "PasswordUtils.h"
 
 namespace PasswordManagement {
 

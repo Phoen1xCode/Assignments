@@ -10,7 +10,7 @@
 #include <string>
 #include <random>
 #include <algorithm>
-#include "base64.h"
+// #include "base64.h"
 #include "../lib/cryptopp/aes.h"
 #include "../lib/cryptopp/filters.h"
 #include "../lib/cryptopp/modes.h"
