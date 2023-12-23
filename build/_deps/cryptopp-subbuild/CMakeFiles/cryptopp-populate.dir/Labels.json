@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "X:/Assignments/build/_deps/cryptopp-subbuild/CMakeFiles/cryptopp-populate"
+		},
+		{
+			"file" : "X:/Assignments/build/_deps/cryptopp-subbuild/CMakeFiles/cryptopp-populate.rule"
+		},
+		{
+			"file" : "X:/Assignments/build/_deps/cryptopp-subbuild/CMakeFiles/cryptopp-populate-complete.rule"
+		},
+		{
+			"file" : "X:/Assignments/build/_deps/cryptopp-subbuild/cryptopp-populate-prefix/src/cryptopp-populate-stamp/cryptopp-populate-build.rule"
+		},
+		{
+			"file" : "X:/Assignments/build/_deps/cryptopp-subbuild/cryptopp-populate-prefix/src/cryptopp-populate-stamp/cryptopp-populate-configure.rule"
+		},
+		{
+			"file" : "X:/Assignments/build/_deps/cryptopp-subbuild/cryptopp-populate-prefix/src/cryptopp-populate-stamp/cryptopp-populate-download.rule"
+		},
+		{
+			"file" : "X:/Assignments/build/_deps/cryptopp-subbuild/cryptopp-populate-prefix/src/cryptopp-populate-stamp/cryptopp-populate-install.rule"
+		},
+		{
+			"file" : "X:/Assignments/build/_deps/cryptopp-subbuild/cryptopp-populate-prefix/src/cryptopp-populate-stamp/cryptopp-populate-mkdir.rule"
+		},
+		{
+			"file" : "X:/Assignments/build/_deps/cryptopp-subbuild/cryptopp-populate-prefix/src/cryptopp-populate-stamp/cryptopp-populate-patch.rule"
+		},
+		{
+			"file" : "X:/Assignments/build/_deps/cryptopp-subbuild/cryptopp-populate-prefix/src/cryptopp-populate-stamp/cryptopp-populate-test.rule"
+		},
+		{
+			"file" : "X:/Assignments/build/_deps/cryptopp-subbuild/cryptopp-populate-prefix/src/cryptopp-populate-stamp/cryptopp-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"cryptopp-populate"
+		],
+		"name" : "cryptopp-populate"
+	}
+}

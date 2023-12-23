@@ -358,52 +358,52 @@ public:
 
 	/// \name MANIPULATORS
 	//@{
-		/// \brief Assignment
+		/// \brief Homework
 		/// \param t the other Integer
 		/// \return the result of assignment
 		Integer&  operator=(const Integer& t);
-		/// \brief Addition Assignment
+		/// \brief Addition Homework
 		/// \param t the other Integer
 		/// \return the result of <tt>*this + t</tt>
 		Integer&  operator+=(const Integer& t);
-		/// \brief Subtraction Assignment
+		/// \brief Subtraction Homework
 		/// \param t the other Integer
 		/// \return the result of <tt>*this - t</tt>
 		Integer&  operator-=(const Integer& t);
-		/// \brief Multiplication Assignment
+		/// \brief Multiplication Homework
 		/// \param t the other Integer
 		/// \return the result of <tt>*this * t</tt>
 		/// \sa a_times_b_mod_c() and a_exp_b_mod_c()
 		Integer&  operator*=(const Integer& t)	{return *this = Times(t);}
-		/// \brief Division Assignment
+		/// \brief Division Homework
 		/// \param t the other Integer
 		/// \return the result of <tt>*this / t</tt>
 		Integer&  operator/=(const Integer& t)	{return *this = DividedBy(t);}
-		/// \brief Remainder Assignment
+		/// \brief Remainder Homework
 		/// \param t the other Integer
 		/// \return the result of <tt>*this % t</tt>
 		/// \sa a_times_b_mod_c() and a_exp_b_mod_c()
 		Integer&  operator%=(const Integer& t)	{return *this = Modulo(t);}
-		/// \brief Division Assignment
+		/// \brief Division Homework
 		/// \param t the other word
 		/// \return the result of <tt>*this / t</tt>
 		Integer&  operator/=(word t)  {return *this = DividedBy(t);}
-		/// \brief Remainder Assignment
+		/// \brief Remainder Homework
 		/// \param t the other word
 		/// \return the result of <tt>*this % t</tt>
 		/// \sa a_times_b_mod_c() and a_exp_b_mod_c()
 		Integer&  operator%=(word t)  {return *this = Integer(POSITIVE, 0, Modulo(t));}
 
-		/// \brief Left-shift Assignment
+		/// \brief Left-shift Homework
 		/// \param n number of bits to shift
 		/// \return reference to this Integer
 		Integer&  operator<<=(size_t n);
-		/// \brief Right-shift Assignment
+		/// \brief Right-shift Homework
 		/// \param n number of bits to shift
 		/// \return reference to this Integer
 		Integer&  operator>>=(size_t n);
 
-		/// \brief Bitwise AND Assignment
+		/// \brief Bitwise AND Homework
 		/// \param t the other Integer
 		/// \return the result of <tt>*this & t</tt>
 		/// \details operator&=() performs a bitwise AND on <tt>*this</tt>. Missing bits are truncated
@@ -415,7 +415,7 @@ public:
 		///  the operation.
 		/// \since Crypto++ 6.0
 		Integer& operator&=(const Integer& t);
-		/// \brief Bitwise OR Assignment
+		/// \brief Bitwise OR Homework
 		/// \param t the second Integer
 		/// \return the result of <tt>*this | t</tt>
 		/// \details operator|=() performs a bitwise OR on <tt>*this</tt>. Missing bits are shifted in
@@ -427,7 +427,7 @@ public:
 		///  the operation.
 		/// \since Crypto++ 6.0
 		Integer& operator|=(const Integer& t);
-		/// \brief Bitwise XOR Assignment
+		/// \brief Bitwise XOR Homework
 		/// \param t the other Integer
 		/// \return the result of <tt>*this ^ t</tt>
 		/// \details operator^=() performs a bitwise XOR on <tt>*this</tt>. Missing bits are shifted

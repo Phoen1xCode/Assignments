@@ -1,0 +1,1 @@
+ "C:/MySQL/mysql-8.2.0-winx64/lib/libmysql.lib" MoneyManagement/lib/fmt/libfmt.a "PasswordManagement/lib/cryptopp-cmake/cryptopp/libcryptopp.a" -lUser32 -lkernel32 -lpthread -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

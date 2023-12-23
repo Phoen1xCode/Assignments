@@ -1,0 +1,2 @@
+C:\MinGW-w64\13.1.0\bin\ar.exe qc libfmt.a CMakeFiles/fmt.dir/src/format.cc.obj CMakeFiles/fmt.dir/src/os.cc.obj
+C:\MinGW-w64\13.1.0\bin\ranlib.exe libfmt.a

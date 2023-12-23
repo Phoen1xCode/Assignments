@@ -12,7 +12,7 @@
 /// \file poly1305.h
 /// \brief Classes for Poly1305 message authentication code
 /// \details Poly1305-AES is a state-of-the-art message-authentication code suitable for a wide
-///   variety of applications. Poly1305-AES computes a 16-byte authenticator of a variable-length
+///   variety of src. Poly1305-AES computes a 16-byte authenticator of a variable-length
 ///   message, using a 16-byte AES key, a 16-byte additional key, and a 16-byte nonce.
 /// \details Crypto++ also supplies the IETF's version of Poly1305. It is a slightly different
 ///   algorithm than Bernstein's version.
@@ -90,7 +90,7 @@ protected:
 /// \brief Poly1305 message authentication code
 /// \tparam T class derived from BlockCipherDocumentation with 16-byte key and 16-byte blocksize
 /// \details Poly1305-AES is a state-of-the-art message-authentication code suitable for a wide
-///   variety of applications. Poly1305-AES computes a 16-byte authenticator of a variable-length
+///   variety of src. Poly1305-AES computes a 16-byte authenticator of a variable-length
 ///   message, using a 16-byte AES key, a 16-byte additional key, and a 16-byte nonce.
 /// \details The key is 32 bytes and a concatenation <tt>key = {k,s}</tt>, where
 ///   <tt>k</tt> is the AES key and <tt>r</tt> is additional key that gets clamped.

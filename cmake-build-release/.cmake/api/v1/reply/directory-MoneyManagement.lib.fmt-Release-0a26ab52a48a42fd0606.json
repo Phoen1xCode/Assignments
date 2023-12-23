@@ -1,0 +1,128 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"MoneyManagement/lib/fmt/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 383,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 395,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 398,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 401,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"MoneyManagement/lib/fmt/libfmt.a"
+			],
+			"targetId" : "fmt::@2b6921634df67e27bee6",
+			"targetIndex" : 3,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/fmt",
+			"paths" : 
+			[
+				"MoneyManagement/lib/fmt/include/fmt/args.h",
+				"MoneyManagement/lib/fmt/include/fmt/chrono.h",
+				"MoneyManagement/lib/fmt/include/fmt/color.h",
+				"MoneyManagement/lib/fmt/include/fmt/compile.h",
+				"MoneyManagement/lib/fmt/include/fmt/core.h",
+				"MoneyManagement/lib/fmt/include/fmt/format.h",
+				"MoneyManagement/lib/fmt/include/fmt/format-inl.h",
+				"MoneyManagement/lib/fmt/include/fmt/os.h",
+				"MoneyManagement/lib/fmt/include/fmt/ostream.h",
+				"MoneyManagement/lib/fmt/include/fmt/printf.h",
+				"MoneyManagement/lib/fmt/include/fmt/ranges.h",
+				"MoneyManagement/lib/fmt/include/fmt/std.h",
+				"MoneyManagement/lib/fmt/include/fmt/xchar.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/fmt",
+			"paths" : 
+			[
+				"cmake-build-release/MoneyManagement/lib/fmt/fmt-config.cmake",
+				"cmake-build-release/MoneyManagement/lib/fmt/fmt-config-version.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/fmt",
+			"exportName" : "fmt-targets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "fmt::@2b6921634df67e27bee6",
+					"index" : 3
+				},
+				{
+					"id" : "fmt-header-only::@2b6921634df67e27bee6",
+					"index" : 0
+				}
+			],
+			"paths" : 
+			[
+				"MoneyManagement/lib/fmt/CMakeFiles/Export/b834597d9b1628ff12ae4314c3a2e4b8/fmt-targets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"cmake-build-release/MoneyManagement/lib/fmt/fmt.pc"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "MoneyManagement/lib/fmt",
+		"source" : "MoneyManagement/lib/fmt"
+	}
+}

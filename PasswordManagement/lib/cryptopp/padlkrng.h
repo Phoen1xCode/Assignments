@@ -38,7 +38,7 @@ public:
 ///   7 bytes are discarded and 1 byte is read. TheVIA SDK samples use <tt>divisor=1</tt>.
 /// \details Cryptography Research, Inc (CRI) audited the Padlock Security Engine
 ///   in 2003. CRI provided recommendations to operate the generator for secure and
-///   non-secure applications. Additionally, the Programmers Guide and SDK provided a
+///   non-secure src. Additionally, the Programmers Guide and SDK provided a
 ///   different configuration in the sample code.
 /// \details You can operate the generator according to CRI recommendations by setting
 ///   <tt>divisor</tt>, reading one word (or partial word) at a time from the FIFO, and
@@ -67,7 +67,7 @@ public:
 	///   7 bytes are discarded and 1 byte is read. VIA SDK samples use <tt>divisor=1</tt>.
 	/// \details Cryptography Research, Inc (CRI) audited the Padlock Security Engine
 	///   in 2003. CRI provided recommendations to operate the generator for secure and
-	///   non-secure applications. Additionally, the Programmers SDK provided a different
+	///   non-secure src. Additionally, the Programmers SDK provided a different
 	///   configuration in the sample code.
 	/// \details The audit report with recommendations is available on the Crypto++ wiki
 	///   at <A HREF="http://www.cryptopp.com/wiki/VIA_Padlock">VIA Padlock</A>.

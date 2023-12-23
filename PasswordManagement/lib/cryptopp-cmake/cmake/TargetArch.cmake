@@ -50,7 +50,7 @@ function(target_architecture output_var)
         # On OS X we use CMAKE_OSX_ARCHITECTURES *if* it was set First let's
         # normalize the order of the values
 
-        # Note that it's not possible to compile PowerPC applications if you are
+        # Note that it's not possible to compile PowerPC src if you are
         # using the OS X SDK version 10.6 or later - you'll need 10.4/10.5 for that,
         # so we disable it by default See this page for more information:
         # http://stackoverflow.com/questions/5333490/how-can-we-restore-ppc-ppc64-as-well-as-full-10-4-10-5-sdk-support-to-xcode-4

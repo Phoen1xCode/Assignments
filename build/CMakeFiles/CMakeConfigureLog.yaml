@@ -1,0 +1,1445 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.22631 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/MinGW-w64/13.1.0/bin/gcc.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+      
+      The C compiler identification is GNU, found in:
+        X:/Assignments/build/CMakeFiles/3.27.2-msvc1/CompilerIdC/a.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/MinGW-w64/13.1.0/bin/g++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+      
+      The CXX compiler identification is GNU, found in:
+        X:/Assignments/build/CMakeFiles/3.27.2-msvc1/CompilerIdCXX/a.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "X:/Assignments/build/CMakeFiles/CMakeScratch/TryCompile-ete2xn"
+      binary: "X:/Assignments/build/CMakeFiles/CMakeScratch/TryCompile-ete2xn"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'X:/Assignments/build/CMakeFiles/CMakeScratch/TryCompile-ete2xn'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW-w64/13.1.0/bin/mingw32-make.exe -f Makefile cmTC_f859a/fast
+        C:/MinGW-w64/13.1.0/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_f859a.dir\\build.make CMakeFiles/cmTC_f859a.dir/build
+        mingw32-make.exe[1]: Entering directory 'X:/Assignments/build/CMakeFiles/CMakeScratch/TryCompile-ete2xn'
+        Building C object CMakeFiles/cmTC_f859a.dir/CMakeCCompilerABI.c.obj
+        C:\\MinGW-w64\\13.1.0\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_f859a.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
+        Using built-in specs.
+        COLLECT_GCC=C:\\MinGW-w64\\13.1.0\\bin\\gcc.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../../../src/gcc-13.1.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libstdcxx-threads=yes --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libssp --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-win32-seh-rev1, Built by MinGW-Builds project' --with-bugurl=https://github.com/niXman/mingw-builds CFLAGS='-O2 -pipe -fno-ident -I/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/opt/include -I/c/buildroot/prerequisites/x86_64-zlib-static/include -I/c/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/opt/include -I/c/buildroot/prerequisites/x86_64-zlib-static/include -I/c/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CPPFLAGS=' -I/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/opt/include -I/c/buildroot/prerequisites/x86_64-zlib-static/include -I/c/buildroot/prerequisites/x86_64-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/opt/lib -L/c/buildroot/prerequisites/x86_64-zlib-static/lib -L/c/buildroot/prerequisites/x86_64-w64-mingw32-static/lib ' LD_FOR_TARGET=/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/bin/ld.exe --with-boot-ldflags=' -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc'
+        Thread model: win32
+        Supported LTO compression algorithms: zlib
+        gcc version 13.1.0 (x86_64-win32-seh-rev1, Built by MinGW-Builds project) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_f859a.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_f859a.dir\\'
+         C:/MinGW-w64/13.1.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1.exe -quiet -v -iprefix C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -U_REENTRANT C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_f859a.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=core2 -march=nocona -version -o C:\\Users\\JAKEJI~1\\AppData\\Local\\Temp\\ccGwKOqU.s
+        GNU C17 (x86_64-win32-seh-rev1, Built by MinGW-Builds project) version 13.1.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 13.1.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.25-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "C:/MinGW-w64/13.1.0/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"
+        ignoring nonexistent directory "C:/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64D:/a/_temp/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"
+        ignoring duplicate directory "C:/MinGW-w64/13.1.0/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"
+        ignoring duplicate directory "C:/MinGW-w64/13.1.0/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"
+        ignoring nonexistent directory "C:/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/mingw/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include
+         C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed
+         C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include
+        End of search list.
+        Compiler executable checksum: 15aa4d35ab517e6de6fb36dd55de57a0
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_f859a.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_f859a.dir\\'
+         C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_f859a.dir\\CMakeCCompilerABI.c.obj C:\\Users\\JAKEJI~1\\AppData\\Local\\Temp\\ccGwKOqU.s
+        GNU assembler version 2.39 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.39
+        COMPILER_PATH=C:/MinGW-w64/13.1.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;C:/MinGW-w64/13.1.0/bin/../libexec/gcc/;C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;C:/MinGW-w64/13.1.0/bin/../lib/gcc/;C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_f859a.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_f859a.dir\\CMakeCCompilerABI.c.'
+        Linking C executable cmTC_f859a.exe
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_f859a.dir\\link.txt --verbose=1
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_f859a.dir/objects.a
+        C:\\MinGW-w64\\13.1.0\\bin\\ar.exe qc CMakeFiles\\cmTC_f859a.dir/objects.a @CMakeFiles\\cmTC_f859a.dir\\objects1.rsp
+        C:\\MinGW-w64\\13.1.0\\bin\\gcc.exe  -v -Wl,--whole-archive CMakeFiles\\cmTC_f859a.dir/objects.a -Wl,--no-whole-archive -o cmTC_f859a.exe -Wl,--out-implib,libcmTC_f859a.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+        Using built-in specs.
+        COLLECT_GCC=C:\\MinGW-w64\\13.1.0\\bin\\gcc.exe
+        COLLECT_LTO_WRAPPER=C:/MinGW-w64/13.1.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../../../src/gcc-13.1.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libstdcxx-threads=yes --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libssp --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-win32-seh-rev1, Built by MinGW-Builds project' --with-bugurl=https://github.com/niXman/mingw-builds CFLAGS='-O2 -pipe -fno-ident -I/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/opt/include -I/c/buildroot/prerequisites/x86_64-zlib-static/include -I/c/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/opt/include -I/c/buildroot/prerequisites/x86_64-zlib-static/include -I/c/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CPPFLAGS=' -I/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/opt/include -I/c/buildroot/prerequisites/x86_64-zlib-static/include -I/c/buildroot/prerequisites/x86_64-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/opt/lib -L/c/buildroot/prerequisites/x86_64-zlib-static/lib -L/c/buildroot/prerequisites/x86_64-w64-mingw32-static/lib ' LD_FOR_TARGET=/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/bin/ld.exe --with-boot-ldflags=' -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc'
+        Thread model: win32
+        Supported LTO compression algorithms: zlib
+        gcc version 13.1.0 (x86_64-win32-seh-rev1, Built by MinGW-Builds project) 
+        COMPILER_PATH=C:/MinGW-w64/13.1.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;C:/MinGW-w64/13.1.0/bin/../libexec/gcc/;C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;C:/MinGW-w64/13.1.0/bin/../lib/gcc/;C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f859a.exe' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_f859a.'
+         C:/MinGW-w64/13.1.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -plugin C:/MinGW-w64/13.1.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=C:/MinGW-w64/13.1.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\JAKEJI~1\\AppData\\Local\\Temp\\ccUd0206.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_f859a.exe C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/MinGW-w64/13.1.0/bin/../lib/gcc -LC:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. --whole-archive CMakeFiles\\cmTC_f859a.dir/objects.a --no-whole-archive --out-implib libcmTC_f859a.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f859a.exe' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_f859a.'
+        mingw32-make.exe[1]: Leaving directory 'X:/Assignments/build/CMakeFiles/CMakeScratch/TryCompile-ete2xn'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+          add: [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+          add: [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
+        end of search list found
+        collapse include dir [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include] ==> [C:/MinGW-w64/13.1.0/lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+        collapse include dir [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed] ==> [C:/MinGW-w64/13.1.0/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+        collapse include dir [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include] ==> [C:/MinGW-w64/13.1.0/x86_64-w64-mingw32/include]
+        implicit include dirs: [C:/MinGW-w64/13.1.0/lib/gcc/x86_64-w64-mingw32/13.1.0/include;C:/MinGW-w64/13.1.0/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed;C:/MinGW-w64/13.1.0/x86_64-w64-mingw32/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: 'X:/Assignments/build/CMakeFiles/CMakeScratch/TryCompile-ete2xn']
+        ignore line: []
+        ignore line: [Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW-w64/13.1.0/bin/mingw32-make.exe -f Makefile cmTC_f859a/fast]
+        ignore line: [C:/MinGW-w64/13.1.0/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_f859a.dir\\build.make CMakeFiles/cmTC_f859a.dir/build]
+        ignore line: [mingw32-make.exe[1]: Entering directory 'X:/Assignments/build/CMakeFiles/CMakeScratch/TryCompile-ete2xn']
+        ignore line: [Building C object CMakeFiles/cmTC_f859a.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [C:\\MinGW-w64\\13.1.0\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_f859a.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\MinGW-w64\\13.1.0\\bin\\gcc.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../../../src/gcc-13.1.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libstdcxx-threads=yes --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libssp --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-win32-seh-rev1, Built by MinGW-Builds project' --with-bugurl=https://github.com/niXman/mingw-builds CFLAGS='-O2 -pipe -fno-ident -I/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/opt/include -I/c/buildroot/prerequisites/x86_64-zlib-static/include -I/c/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/opt/include -I/c/buildroot/prerequisites/x86_64-zlib-static/include -I/c/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CPPFLAGS=' -I/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/opt/include -I/c/buildroot/prerequisites/x86_64-zlib-static/include -I/c/buildroot/prerequisites/x86_64-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/opt/lib -L/c/buildroot/prerequisites/x86_64-zlib-static/lib -L/c/buildroot/prerequisites/x86_64-w64-mingw32-static/lib ' LD_FOR_TARGET=/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/bin/ld.exe --with-boot-ldflags=' -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc']
+        ignore line: [Thread model: win32]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.1.0 (x86_64-win32-seh-rev1  Built by MinGW-Builds project) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_f859a.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_f859a.dir\\']
+        ignore line: [ C:/MinGW-w64/13.1.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1.exe -quiet -v -iprefix C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -U_REENTRANT C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_f859a.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=core2 -march=nocona -version -o C:\\Users\\JAKEJI~1\\AppData\\Local\\Temp\\ccGwKOqU.s]
+        ignore line: [GNU C17 (x86_64-win32-seh-rev1  Built by MinGW-Builds project) version 13.1.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 13.1.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.25-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "C:/MinGW-w64/13.1.0/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"]
+        ignore line: [ignoring nonexistent directory "C:/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64D:/a/_temp/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"]
+        ignore line: [ignoring duplicate directory "C:/MinGW-w64/13.1.0/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "C:/MinGW-w64/13.1.0/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"]
+        ignore line: [ignoring nonexistent directory "C:/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/mingw/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+        ignore line: [ C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+        ignore line: [ C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 15aa4d35ab517e6de6fb36dd55de57a0]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_f859a.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_f859a.dir\\']
+        ignore line: [ C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_f859a.dir\\CMakeCCompilerABI.c.obj C:\\Users\\JAKEJI~1\\AppData\\Local\\Temp\\ccGwKOqU.s]
+        ignore line: [GNU assembler version 2.39 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.39]
+        ignore line: [COMPILER_PATH=C:/MinGW-w64/13.1.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/MinGW-w64/13.1.0/bin/../libexec/gcc/]
+        ignore line: [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/MinGW-w64/13.1.0/bin/../lib/gcc/]
+        ignore line: [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
+        ignore line: [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_f859a.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_f859a.dir\\CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_f859a.exe]
+        ignore line: ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_f859a.dir\\link.txt --verbose=1]
+        ignore line: ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_f859a.dir/objects.a]
+        ignore line: [C:\\MinGW-w64\\13.1.0\\bin\\ar.exe qc CMakeFiles\\cmTC_f859a.dir/objects.a @CMakeFiles\\cmTC_f859a.dir\\objects1.rsp]
+        ignore line: [C:\\MinGW-w64\\13.1.0\\bin\\gcc.exe  -v -Wl --whole-archive CMakeFiles\\cmTC_f859a.dir/objects.a -Wl --no-whole-archive -o cmTC_f859a.exe -Wl --out-implib libcmTC_f859a.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\MinGW-w64\\13.1.0\\bin\\gcc.exe]
+        ignore line: [COLLECT_LTO_WRAPPER=C:/MinGW-w64/13.1.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../../../src/gcc-13.1.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libstdcxx-threads=yes --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libssp --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-win32-seh-rev1, Built by MinGW-Builds project' --with-bugurl=https://github.com/niXman/mingw-builds CFLAGS='-O2 -pipe -fno-ident -I/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/opt/include -I/c/buildroot/prerequisites/x86_64-zlib-static/include -I/c/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/opt/include -I/c/buildroot/prerequisites/x86_64-zlib-static/include -I/c/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CPPFLAGS=' -I/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/opt/include -I/c/buildroot/prerequisites/x86_64-zlib-static/include -I/c/buildroot/prerequisites/x86_64-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/opt/lib -L/c/buildroot/prerequisites/x86_64-zlib-static/lib -L/c/buildroot/prerequisites/x86_64-w64-mingw32-static/lib ' LD_FOR_TARGET=/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/bin/ld.exe --with-boot-ldflags=' -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc']
+        ignore line: [Thread model: win32]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.1.0 (x86_64-win32-seh-rev1  Built by MinGW-Builds project) ]
+        ignore line: [COMPILER_PATH=C:/MinGW-w64/13.1.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/MinGW-w64/13.1.0/bin/../libexec/gcc/]
+        ignore line: [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/MinGW-w64/13.1.0/bin/../lib/gcc/]
+        ignore line: [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
+        ignore line: [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f859a.exe' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_f859a.']
+        link line: [ C:/MinGW-w64/13.1.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -plugin C:/MinGW-w64/13.1.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=C:/MinGW-w64/13.1.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\JAKEJI~1\\AppData\\Local\\Temp\\ccUd0206.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_f859a.exe C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/MinGW-w64/13.1.0/bin/../lib/gcc -LC:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. --whole-archive CMakeFiles\\cmTC_f859a.dir/objects.a --no-whole-archive --out-implib libcmTC_f859a.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+          arg [C:/MinGW-w64/13.1.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [C:/MinGW-w64/13.1.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll] ==> ignore
+          arg [-plugin-opt=C:/MinGW-w64/13.1.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\JAKEJI~1\\AppData\\Local\\Temp\\ccUd0206.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
+          arg [-plugin-opt=-pass-through=-luser32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-liconv] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [--sysroot=C:/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64] ==> ignore
+          arg [-m] ==> ignore
+          arg [i386pep] ==> ignore
+          arg [-Bdynamic] ==> search dynamic
+          arg [-o] ==> ignore
+          arg [cmTC_f859a.exe] ==> ignore
+          arg [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
+          arg [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o] ==> obj [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o]
+          arg [-LC:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0] ==> dir [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0]
+          arg [-LC:/MinGW-w64/13.1.0/bin/../lib/gcc] ==> dir [C:/MinGW-w64/13.1.0/bin/../lib/gcc]
+          arg [-LC:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib]
+          arg [-LC:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib] ==> dir [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib]
+          arg [-LC:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib] ==> dir [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib]
+          arg [-LC:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../..] ==> dir [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../..]
+          arg [--whole-archive] ==> ignore
+          arg [CMakeFiles\\cmTC_f859a.dir/objects.a] ==> ignore
+          arg [--no-whole-archive] ==> ignore
+          arg [--out-implib] ==> ignore
+          arg [libcmTC_f859a.dll.a] ==> ignore
+          arg [--major-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [--minor-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lgcc_eh] ==> lib [gcc_eh]
+          arg [-lmoldname] ==> lib [moldname]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-ladvapi32] ==> lib [advapi32]
+          arg [-lshell32] ==> lib [shell32]
+          arg [-luser32] ==> lib [user32]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-liconv] ==> lib [iconv]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lgcc_eh] ==> lib [gcc_eh]
+          arg [-lmoldname] ==> lib [moldname]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o] ==> obj [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+        remove lib [gcc_eh]
+        remove lib [msvcrt]
+        remove lib [gcc_eh]
+        remove lib [msvcrt]
+        collapse obj [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> [C:/MinGW-w64/13.1.0/x86_64-w64-mingw32/lib/crt2.o]
+        collapse obj [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o] ==> [C:/MinGW-w64/13.1.0/lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o]
+        collapse obj [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o] ==> [C:/MinGW-w64/13.1.0/lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+        collapse library dir [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0] ==> [C:/MinGW-w64/13.1.0/lib/gcc/x86_64-w64-mingw32/13.1.0]
+        collapse library dir [C:/MinGW-w64/13.1.0/bin/../lib/gcc] ==> [C:/MinGW-w64/13.1.0/lib/gcc]
+        collapse library dir [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> [C:/MinGW-w64/13.1.0/x86_64-w64-mingw32/lib]
+        collapse library dir [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib] ==> [C:/MinGW-w64/13.1.0/lib]
+        collapse library dir [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib] ==> [C:/MinGW-w64/13.1.0/x86_64-w64-mingw32/lib]
+        collapse library dir [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../..] ==> [C:/MinGW-w64/13.1.0/lib]
+        implicit libs: [mingw32;gcc;moldname;mingwex;kernel32;advapi32;shell32;user32;kernel32;iconv;mingw32;gcc;moldname;mingwex;kernel32]
+        implicit objs: [C:/MinGW-w64/13.1.0/x86_64-w64-mingw32/lib/crt2.o;C:/MinGW-w64/13.1.0/lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o;C:/MinGW-w64/13.1.0/lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+        implicit dirs: [C:/MinGW-w64/13.1.0/lib/gcc/x86_64-w64-mingw32/13.1.0;C:/MinGW-w64/13.1.0/lib/gcc;C:/MinGW-w64/13.1.0/x86_64-w64-mingw32/lib;C:/MinGW-w64/13.1.0/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "X:/Assignments/build/CMakeFiles/CMakeScratch/TryCompile-q4fhvd"
+      binary: "X:/Assignments/build/CMakeFiles/CMakeScratch/TryCompile-q4fhvd"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'X:/Assignments/build/CMakeFiles/CMakeScratch/TryCompile-q4fhvd'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW-w64/13.1.0/bin/mingw32-make.exe -f Makefile cmTC_d8f00/fast
+        C:/MinGW-w64/13.1.0/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_d8f00.dir\\build.make CMakeFiles/cmTC_d8f00.dir/build
+        mingw32-make.exe[1]: Entering directory 'X:/Assignments/build/CMakeFiles/CMakeScratch/TryCompile-q4fhvd'
+        Building CXX object CMakeFiles/cmTC_d8f00.dir/CMakeCXXCompilerABI.cpp.obj
+        C:\\MinGW-w64\\13.1.0\\bin\\g++.exe   -v -o CMakeFiles\\cmTC_d8f00.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+        Using built-in specs.
+        COLLECT_GCC=C:\\MinGW-w64\\13.1.0\\bin\\g++.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../../../src/gcc-13.1.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libstdcxx-threads=yes --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libssp --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-win32-seh-rev1, Built by MinGW-Builds project' --with-bugurl=https://github.com/niXman/mingw-builds CFLAGS='-O2 -pipe -fno-ident -I/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/opt/include -I/c/buildroot/prerequisites/x86_64-zlib-static/include -I/c/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/opt/include -I/c/buildroot/prerequisites/x86_64-zlib-static/include -I/c/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CPPFLAGS=' -I/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/opt/include -I/c/buildroot/prerequisites/x86_64-zlib-static/include -I/c/buildroot/prerequisites/x86_64-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/opt/lib -L/c/buildroot/prerequisites/x86_64-zlib-static/lib -L/c/buildroot/prerequisites/x86_64-w64-mingw32-static/lib ' LD_FOR_TARGET=/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/bin/ld.exe --with-boot-ldflags=' -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc'
+        Thread model: win32
+        Supported LTO compression algorithms: zlib
+        gcc version 13.1.0 (x86_64-win32-seh-rev1, Built by MinGW-Builds project) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_d8f00.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_d8f00.dir\\'
+         C:/MinGW-w64/13.1.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -U_REENTRANT C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_d8f00.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=core2 -march=nocona -version -o C:\\Users\\JAKEJI~1\\AppData\\Local\\Temp\\ccpBkXCJ.s
+        GNU C++17 (x86_64-win32-seh-rev1, Built by MinGW-Builds project) version 13.1.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 13.1.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.25-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "C:/MinGW-w64/13.1.0/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"
+        ignoring duplicate directory "C:/MinGW-w64/13.1.0/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"
+        ignoring duplicate directory "C:/MinGW-w64/13.1.0/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"
+        ignoring duplicate directory "C:/MinGW-w64/13.1.0/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"
+        ignoring nonexistent directory "C:/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64D:/a/_temp/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"
+        ignoring duplicate directory "C:/MinGW-w64/13.1.0/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"
+        ignoring duplicate directory "C:/MinGW-w64/13.1.0/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"
+        ignoring nonexistent directory "C:/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/mingw/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++
+         C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32
+         C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward
+         C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include
+         C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed
+         C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include
+        End of search list.
+        Compiler executable checksum: d22fc1af69d29ebe0e423f7f90ec1945
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_d8f00.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_d8f00.dir\\'
+         C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_d8f00.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\JAKEJI~1\\AppData\\Local\\Temp\\ccpBkXCJ.s
+        GNU assembler version 2.39 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.39
+        COMPILER_PATH=C:/MinGW-w64/13.1.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;C:/MinGW-w64/13.1.0/bin/../libexec/gcc/;C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;C:/MinGW-w64/13.1.0/bin/../lib/gcc/;C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_d8f00.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_d8f00.dir\\CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_d8f00.exe
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_d8f00.dir\\link.txt --verbose=1
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_d8f00.dir/objects.a
+        C:\\MinGW-w64\\13.1.0\\bin\\ar.exe qc CMakeFiles\\cmTC_d8f00.dir/objects.a @CMakeFiles\\cmTC_d8f00.dir\\objects1.rsp
+        C:\\MinGW-w64\\13.1.0\\bin\\g++.exe  -v -Wl,--whole-archive CMakeFiles\\cmTC_d8f00.dir/objects.a -Wl,--no-whole-archive -o cmTC_d8f00.exe -Wl,--out-implib,libcmTC_d8f00.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+        Using built-in specs.
+        COLLECT_GCC=C:\\MinGW-w64\\13.1.0\\bin\\g++.exe
+        COLLECT_LTO_WRAPPER=C:/MinGW-w64/13.1.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../../../src/gcc-13.1.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libstdcxx-threads=yes --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libssp --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-win32-seh-rev1, Built by MinGW-Builds project' --with-bugurl=https://github.com/niXman/mingw-builds CFLAGS='-O2 -pipe -fno-ident -I/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/opt/include -I/c/buildroot/prerequisites/x86_64-zlib-static/include -I/c/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/opt/include -I/c/buildroot/prerequisites/x86_64-zlib-static/include -I/c/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CPPFLAGS=' -I/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/opt/include -I/c/buildroot/prerequisites/x86_64-zlib-static/include -I/c/buildroot/prerequisites/x86_64-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/opt/lib -L/c/buildroot/prerequisites/x86_64-zlib-static/lib -L/c/buildroot/prerequisites/x86_64-w64-mingw32-static/lib ' LD_FOR_TARGET=/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/bin/ld.exe --with-boot-ldflags=' -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc'
+        Thread model: win32
+        Supported LTO compression algorithms: zlib
+        gcc version 13.1.0 (x86_64-win32-seh-rev1, Built by MinGW-Builds project) 
+        COMPILER_PATH=C:/MinGW-w64/13.1.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;C:/MinGW-w64/13.1.0/bin/../libexec/gcc/;C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;C:/MinGW-w64/13.1.0/bin/../lib/gcc/;C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d8f00.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_d8f00.'
+         C:/MinGW-w64/13.1.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -plugin C:/MinGW-w64/13.1.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=C:/MinGW-w64/13.1.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\JAKEJI~1\\AppData\\Local\\Temp\\ccTQ2731.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_d8f00.exe C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/MinGW-w64/13.1.0/bin/../lib/gcc -LC:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. --whole-archive CMakeFiles\\cmTC_d8f00.dir/objects.a --no-whole-archive --out-implib libcmTC_d8f00.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d8f00.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_d8f00.'
+        mingw32-make.exe[1]: Leaving directory 'X:/Assignments/build/CMakeFiles/CMakeScratch/TryCompile-q4fhvd'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++]
+          add: [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32]
+          add: [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward]
+          add: [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+          add: [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+          add: [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
+        end of search list found
+        collapse include dir [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++] ==> [C:/MinGW-w64/13.1.0/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++]
+        collapse include dir [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32] ==> [C:/MinGW-w64/13.1.0/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32]
+        collapse include dir [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward] ==> [C:/MinGW-w64/13.1.0/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward]
+        collapse include dir [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include] ==> [C:/MinGW-w64/13.1.0/lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+        collapse include dir [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed] ==> [C:/MinGW-w64/13.1.0/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+        collapse include dir [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include] ==> [C:/MinGW-w64/13.1.0/x86_64-w64-mingw32/include]
+        implicit include dirs: [C:/MinGW-w64/13.1.0/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++;C:/MinGW-w64/13.1.0/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32;C:/MinGW-w64/13.1.0/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward;C:/MinGW-w64/13.1.0/lib/gcc/x86_64-w64-mingw32/13.1.0/include;C:/MinGW-w64/13.1.0/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed;C:/MinGW-w64/13.1.0/x86_64-w64-mingw32/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: 'X:/Assignments/build/CMakeFiles/CMakeScratch/TryCompile-q4fhvd']
+        ignore line: []
+        ignore line: [Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW-w64/13.1.0/bin/mingw32-make.exe -f Makefile cmTC_d8f00/fast]
+        ignore line: [C:/MinGW-w64/13.1.0/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_d8f00.dir\\build.make CMakeFiles/cmTC_d8f00.dir/build]
+        ignore line: [mingw32-make.exe[1]: Entering directory 'X:/Assignments/build/CMakeFiles/CMakeScratch/TryCompile-q4fhvd']
+        ignore line: [Building CXX object CMakeFiles/cmTC_d8f00.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [C:\\MinGW-w64\\13.1.0\\bin\\g++.exe   -v -o CMakeFiles\\cmTC_d8f00.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\MinGW-w64\\13.1.0\\bin\\g++.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../../../src/gcc-13.1.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libstdcxx-threads=yes --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libssp --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-win32-seh-rev1, Built by MinGW-Builds project' --with-bugurl=https://github.com/niXman/mingw-builds CFLAGS='-O2 -pipe -fno-ident -I/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/opt/include -I/c/buildroot/prerequisites/x86_64-zlib-static/include -I/c/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/opt/include -I/c/buildroot/prerequisites/x86_64-zlib-static/include -I/c/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CPPFLAGS=' -I/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/opt/include -I/c/buildroot/prerequisites/x86_64-zlib-static/include -I/c/buildroot/prerequisites/x86_64-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/opt/lib -L/c/buildroot/prerequisites/x86_64-zlib-static/lib -L/c/buildroot/prerequisites/x86_64-w64-mingw32-static/lib ' LD_FOR_TARGET=/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/bin/ld.exe --with-boot-ldflags=' -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc']
+        ignore line: [Thread model: win32]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.1.0 (x86_64-win32-seh-rev1  Built by MinGW-Builds project) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_d8f00.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_d8f00.dir\\']
+        ignore line: [ C:/MinGW-w64/13.1.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -U_REENTRANT C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_d8f00.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=core2 -march=nocona -version -o C:\\Users\\JAKEJI~1\\AppData\\Local\\Temp\\ccpBkXCJ.s]
+        ignore line: [GNU C++17 (x86_64-win32-seh-rev1  Built by MinGW-Builds project) version 13.1.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 13.1.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.25-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "C:/MinGW-w64/13.1.0/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"]
+        ignore line: [ignoring duplicate directory "C:/MinGW-w64/13.1.0/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"]
+        ignore line: [ignoring duplicate directory "C:/MinGW-w64/13.1.0/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"]
+        ignore line: [ignoring duplicate directory "C:/MinGW-w64/13.1.0/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"]
+        ignore line: [ignoring nonexistent directory "C:/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64D:/a/_temp/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"]
+        ignore line: [ignoring duplicate directory "C:/MinGW-w64/13.1.0/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "C:/MinGW-w64/13.1.0/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"]
+        ignore line: [ignoring nonexistent directory "C:/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/mingw/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++]
+        ignore line: [ C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32]
+        ignore line: [ C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward]
+        ignore line: [ C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+        ignore line: [ C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+        ignore line: [ C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: d22fc1af69d29ebe0e423f7f90ec1945]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_d8f00.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_d8f00.dir\\']
+        ignore line: [ C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_d8f00.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\JAKEJI~1\\AppData\\Local\\Temp\\ccpBkXCJ.s]
+        ignore line: [GNU assembler version 2.39 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.39]
+        ignore line: [COMPILER_PATH=C:/MinGW-w64/13.1.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/MinGW-w64/13.1.0/bin/../libexec/gcc/]
+        ignore line: [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/MinGW-w64/13.1.0/bin/../lib/gcc/]
+        ignore line: [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
+        ignore line: [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_d8f00.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_d8f00.dir\\CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_d8f00.exe]
+        ignore line: ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_d8f00.dir\\link.txt --verbose=1]
+        ignore line: ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_d8f00.dir/objects.a]
+        ignore line: [C:\\MinGW-w64\\13.1.0\\bin\\ar.exe qc CMakeFiles\\cmTC_d8f00.dir/objects.a @CMakeFiles\\cmTC_d8f00.dir\\objects1.rsp]
+        ignore line: [C:\\MinGW-w64\\13.1.0\\bin\\g++.exe  -v -Wl --whole-archive CMakeFiles\\cmTC_d8f00.dir/objects.a -Wl --no-whole-archive -o cmTC_d8f00.exe -Wl --out-implib libcmTC_d8f00.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\MinGW-w64\\13.1.0\\bin\\g++.exe]
+        ignore line: [COLLECT_LTO_WRAPPER=C:/MinGW-w64/13.1.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../../../src/gcc-13.1.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libstdcxx-threads=yes --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libssp --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/c/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-win32-seh-rev1, Built by MinGW-Builds project' --with-bugurl=https://github.com/niXman/mingw-builds CFLAGS='-O2 -pipe -fno-ident -I/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/opt/include -I/c/buildroot/prerequisites/x86_64-zlib-static/include -I/c/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/opt/include -I/c/buildroot/prerequisites/x86_64-zlib-static/include -I/c/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CPPFLAGS=' -I/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/opt/include -I/c/buildroot/prerequisites/x86_64-zlib-static/include -I/c/buildroot/prerequisites/x86_64-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/opt/lib -L/c/buildroot/prerequisites/x86_64-zlib-static/lib -L/c/buildroot/prerequisites/x86_64-w64-mingw32-static/lib ' LD_FOR_TARGET=/c/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64/bin/ld.exe --with-boot-ldflags=' -Wl,--disable-dynamicbase -static-libstdc++ -static-libgcc']
+        ignore line: [Thread model: win32]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.1.0 (x86_64-win32-seh-rev1  Built by MinGW-Builds project) ]
+        ignore line: [COMPILER_PATH=C:/MinGW-w64/13.1.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/MinGW-w64/13.1.0/bin/../libexec/gcc/]
+        ignore line: [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/MinGW-w64/13.1.0/bin/../lib/gcc/]
+        ignore line: [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
+        ignore line: [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d8f00.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_d8f00.']
+        link line: [ C:/MinGW-w64/13.1.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -plugin C:/MinGW-w64/13.1.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=C:/MinGW-w64/13.1.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\JAKEJI~1\\AppData\\Local\\Temp\\ccTQ2731.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_d8f00.exe C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/MinGW-w64/13.1.0/bin/../lib/gcc -LC:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. --whole-archive CMakeFiles\\cmTC_d8f00.dir/objects.a --no-whole-archive --out-implib libcmTC_d8f00.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+          arg [C:/MinGW-w64/13.1.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [C:/MinGW-w64/13.1.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll] ==> ignore
+          arg [-plugin-opt=C:/MinGW-w64/13.1.0/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\JAKEJI~1\\AppData\\Local\\Temp\\ccTQ2731.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
+          arg [-plugin-opt=-pass-through=-luser32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-liconv] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [--sysroot=C:/buildroot/x86_64-1310-win32-seh-msvcrt-rt_v11-rev1/mingw64] ==> ignore
+          arg [-m] ==> ignore
+          arg [i386pep] ==> ignore
+          arg [-Bdynamic] ==> search dynamic
+          arg [-o] ==> ignore
+          arg [cmTC_d8f00.exe] ==> ignore
+          arg [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
+          arg [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o] ==> obj [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o]
+          arg [-LC:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0] ==> dir [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0]
+          arg [-LC:/MinGW-w64/13.1.0/bin/../lib/gcc] ==> dir [C:/MinGW-w64/13.1.0/bin/../lib/gcc]
+          arg [-LC:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib]
+          arg [-LC:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib] ==> dir [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib]
+          arg [-LC:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib] ==> dir [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib]
+          arg [-LC:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../..] ==> dir [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../..]
+          arg [--whole-archive] ==> ignore
+          arg [CMakeFiles\\cmTC_d8f00.dir/objects.a] ==> ignore
+          arg [--no-whole-archive] ==> ignore
+          arg [--out-implib] ==> ignore
+          arg [libcmTC_d8f00.dll.a] ==> ignore
+          arg [--major-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [--minor-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lmoldname] ==> lib [moldname]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-ladvapi32] ==> lib [advapi32]
+          arg [-lshell32] ==> lib [shell32]
+          arg [-luser32] ==> lib [user32]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-liconv] ==> lib [iconv]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lmoldname] ==> lib [moldname]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o] ==> obj [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+        remove lib [msvcrt]
+        remove lib [msvcrt]
+        collapse obj [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> [C:/MinGW-w64/13.1.0/x86_64-w64-mingw32/lib/crt2.o]
+        collapse obj [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o] ==> [C:/MinGW-w64/13.1.0/lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o]
+        collapse obj [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o] ==> [C:/MinGW-w64/13.1.0/lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+        collapse library dir [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0] ==> [C:/MinGW-w64/13.1.0/lib/gcc/x86_64-w64-mingw32/13.1.0]
+        collapse library dir [C:/MinGW-w64/13.1.0/bin/../lib/gcc] ==> [C:/MinGW-w64/13.1.0/lib/gcc]
+        collapse library dir [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> [C:/MinGW-w64/13.1.0/x86_64-w64-mingw32/lib]
+        collapse library dir [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib] ==> [C:/MinGW-w64/13.1.0/lib]
+        collapse library dir [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib] ==> [C:/MinGW-w64/13.1.0/x86_64-w64-mingw32/lib]
+        collapse library dir [C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../..] ==> [C:/MinGW-w64/13.1.0/lib]
+        implicit libs: [stdc++;mingw32;gcc_s;gcc;moldname;mingwex;kernel32;advapi32;shell32;user32;kernel32;iconv;mingw32;gcc_s;gcc;moldname;mingwex;kernel32]
+        implicit objs: [C:/MinGW-w64/13.1.0/x86_64-w64-mingw32/lib/crt2.o;C:/MinGW-w64/13.1.0/lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o;C:/MinGW-w64/13.1.0/lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+        implicit dirs: [C:/MinGW-w64/13.1.0/lib/gcc/x86_64-w64-mingw32/13.1.0;C:/MinGW-w64/13.1.0/lib/gcc;C:/MinGW-w64/13.1.0/x86_64-w64-mingw32/lib;C:/MinGW-w64/13.1.0/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:1107 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CMakeDetermineASMCompiler.cmake:127 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "PasswordManagement/lib/cryptopp-cmake/CMakeLists.txt:53 (project)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      gcc.exe (x86_64-win32-seh-rev1, Built by MinGW-Builds project) 13.1.0
+      Copyright (C) 2023 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "PasswordManagement/lib/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:191 (target_architecture)"
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:219 (check_target_architecture)"
+    directories:
+      source: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+      binary: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW-w64/13.1.0/bin/mingw32-make.exe -f Makefile cmTC_e2554/fast
+        C:/MinGW-w64/13.1.0/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_e2554.dir\\build.make CMakeFiles/cmTC_e2554.dir/build
+        mingw32-make.exe[1]: Entering directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_e2554.dir/arch.c.obj
+        C:\\MinGW-w64\\13.1.0\\bin\\gcc.exe    -o CMakeFiles\\cmTC_e2554.dir\\arch.c.obj -c X:\\Assignments\\build\\arch.c
+        X:\\Assignments\\build\\arch.c:15:6: error: #error cmake_ARCH mingw64
+           15 |     #error cmake_ARCH mingw64
+              |      ^~~~~
+        X:\\Assignments\\build\\arch.c:33:2: error: #error cmake_ARCH unknown
+           33 | #error cmake_ARCH unknown
+              |  ^~~~~
+        mingw32-make.exe[1]: *** [CMakeFiles\\cmTC_e2554.dir\\build.make:77: CMakeFiles/cmTC_e2554.dir/arch.c.obj] Error 1
+        mingw32-make.exe[1]: Leaving directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        mingw32-make.exe: *** [Makefile:126: cmTC_e2554/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "PasswordManagement/lib/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:191 (target_architecture)"
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:220 (check_target_architecture)"
+    directories:
+      source: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+      binary: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW-w64/13.1.0/bin/mingw32-make.exe -f Makefile cmTC_24f9e/fast
+        C:/MinGW-w64/13.1.0/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_24f9e.dir\\build.make CMakeFiles/cmTC_24f9e.dir/build
+        mingw32-make.exe[1]: Entering directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_24f9e.dir/arch.c.obj
+        C:\\MinGW-w64\\13.1.0\\bin\\gcc.exe    -o CMakeFiles\\cmTC_24f9e.dir\\arch.c.obj -c X:\\Assignments\\build\\arch.c
+        X:\\Assignments\\build\\arch.c:15:6: error: #error cmake_ARCH mingw64
+           15 |     #error cmake_ARCH mingw64
+              |      ^~~~~
+        X:\\Assignments\\build\\arch.c:33:2: error: #error cmake_ARCH unknown
+           33 | #error cmake_ARCH unknown
+              |  ^~~~~
+        mingw32-make.exe[1]: *** [CMakeFiles\\cmTC_24f9e.dir\\build.make:77: CMakeFiles/cmTC_24f9e.dir/arch.c.obj] Error 1
+        mingw32-make.exe[1]: Leaving directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        mingw32-make.exe: *** [Makefile:126: cmTC_24f9e/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "PasswordManagement/lib/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:191 (target_architecture)"
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:221 (check_target_architecture)"
+    directories:
+      source: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+      binary: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW-w64/13.1.0/bin/mingw32-make.exe -f Makefile cmTC_d95ea/fast
+        C:/MinGW-w64/13.1.0/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_d95ea.dir\\build.make CMakeFiles/cmTC_d95ea.dir/build
+        mingw32-make.exe[1]: Entering directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_d95ea.dir/arch.c.obj
+        C:\\MinGW-w64\\13.1.0\\bin\\gcc.exe    -o CMakeFiles\\cmTC_d95ea.dir\\arch.c.obj -c X:\\Assignments\\build\\arch.c
+        X:\\Assignments\\build\\arch.c:15:6: error: #error cmake_ARCH mingw64
+           15 |     #error cmake_ARCH mingw64
+              |      ^~~~~
+        X:\\Assignments\\build\\arch.c:33:2: error: #error cmake_ARCH unknown
+           33 | #error cmake_ARCH unknown
+              |  ^~~~~
+        mingw32-make.exe[1]: *** [CMakeFiles\\cmTC_d95ea.dir\\build.make:77: CMakeFiles/cmTC_d95ea.dir/arch.c.obj] Error 1
+        mingw32-make.exe[1]: Leaving directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        mingw32-make.exe: *** [Makefile:126: cmTC_d95ea/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "PasswordManagement/lib/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:191 (target_architecture)"
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:222 (check_target_architecture)"
+    directories:
+      source: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+      binary: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW-w64/13.1.0/bin/mingw32-make.exe -f Makefile cmTC_94910/fast
+        C:/MinGW-w64/13.1.0/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_94910.dir\\build.make CMakeFiles/cmTC_94910.dir/build
+        mingw32-make.exe[1]: Entering directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_94910.dir/arch.c.obj
+        C:\\MinGW-w64\\13.1.0\\bin\\gcc.exe    -o CMakeFiles\\cmTC_94910.dir\\arch.c.obj -c X:\\Assignments\\build\\arch.c
+        X:\\Assignments\\build\\arch.c:15:6: error: #error cmake_ARCH mingw64
+           15 |     #error cmake_ARCH mingw64
+              |      ^~~~~
+        X:\\Assignments\\build\\arch.c:33:2: error: #error cmake_ARCH unknown
+           33 | #error cmake_ARCH unknown
+              |  ^~~~~
+        mingw32-make.exe[1]: *** [CMakeFiles\\cmTC_94910.dir\\build.make:77: CMakeFiles/cmTC_94910.dir/arch.c.obj] Error 1
+        mingw32-make.exe[1]: Leaving directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        mingw32-make.exe: *** [Makefile:126: cmTC_94910/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "PasswordManagement/lib/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:191 (target_architecture)"
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:223 (check_target_architecture)"
+    directories:
+      source: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+      binary: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW-w64/13.1.0/bin/mingw32-make.exe -f Makefile cmTC_5e81c/fast
+        C:/MinGW-w64/13.1.0/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_5e81c.dir\\build.make CMakeFiles/cmTC_5e81c.dir/build
+        mingw32-make.exe[1]: Entering directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_5e81c.dir/arch.c.obj
+        C:\\MinGW-w64\\13.1.0\\bin\\gcc.exe    -o CMakeFiles\\cmTC_5e81c.dir\\arch.c.obj -c X:\\Assignments\\build\\arch.c
+        X:\\Assignments\\build\\arch.c:15:6: error: #error cmake_ARCH mingw64
+           15 |     #error cmake_ARCH mingw64
+              |      ^~~~~
+        X:\\Assignments\\build\\arch.c:33:2: error: #error cmake_ARCH unknown
+           33 | #error cmake_ARCH unknown
+              |  ^~~~~
+        mingw32-make.exe[1]: *** [CMakeFiles\\cmTC_5e81c.dir\\build.make:77: CMakeFiles/cmTC_5e81c.dir/arch.c.obj] Error 1
+        mingw32-make.exe[1]: Leaving directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        mingw32-make.exe: *** [Makefile:126: cmTC_5e81c/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "PasswordManagement/lib/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:191 (target_architecture)"
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:224 (check_target_architecture)"
+    directories:
+      source: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+      binary: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW-w64/13.1.0/bin/mingw32-make.exe -f Makefile cmTC_afbad/fast
+        C:/MinGW-w64/13.1.0/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_afbad.dir\\build.make CMakeFiles/cmTC_afbad.dir/build
+        mingw32-make.exe[1]: Entering directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_afbad.dir/arch.c.obj
+        C:\\MinGW-w64\\13.1.0\\bin\\gcc.exe    -o CMakeFiles\\cmTC_afbad.dir\\arch.c.obj -c X:\\Assignments\\build\\arch.c
+        X:\\Assignments\\build\\arch.c:15:6: error: #error cmake_ARCH mingw64
+           15 |     #error cmake_ARCH mingw64
+              |      ^~~~~
+        X:\\Assignments\\build\\arch.c:33:2: error: #error cmake_ARCH unknown
+           33 | #error cmake_ARCH unknown
+              |  ^~~~~
+        mingw32-make.exe[1]: *** [CMakeFiles\\cmTC_afbad.dir\\build.make:77: CMakeFiles/cmTC_afbad.dir/arch.c.obj] Error 1
+        mingw32-make.exe[1]: Leaving directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        mingw32-make.exe: *** [Makefile:126: cmTC_afbad/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "PasswordManagement/lib/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:191 (target_architecture)"
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:225 (check_target_architecture)"
+    directories:
+      source: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+      binary: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW-w64/13.1.0/bin/mingw32-make.exe -f Makefile cmTC_81977/fast
+        C:/MinGW-w64/13.1.0/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_81977.dir\\build.make CMakeFiles/cmTC_81977.dir/build
+        mingw32-make.exe[1]: Entering directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_81977.dir/arch.c.obj
+        C:\\MinGW-w64\\13.1.0\\bin\\gcc.exe    -o CMakeFiles\\cmTC_81977.dir\\arch.c.obj -c X:\\Assignments\\build\\arch.c
+        X:\\Assignments\\build\\arch.c:15:6: error: #error cmake_ARCH mingw64
+           15 |     #error cmake_ARCH mingw64
+              |      ^~~~~
+        X:\\Assignments\\build\\arch.c:33:2: error: #error cmake_ARCH unknown
+           33 | #error cmake_ARCH unknown
+              |  ^~~~~
+        mingw32-make.exe[1]: *** [CMakeFiles\\cmTC_81977.dir\\build.make:77: CMakeFiles/cmTC_81977.dir/arch.c.obj] Error 1
+        mingw32-make.exe[1]: Leaving directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        mingw32-make.exe: *** [Makefile:126: cmTC_81977/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "PasswordManagement/lib/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:191 (target_architecture)"
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:226 (check_target_architecture)"
+    directories:
+      source: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+      binary: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW-w64/13.1.0/bin/mingw32-make.exe -f Makefile cmTC_7a8be/fast
+        C:/MinGW-w64/13.1.0/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_7a8be.dir\\build.make CMakeFiles/cmTC_7a8be.dir/build
+        mingw32-make.exe[1]: Entering directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_7a8be.dir/arch.c.obj
+        C:\\MinGW-w64\\13.1.0\\bin\\gcc.exe    -o CMakeFiles\\cmTC_7a8be.dir\\arch.c.obj -c X:\\Assignments\\build\\arch.c
+        X:\\Assignments\\build\\arch.c:15:6: error: #error cmake_ARCH mingw64
+           15 |     #error cmake_ARCH mingw64
+              |      ^~~~~
+        X:\\Assignments\\build\\arch.c:33:2: error: #error cmake_ARCH unknown
+           33 | #error cmake_ARCH unknown
+              |  ^~~~~
+        mingw32-make.exe[1]: *** [CMakeFiles\\cmTC_7a8be.dir\\build.make:77: CMakeFiles/cmTC_7a8be.dir/arch.c.obj] Error 1
+        mingw32-make.exe[1]: Leaving directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        mingw32-make.exe: *** [Makefile:126: cmTC_7a8be/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "PasswordManagement/lib/cryptopp-cmake/cmake/TargetArch.cmake:115 (try_run)"
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:191 (target_architecture)"
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:227 (check_target_architecture)"
+    directories:
+      source: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+      binary: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW-w64/13.1.0/bin/mingw32-make.exe -f Makefile cmTC_1aea2/fast
+        C:/MinGW-w64/13.1.0/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_1aea2.dir\\build.make CMakeFiles/cmTC_1aea2.dir/build
+        mingw32-make.exe[1]: Entering directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_1aea2.dir/arch.c.obj
+        C:\\MinGW-w64\\13.1.0\\bin\\gcc.exe    -o CMakeFiles\\cmTC_1aea2.dir\\arch.c.obj -c X:\\Assignments\\build\\arch.c
+        X:\\Assignments\\build\\arch.c:15:6: error: #error cmake_ARCH mingw64
+           15 |     #error cmake_ARCH mingw64
+              |      ^~~~~
+        X:\\Assignments\\build\\arch.c:33:2: error: #error cmake_ARCH unknown
+           33 | #error cmake_ARCH unknown
+              |  ^~~~~
+        mingw32-make.exe[1]: *** [CMakeFiles\\cmTC_1aea2.dir\\build.make:77: CMakeFiles/cmTC_1aea2.dir/arch.c.obj] Error 1
+        mingw32-make.exe[1]: Leaving directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        mingw32-make.exe: *** [Makefile:126: cmTC_1aea2/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:169 (try_compile)"
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:474 (check_compile_link_option)"
+    directories:
+      source: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+      binary: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake;X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cryptopp"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "COMMAND_SUCCESS"
+      cached: true
+      stdout: |
+        Change Dir: 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW-w64/13.1.0/bin/mingw32-make.exe -f Makefile cmTC_9dde0/fast
+        C:/MinGW-w64/13.1.0/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_9dde0.dir\\build.make CMakeFiles/cmTC_9dde0.dir/build
+        mingw32-make.exe[1]: Entering directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_9dde0.dir/test_x86_sse2.cpp.obj
+        C:\\MinGW-w64\\13.1.0\\bin\\g++.exe   -std=gnu++17   -msse2 -o CMakeFiles\\cmTC_9dde0.dir\\test_x86_sse2.cpp.obj -c X:\\Assignments\\build\\PasswordManagement\\lib\\cryptopp-cmake\\cryptopp\\TestPrograms\\test_x86_sse2.cpp
+        Linking CXX executable cmTC_9dde0.exe
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_9dde0.dir\\link.txt --verbose=1
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_9dde0.dir/objects.a
+        C:\\MinGW-w64\\13.1.0\\bin\\ar.exe qc CMakeFiles\\cmTC_9dde0.dir/objects.a @CMakeFiles\\cmTC_9dde0.dir\\objects1.rsp
+        C:\\MinGW-w64\\13.1.0\\bin\\g++.exe -Wl,--whole-archive CMakeFiles\\cmTC_9dde0.dir/objects.a -Wl,--no-whole-archive -o cmTC_9dde0.exe -Wl,--out-implib,libcmTC_9dde0.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_9dde0.dir\\linkLibs.rsp
+        mingw32-make.exe[1]: Leaving directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:169 (try_compile)"
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:483 (check_compile_link_option)"
+    directories:
+      source: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+      binary: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake;X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cryptopp"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "COMMAND_SUCCESS"
+      cached: true
+      stdout: |
+        Change Dir: 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW-w64/13.1.0/bin/mingw32-make.exe -f Makefile cmTC_1c955/fast
+        C:/MinGW-w64/13.1.0/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_1c955.dir\\build.make CMakeFiles/cmTC_1c955.dir/build
+        mingw32-make.exe[1]: Entering directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_1c955.dir/test_x86_sse3.cpp.obj
+        C:\\MinGW-w64\\13.1.0\\bin\\g++.exe   -std=gnu++17   -msse3 -o CMakeFiles\\cmTC_1c955.dir\\test_x86_sse3.cpp.obj -c X:\\Assignments\\build\\PasswordManagement\\lib\\cryptopp-cmake\\cryptopp\\TestPrograms\\test_x86_sse3.cpp
+        Linking CXX executable cmTC_1c955.exe
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_1c955.dir\\link.txt --verbose=1
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_1c955.dir/objects.a
+        C:\\MinGW-w64\\13.1.0\\bin\\ar.exe qc CMakeFiles\\cmTC_1c955.dir/objects.a @CMakeFiles\\cmTC_1c955.dir\\objects1.rsp
+        C:\\MinGW-w64\\13.1.0\\bin\\g++.exe -Wl,--whole-archive CMakeFiles\\cmTC_1c955.dir/objects.a -Wl,--no-whole-archive -o cmTC_1c955.exe -Wl,--out-implib,libcmTC_1c955.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_1c955.dir\\linkLibs.rsp
+        mingw32-make.exe[1]: Leaving directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:169 (try_compile)"
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:490 (check_compile_link_option)"
+    directories:
+      source: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+      binary: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake;X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cryptopp"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "COMMAND_SUCCESS"
+      cached: true
+      stdout: |
+        Change Dir: 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW-w64/13.1.0/bin/mingw32-make.exe -f Makefile cmTC_f5ecd/fast
+        C:/MinGW-w64/13.1.0/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_f5ecd.dir\\build.make CMakeFiles/cmTC_f5ecd.dir/build
+        mingw32-make.exe[1]: Entering directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_f5ecd.dir/test_x86_ssse3.cpp.obj
+        C:\\MinGW-w64\\13.1.0\\bin\\g++.exe   -std=gnu++17   -mssse3 -o CMakeFiles\\cmTC_f5ecd.dir\\test_x86_ssse3.cpp.obj -c X:\\Assignments\\build\\PasswordManagement\\lib\\cryptopp-cmake\\cryptopp\\TestPrograms\\test_x86_ssse3.cpp
+        Linking CXX executable cmTC_f5ecd.exe
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_f5ecd.dir\\link.txt --verbose=1
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_f5ecd.dir/objects.a
+        C:\\MinGW-w64\\13.1.0\\bin\\ar.exe qc CMakeFiles\\cmTC_f5ecd.dir/objects.a @CMakeFiles\\cmTC_f5ecd.dir\\objects1.rsp
+        C:\\MinGW-w64\\13.1.0\\bin\\g++.exe -Wl,--whole-archive CMakeFiles\\cmTC_f5ecd.dir/objects.a -Wl,--no-whole-archive -o cmTC_f5ecd.exe -Wl,--out-implib,libcmTC_f5ecd.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_f5ecd.dir\\linkLibs.rsp
+        mingw32-make.exe[1]: Leaving directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:169 (try_compile)"
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:509 (check_compile_link_option)"
+    directories:
+      source: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+      binary: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake;X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cryptopp"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "COMMAND_SUCCESS"
+      cached: true
+      stdout: |
+        Change Dir: 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW-w64/13.1.0/bin/mingw32-make.exe -f Makefile cmTC_22c20/fast
+        C:/MinGW-w64/13.1.0/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_22c20.dir\\build.make CMakeFiles/cmTC_22c20.dir/build
+        mingw32-make.exe[1]: Entering directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_22c20.dir/test_x86_sse41.cpp.obj
+        C:\\MinGW-w64\\13.1.0\\bin\\g++.exe   -std=gnu++17   -msse4.1 -o CMakeFiles\\cmTC_22c20.dir\\test_x86_sse41.cpp.obj -c X:\\Assignments\\build\\PasswordManagement\\lib\\cryptopp-cmake\\cryptopp\\TestPrograms\\test_x86_sse41.cpp
+        Linking CXX executable cmTC_22c20.exe
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_22c20.dir\\link.txt --verbose=1
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_22c20.dir/objects.a
+        C:\\MinGW-w64\\13.1.0\\bin\\ar.exe qc CMakeFiles\\cmTC_22c20.dir/objects.a @CMakeFiles\\cmTC_22c20.dir\\objects1.rsp
+        C:\\MinGW-w64\\13.1.0\\bin\\g++.exe -Wl,--whole-archive CMakeFiles\\cmTC_22c20.dir/objects.a -Wl,--no-whole-archive -o cmTC_22c20.exe -Wl,--out-implib,libcmTC_22c20.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_22c20.dir\\linkLibs.rsp
+        mingw32-make.exe[1]: Leaving directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:169 (try_compile)"
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:521 (check_compile_link_option)"
+    directories:
+      source: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+      binary: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake;X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cryptopp"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "COMMAND_SUCCESS"
+      cached: true
+      stdout: |
+        Change Dir: 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW-w64/13.1.0/bin/mingw32-make.exe -f Makefile cmTC_47272/fast
+        C:/MinGW-w64/13.1.0/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_47272.dir\\build.make CMakeFiles/cmTC_47272.dir/build
+        mingw32-make.exe[1]: Entering directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_47272.dir/test_x86_sse42.cpp.obj
+        C:\\MinGW-w64\\13.1.0\\bin\\g++.exe   -std=gnu++17   -msse4.2 -o CMakeFiles\\cmTC_47272.dir\\test_x86_sse42.cpp.obj -c X:\\Assignments\\build\\PasswordManagement\\lib\\cryptopp-cmake\\cryptopp\\TestPrograms\\test_x86_sse42.cpp
+        Linking CXX executable cmTC_47272.exe
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_47272.dir\\link.txt --verbose=1
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_47272.dir/objects.a
+        C:\\MinGW-w64\\13.1.0\\bin\\ar.exe qc CMakeFiles\\cmTC_47272.dir/objects.a @CMakeFiles\\cmTC_47272.dir\\objects1.rsp
+        C:\\MinGW-w64\\13.1.0\\bin\\g++.exe -Wl,--whole-archive CMakeFiles\\cmTC_47272.dir/objects.a -Wl,--no-whole-archive -o cmTC_47272.exe -Wl,--out-implib,libcmTC_47272.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_47272.dir\\linkLibs.rsp
+        mingw32-make.exe[1]: Leaving directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:169 (try_compile)"
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:532 (check_compile_link_option)"
+    directories:
+      source: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+      binary: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake;X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cryptopp"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "COMMAND_SUCCESS"
+      cached: true
+      stdout: |
+        Change Dir: 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW-w64/13.1.0/bin/mingw32-make.exe -f Makefile cmTC_6afdc/fast
+        C:/MinGW-w64/13.1.0/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_6afdc.dir\\build.make CMakeFiles/cmTC_6afdc.dir/build
+        mingw32-make.exe[1]: Entering directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_6afdc.dir/test_x86_clmul.cpp.obj
+        C:\\MinGW-w64\\13.1.0\\bin\\g++.exe   -std=gnu++17   -mpclmul -o CMakeFiles\\cmTC_6afdc.dir\\test_x86_clmul.cpp.obj -c X:\\Assignments\\build\\PasswordManagement\\lib\\cryptopp-cmake\\cryptopp\\TestPrograms\\test_x86_clmul.cpp
+        Linking CXX executable cmTC_6afdc.exe
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_6afdc.dir\\link.txt --verbose=1
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_6afdc.dir/objects.a
+        C:\\MinGW-w64\\13.1.0\\bin\\ar.exe qc CMakeFiles\\cmTC_6afdc.dir/objects.a @CMakeFiles\\cmTC_6afdc.dir\\objects1.rsp
+        C:\\MinGW-w64\\13.1.0\\bin\\g++.exe -Wl,--whole-archive CMakeFiles\\cmTC_6afdc.dir/objects.a -Wl,--no-whole-archive -o cmTC_6afdc.exe -Wl,--out-implib,libcmTC_6afdc.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_6afdc.dir\\linkLibs.rsp
+        mingw32-make.exe[1]: Leaving directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:169 (try_compile)"
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:543 (check_compile_link_option)"
+    directories:
+      source: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+      binary: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake;X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cryptopp"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "COMMAND_SUCCESS"
+      cached: true
+      stdout: |
+        Change Dir: 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW-w64/13.1.0/bin/mingw32-make.exe -f Makefile cmTC_9be12/fast
+        C:/MinGW-w64/13.1.0/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_9be12.dir\\build.make CMakeFiles/cmTC_9be12.dir/build
+        mingw32-make.exe[1]: Entering directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_9be12.dir/test_x86_aes.cpp.obj
+        C:\\MinGW-w64\\13.1.0\\bin\\g++.exe   -std=gnu++17   -maes -o CMakeFiles\\cmTC_9be12.dir\\test_x86_aes.cpp.obj -c X:\\Assignments\\build\\PasswordManagement\\lib\\cryptopp-cmake\\cryptopp\\TestPrograms\\test_x86_aes.cpp
+        Linking CXX executable cmTC_9be12.exe
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_9be12.dir\\link.txt --verbose=1
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_9be12.dir/objects.a
+        C:\\MinGW-w64\\13.1.0\\bin\\ar.exe qc CMakeFiles\\cmTC_9be12.dir/objects.a @CMakeFiles\\cmTC_9be12.dir\\objects1.rsp
+        C:\\MinGW-w64\\13.1.0\\bin\\g++.exe -Wl,--whole-archive CMakeFiles\\cmTC_9be12.dir/objects.a -Wl,--no-whole-archive -o cmTC_9be12.exe -Wl,--out-implib,libcmTC_9be12.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_9be12.dir\\linkLibs.rsp
+        mingw32-make.exe[1]: Leaving directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:169 (try_compile)"
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:554 (check_compile_link_option)"
+    directories:
+      source: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+      binary: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake;X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cryptopp"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "COMMAND_SUCCESS"
+      cached: true
+      stdout: |
+        Change Dir: 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW-w64/13.1.0/bin/mingw32-make.exe -f Makefile cmTC_f87ec/fast
+        C:/MinGW-w64/13.1.0/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_f87ec.dir\\build.make CMakeFiles/cmTC_f87ec.dir/build
+        mingw32-make.exe[1]: Entering directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_f87ec.dir/test_x86_avx.cpp.obj
+        C:\\MinGW-w64\\13.1.0\\bin\\g++.exe   -std=gnu++17   -mavx -o CMakeFiles\\cmTC_f87ec.dir\\test_x86_avx.cpp.obj -c X:\\Assignments\\build\\PasswordManagement\\lib\\cryptopp-cmake\\cryptopp\\TestPrograms\\test_x86_avx.cpp
+        Linking CXX executable cmTC_f87ec.exe
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_f87ec.dir\\link.txt --verbose=1
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_f87ec.dir/objects.a
+        C:\\MinGW-w64\\13.1.0\\bin\\ar.exe qc CMakeFiles\\cmTC_f87ec.dir/objects.a @CMakeFiles\\cmTC_f87ec.dir\\objects1.rsp
+        C:\\MinGW-w64\\13.1.0\\bin\\g++.exe -Wl,--whole-archive CMakeFiles\\cmTC_f87ec.dir/objects.a -Wl,--no-whole-archive -o cmTC_f87ec.exe -Wl,--out-implib,libcmTC_f87ec.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_f87ec.dir\\linkLibs.rsp
+        mingw32-make.exe[1]: Leaving directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:169 (try_compile)"
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:563 (check_compile_link_option)"
+    directories:
+      source: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+      binary: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake;X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cryptopp"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "COMMAND_SUCCESS"
+      cached: true
+      stdout: |
+        Change Dir: 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW-w64/13.1.0/bin/mingw32-make.exe -f Makefile cmTC_503e5/fast
+        C:/MinGW-w64/13.1.0/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_503e5.dir\\build.make CMakeFiles/cmTC_503e5.dir/build
+        mingw32-make.exe[1]: Entering directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_503e5.dir/test_x86_avx2.cpp.obj
+        C:\\MinGW-w64\\13.1.0\\bin\\g++.exe   -std=gnu++17   -mavx2 -o CMakeFiles\\cmTC_503e5.dir\\test_x86_avx2.cpp.obj -c X:\\Assignments\\build\\PasswordManagement\\lib\\cryptopp-cmake\\cryptopp\\TestPrograms\\test_x86_avx2.cpp
+        Linking CXX executable cmTC_503e5.exe
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_503e5.dir\\link.txt --verbose=1
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_503e5.dir/objects.a
+        C:\\MinGW-w64\\13.1.0\\bin\\ar.exe qc CMakeFiles\\cmTC_503e5.dir/objects.a @CMakeFiles\\cmTC_503e5.dir\\objects1.rsp
+        C:\\MinGW-w64\\13.1.0\\bin\\g++.exe -Wl,--whole-archive CMakeFiles\\cmTC_503e5.dir/objects.a -Wl,--no-whole-archive -o cmTC_503e5.exe -Wl,--out-implib,libcmTC_503e5.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_503e5.dir\\linkLibs.rsp
+        mingw32-make.exe[1]: Leaving directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:169 (try_compile)"
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:575 (check_compile_link_option)"
+    directories:
+      source: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+      binary: "X:/Assignments/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake;X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cryptopp"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "COMMAND_SUCCESS"
+      cached: true
+      stdout: |
+        Change Dir: 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW-w64/13.1.0/bin/mingw32-make.exe -f Makefile cmTC_2df0f/fast
+        C:/MinGW-w64/13.1.0/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_2df0f.dir\\build.make CMakeFiles/cmTC_2df0f.dir/build
+        mingw32-make.exe[1]: Entering directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_2df0f.dir/test_x86_sha.cpp.obj
+        C:\\MinGW-w64\\13.1.0\\bin\\g++.exe   -std=gnu++17   -msha -o CMakeFiles\\cmTC_2df0f.dir\\test_x86_sha.cpp.obj -c X:\\Assignments\\build\\PasswordManagement\\lib\\cryptopp-cmake\\cryptopp\\TestPrograms\\test_x86_sha.cpp
+        Linking CXX executable cmTC_2df0f.exe
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_2df0f.dir\\link.txt --verbose=1
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_2df0f.dir/objects.a
+        C:\\MinGW-w64\\13.1.0\\bin\\ar.exe qc CMakeFiles\\cmTC_2df0f.dir/objects.a @CMakeFiles\\cmTC_2df0f.dir\\objects1.rsp
+        C:\\MinGW-w64\\13.1.0\\bin\\g++.exe -Wl,--whole-archive CMakeFiles\\cmTC_2df0f.dir/objects.a -Wl,--no-whole-archive -o cmTC_2df0f.exe -Wl,--out-implib,libcmTC_2df0f.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_2df0f.dir\\linkLibs.rsp
+        mingw32-make.exe[1]: Leaving directory 'X:/Assignments/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:1402 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "X:/Assignments/build/CMakeFiles/CMakeScratch/TryCompile-ss2110"
+      binary: "X:/Assignments/build/CMakeFiles/CMakeScratch/TryCompile-ss2110"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake;X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cryptopp"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'X:/Assignments/build/CMakeFiles/CMakeScratch/TryCompile-ss2110'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW-w64/13.1.0/bin/mingw32-make.exe -f Makefile cmTC_ac935/fast
+        C:/MinGW-w64/13.1.0/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_ac935.dir\\build.make CMakeFiles/cmTC_ac935.dir/build
+        mingw32-make.exe[1]: Entering directory 'X:/Assignments/build/CMakeFiles/CMakeScratch/TryCompile-ss2110'
+        Building C object CMakeFiles/cmTC_ac935.dir/src.c.obj
+        C:\\MinGW-w64\\13.1.0\\bin\\gcc.exe -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles\\cmTC_ac935.dir\\src.c.obj -c X:\\Assignments\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ss2110\\src.c
+        Linking C executable cmTC_ac935.exe
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_ac935.dir\\link.txt --verbose=1
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_ac935.dir/objects.a
+        C:\\MinGW-w64\\13.1.0\\bin\\ar.exe qc CMakeFiles\\cmTC_ac935.dir/objects.a @CMakeFiles\\cmTC_ac935.dir\\objects1.rsp
+        C:\\MinGW-w64\\13.1.0\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_ac935.dir/objects.a -Wl,--no-whole-archive -o cmTC_ac935.exe -Wl,--out-implib,libcmTC_ac935.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_ac935.dir\\linkLibs.rsp
+        C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles\\cmTC_ac935.dir/objects.a(src.c.obj):src.c:(.text+0x35): undefined reference to `pthread_create'
+        C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles\\cmTC_ac935.dir/objects.a(src.c.obj):src.c:(.text+0x41): undefined reference to `pthread_detach'
+        C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles\\cmTC_ac935.dir/objects.a(src.c.obj):src.c:(.text+0x4d): undefined reference to `pthread_cancel'
+        C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles\\cmTC_ac935.dir/objects.a(src.c.obj):src.c:(.text+0x5e): undefined reference to `pthread_join'
+        C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles\\cmTC_ac935.dir/objects.a(src.c.obj):src.c:(.text+0x68): undefined reference to `pthread_exit'
+        collect2.exe: error: ld returned 1 exit status
+        mingw32-make.exe[1]: *** [CMakeFiles\\cmTC_ac935.dir\\build.make:100: cmTC_ac935.exe] Error 1
+        mingw32-make.exe[1]: Leaving directory 'X:/Assignments/build/CMakeFiles/CMakeScratch/TryCompile-ss2110'
+        mingw32-make.exe: *** [Makefile:126: cmTC_ac935/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:1402 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "X:/Assignments/build/CMakeFiles/CMakeScratch/TryCompile-2d2k34"
+      binary: "X:/Assignments/build/CMakeFiles/CMakeScratch/TryCompile-2d2k34"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake;X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cryptopp"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'X:/Assignments/build/CMakeFiles/CMakeScratch/TryCompile-2d2k34'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW-w64/13.1.0/bin/mingw32-make.exe -f Makefile cmTC_3a6a0/fast
+        C:/MinGW-w64/13.1.0/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_3a6a0.dir\\build.make CMakeFiles/cmTC_3a6a0.dir/build
+        mingw32-make.exe[1]: Entering directory 'X:/Assignments/build/CMakeFiles/CMakeScratch/TryCompile-2d2k34'
+        Building C object CMakeFiles/cmTC_3a6a0.dir/CheckFunctionExists.c.obj
+        C:\\MinGW-w64\\13.1.0\\bin\\gcc.exe   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles\\cmTC_3a6a0.dir\\CheckFunctionExists.c.obj -c X:\\Assignments\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2d2k34\\CheckFunctionExists.c
+        Linking C executable cmTC_3a6a0.exe
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_3a6a0.dir\\link.txt --verbose=1
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_3a6a0.dir/objects.a
+        C:\\MinGW-w64\\13.1.0\\bin\\ar.exe qc CMakeFiles\\cmTC_3a6a0.dir/objects.a @CMakeFiles\\cmTC_3a6a0.dir\\objects1.rsp
+        C:\\MinGW-w64\\13.1.0\\bin\\gcc.exe  -DCHECK_FUNCTION_EXISTS=pthread_create -Wl,--whole-archive CMakeFiles\\cmTC_3a6a0.dir/objects.a -Wl,--no-whole-archive -o cmTC_3a6a0.exe -Wl,--out-implib,libcmTC_3a6a0.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_3a6a0.dir\\linkLibs.rsp
+        C:/MinGW-w64/13.1.0/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -lpthreads: No such file or directory
+        collect2.exe: error: ld returned 1 exit status
+        mingw32-make.exe[1]: *** [CMakeFiles\\cmTC_3a6a0.dir\\build.make:100: cmTC_3a6a0.exe] Error 1
+        mingw32-make.exe[1]: Leaving directory 'X:/Assignments/build/CMakeFiles/CMakeScratch/TryCompile-2d2k34'
+        mingw32-make.exe: *** [Makefile:126: cmTC_3a6a0/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.27/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "PasswordManagement/lib/cryptopp-cmake/cryptopp/CMakeLists.txt:1402 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "X:/Assignments/build/CMakeFiles/CMakeScratch/TryCompile-z8jfqf"
+      binary: "X:/Assignments/build/CMakeFiles/CMakeScratch/TryCompile-z8jfqf"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake;X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cryptopp"
+      CMAKE_POSITION_INDEPENDENT_CODE: "1"
+      CMAKE_USER_MAKE_RULES_OVERRIDE: "X:/Assignments/PasswordManagement/lib/cryptopp-cmake/cmake/ResetInitialCompilerOptions.cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'X:/Assignments/build/CMakeFiles/CMakeScratch/TryCompile-z8jfqf'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW-w64/13.1.0/bin/mingw32-make.exe -f Makefile cmTC_69e8f/fast
+        C:/MinGW-w64/13.1.0/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_69e8f.dir\\build.make CMakeFiles/cmTC_69e8f.dir/build
+        mingw32-make.exe[1]: Entering directory 'X:/Assignments/build/CMakeFiles/CMakeScratch/TryCompile-z8jfqf'
+        Building C object CMakeFiles/cmTC_69e8f.dir/CheckFunctionExists.c.obj
+        C:\\MinGW-w64\\13.1.0\\bin\\gcc.exe   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles\\cmTC_69e8f.dir\\CheckFunctionExists.c.obj -c X:\\Assignments\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z8jfqf\\CheckFunctionExists.c
+        Linking C executable cmTC_69e8f.exe
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_69e8f.dir\\link.txt --verbose=1
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_69e8f.dir/objects.a
+        C:\\MinGW-w64\\13.1.0\\bin\\ar.exe qc CMakeFiles\\cmTC_69e8f.dir/objects.a @CMakeFiles\\cmTC_69e8f.dir\\objects1.rsp
+        C:\\MinGW-w64\\13.1.0\\bin\\gcc.exe  -DCHECK_FUNCTION_EXISTS=pthread_create -Wl,--whole-archive CMakeFiles\\cmTC_69e8f.dir/objects.a -Wl,--no-whole-archive -o cmTC_69e8f.exe -Wl,--out-implib,libcmTC_69e8f.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_69e8f.dir\\linkLibs.rsp
+        mingw32-make.exe[1]: Leaving directory 'X:/Assignments/build/CMakeFiles/CMakeScratch/TryCompile-z8jfqf'
+        
+      exitCode: 0
+...

@@ -1,0 +1,66 @@
+"C:\Program Files\JetBrains\CLion 2023.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Release "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2023.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S X:\Assignments -B X:\Assignments\cmake-build-release
+-- The C compiler identification is GNU 13.1.0
+-- The CXX compiler identification is GNU 13.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/JetBrains/CLion 2023.2/bin/mingw/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/JetBrains/CLion 2023.2/bin/mingw/bin/g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Version: 10.1.1
+-- Build type: Release
+-- The ASM compiler identification is GNU
+-- Found assembler: C:/Program Files/JetBrains/CLion 2023.2/bin/mingw/bin/gcc.exe
+=> Project : cryptopp-cmake v8.9.0
+-- Found Git: C:/Program Files/Git/cmd/git.exe (found version "2.42.0.windows.2") 
+-- Crypto++ auto fetched at: X:/Assignments/cmake-build-release/PasswordManagement/lib/cryptopp-cmake/cryptopp
+-- Using branch master for tests
+-- Adding unit test: disable-asm
+-- Adding unit test: include-prefix
+-- Adding unit test: no-install
+-- Adding unit test: standard-cpm
+-- Adding install integration test: int-install-default
+-- Adding install integration test: int-install-prefix
+=> Module : cryptopp
+-- [cryptopp] CMake version 3.26.4
+-- [cryptopp] System Windows
+-- [cryptopp] Processor AMD64
+-- [cryptopp] CMAKE_HOST_SYSTEM_PROCESSOR : AMD64
+-- [cryptopp]      CMAKE_SYSTEM_PROCESSOR : AMD64
+-- [cryptopp] Target architecture detected as: mingw64 -> CRYPTOPP_MINGW64
+-- [cryptopp] Performing Test CRYPTOPP_HAVE_SSE2
+-- [cryptopp] Performing Test CRYPTOPP_HAVE_SSE2 - Success
+-- [cryptopp] Performing Test CRYPTOPP_HAVE_SSE3
+-- [cryptopp] Performing Test CRYPTOPP_HAVE_SSE3 - Success
+-- [cryptopp] Performing Test CRYPTOPP_HAVE_SSSE3
+-- [cryptopp] Performing Test CRYPTOPP_HAVE_SSSE3 - Success
+-- [cryptopp] Performing Test CRYPTOPP_HAVE_SSE41
+-- [cryptopp] Performing Test CRYPTOPP_HAVE_SSE41 - Success
+-- [cryptopp] Performing Test CRYPTOPP_HAVE_SSE42
+-- [cryptopp] Performing Test CRYPTOPP_HAVE_SSE42 - Success
+-- [cryptopp] Performing Test CRYPTOPP_HAVE_CLMUL
+-- [cryptopp] Performing Test CRYPTOPP_HAVE_CLMUL - Success
+-- [cryptopp] Performing Test CRYPTOPP_HAVE_AESNI
+-- [cryptopp] Performing Test CRYPTOPP_HAVE_AESNI - Success
+-- [cryptopp] Performing Test CRYPTOPP_HAVE_AVX
+-- [cryptopp] Performing Test CRYPTOPP_HAVE_AVX - Success
+-- [cryptopp] Performing Test CRYPTOPP_HAVE_AVX2
+-- [cryptopp] Performing Test CRYPTOPP_HAVE_AVX2 - Success
+-- [cryptopp] Performing Test CRYPTOPP_HAVE_SHANI
+-- [cryptopp] Performing Test CRYPTOPP_HAVE_SHANI - Success
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- [cryptopp] Generating cmake package config files
+-- [cryptopp] Generating pkgconfig files
+-- [cryptopp] Platform: MinGW-64
+-- [cryptopp] Compiler definitions:  
+-- [cryptopp] Compiler options:   
+-- [cryptopp] Build type: Release
+-- Configuring done (15.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: X:/Assignments/cmake-build-release

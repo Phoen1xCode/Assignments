@@ -1,0 +1,221 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "MoneyManagement/lib/fmt",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-MoneyManagement.lib.fmt-Release-0a26ab52a48a42fd0606.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "MoneyManagement/lib/fmt",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "PasswordManagement/lib/cryptopp-cmake",
+					"childIndexes" : 
+					[
+						3,
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-PasswordManagement.lib.cryptopp-cmake-Release-ffac6e8deaa601fbd084.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "PasswordManagement/lib/cryptopp-cmake"
+				},
+				{
+					"build" : "PasswordManagement/lib/cryptopp-cmake/test",
+					"childIndexes" : 
+					[
+						4,
+						5
+					],
+					"jsonFile" : "directory-PasswordManagement.lib.cryptopp-cmake.test-Release-e05926648674f72a1046.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "PasswordManagement/lib/cryptopp-cmake/test",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "PasswordManagement/lib/cryptopp-cmake/test/unit",
+					"jsonFile" : "directory-PasswordManagement.lib.cryptopp-cmake.test.unit-Release-67785f36bbe8a79066d6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 2,
+					"source" : "PasswordManagement/lib/cryptopp-cmake/test/unit"
+				},
+				{
+					"build" : "PasswordManagement/lib/cryptopp-cmake/test/integration",
+					"jsonFile" : "directory-PasswordManagement.lib.cryptopp-cmake.test.integration-Release-d01fd44dfa82fbed2efd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 2,
+					"source" : "PasswordManagement/lib/cryptopp-cmake/test/integration"
+				},
+				{
+					"build" : "PasswordManagement/lib/cryptopp-cmake/cryptopp",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-PasswordManagement.lib.cryptopp-cmake.cryptopp-Release-0a4cbdc3a960c9c4fdc2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "PasswordManagement/lib/cryptopp-cmake/cryptopp",
+					"targetIndexes" : 
+					[
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Assignments",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "FMT",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2,
+						3,
+						4,
+						5,
+						6
+					],
+					"name" : "cryptopp-cmake",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Assignments::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Assignments-Release-fe19b542ad072721462c.json",
+					"name" : "Assignments",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "cryptest::@b3bdbaa3a6013094a337",
+					"jsonFile" : "target-cryptest-Release-39be3109fb20ae4bdee4.json",
+					"name" : "cryptest",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "cryptopp::@b3bdbaa3a6013094a337",
+					"jsonFile" : "target-cryptopp-Release-14b732dbb5a5249990ba.json",
+					"name" : "cryptopp",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "fmt::@2b6921634df67e27bee6",
+					"jsonFile" : "target-fmt-Release-f7e82b8dba28e2cf3750.json",
+					"name" : "fmt",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "test-verbose::@ecc61ab720b7c0915a72",
+					"jsonFile" : "target-test-verbose-Release-171327466325b6708f4c.json",
+					"name" : "test-verbose",
+					"projectIndex" : 2
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "X:/Assignments/cmake-build-release",
+		"source" : "X:/Assignments"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="GBK">
+    <file url="file://$PROJECT_DIR$/MoneyManagement/include/data_in_out.h" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MoneyManagement/src/account.cpp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MoneyManagement/src/analyse.cpp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MoneyManagement/src/data_in_out.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/MoneyManagement/src/plan.cpp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MoneyManagement/src/submain.cpp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/PasswordManagement/CMakeLists.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/PasswordManagement/PasswordManagement.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/PasswordManagement/include/ConfigManager.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/PasswordManagement/include/Credential.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/PasswordManagement/include/CredentialManager.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/PasswordManagement/include/KeyManager.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/PasswordManagement/include/PasswordManager.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/PasswordManagement/include/PasswordUtils.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/PasswordManagement/include/User.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/PasswordManagement/src/ConfigManager.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/PasswordManagement/src/Credential.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/PasswordManagement/src/CredentialManager.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/PasswordManagement/src/KeyManager.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/PasswordManagement/src/PasswordManager.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/PasswordManagement/src/PasswordUtils.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/PasswordManagement/src/User.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/README.md" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/main.cpp" charset="UTF-8" />
+    <file url="PROJECT" charset="GBK" />
+  </component>
+</project>

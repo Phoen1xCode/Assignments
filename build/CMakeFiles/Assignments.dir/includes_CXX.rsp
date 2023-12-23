@@ -1,0 +1,1 @@
+-I"C:/MySQL/mysql-8.2.0-winx64/include" -IX:/Assignments/MoneyManagement/lib/fmt/include -I"X:/Assignments/build/PasswordManagement/lib/cryptopp-cmake/cryptopp" -I"X:/Assignments/build/PasswordManagement/lib/cryptopp-cmake"
